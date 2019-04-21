@@ -13,7 +13,7 @@ class CreateSuperAdminUserSeeder extends Seeder
     public function run()
     {
         $user = [
-            'username' => 'superAdmin',
+            'username' => 'superadmin',
             'password' => bcrypt('123456'),
             'invitation_code' => str_random(6),
         ];

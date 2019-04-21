@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
 
 
 
-//            $this->call(SettingTableSeeder::class);
+            $this->call(SettingTableSeeder::class);
 //            $this->call(TestDataSeeder::class);
 //            $this->call(CreateNumSeeder::class);
 //            $this->call(CreateCalendrSeeder::class);

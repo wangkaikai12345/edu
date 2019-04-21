@@ -103,7 +103,7 @@ return [
             'description' => '让学习成为一种习惯',
             'domain' => 'http://test.ydma.cn',
             'email' => 'baronbool92@gmail.com',
-            'stat_code' => '你的统计代码',
+            'stat_code' => '<script>console.log("你的统计代码")</script>',
             'icp' => '@2018',
             'sub_title' => '副标题',
             'title' => '网站名称',
