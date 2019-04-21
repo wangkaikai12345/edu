@@ -1,0 +1,140 @@
+html, body, .wrapper {
+  height: 100%;
+}
+
+.zh_content_wrap {
+  position: relative;
+  top: 60px;
+  //height: auto;
+  height: 100%;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+.zh_content_wrap.paper {
+  height: 100%!important;
+  #content {
+    overflow-y: auto;
+  }
+  .czh_content {
+    position: relative;
+    width: auto;
+    height: auto;
+    min-width: 1400px;
+    .col-zdlg-2-5 {
+      float: left !important;
+      width: 20% !important;
+    }
+    .edui-default {
+      z-index: 5!important;
+    }
+  }
+}
+.zh_content_wrap.video_page {
+  height: calc(100% - 60px);
+}
+
+.czhNote:after,
+.czhNote:before,
+.zh_question:after,
+.zh_question:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 1px;
+  height: 70px;
+  background: #999999;
+}
+
+.czhNote:after,
+.zh_question:after {
+  left: 7px;
+}
+
+.czhNote:before,
+.zh_question:before {
+  left: 4px;
+}
+
+.scroll_change {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  cursor: move;
+  z-index: 99999;
+}
+
+.czhNote.active ~ #content #dplayer,
+.zh_question.active ~ #content #dplayer {
+  width: calc(100% - 720px);
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1056632 */
+  src: url('//at.alicdn.com/t/font_1056632_hb2ygren03.eot');
+  src: url('//at.alicdn.com/t/font_1056632_hb2ygren03.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1056632_hb2ygren03.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1056632_hb2ygren03.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1056632_hb2ygren03.ttf') format('truetype')
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-bottom: 0!important;
+}
+
+#dplayer,
+#ppt,
+#text {
+  position: absolute;
+  left: 80px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+#dplayer.full_page {
+  width: calc(100% - 80px)!important;
+}
+
+@media (max-width: 640px) {
+  #czh_note,
+  #zh_question {
+    display: none!important;
+  }
+}
+
+.move_shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background: transparent;
+  opacity: 0;
+}
+
+#zh_question .move_shadow,#czh_note .move_shadow {
+  left: 30px;
+}

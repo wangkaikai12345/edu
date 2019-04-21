@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en" class="full-height">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><meta http-equiv="expires" content="0"><meta http-equiv="pragma" content="no-cache"><meta http-equiv="cache-control" content="no-cache"><meta name="renderer" content="webkit|ie-comp|ie-stand"><link href="/dist/vendor/css/0.css" rel="stylesheet"><link href="/dist/profile/css/index.css" rel="stylesheet"></head>
+<body class="white-skin">
+<header>
+    <nav class="navbar navbar-expand-lg scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/dist/course/images/logo-sm-2017-12-01.png" height="45" alt="eduplay logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link waves-effect" href="#">首页<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link waves-effect" href="#">课程中心</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link waves-effect" href="#">IT云课堂</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link waves-effect" href="#">兄弟连教育</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect" href="#">技术论坛</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <div class="md-form my-0">
+                        <input class="form-control mr-sm-2 font-weight-normal" type="text" placeholder="搜索"
+                               aria-label="Search">
+                    </div>
+                </form>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item ml-3 mr-3">
+                        <a class="nav-link waves-effect">1
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item avatar dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink-5"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <img src="data:image/jpeg;base64,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"
+                                 class="rounded-circle z-depth-0"
+                                 alt="avatar image">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-primary"
+                             aria-labelledby="navbarDropdownMenuLink-5">
+                            <a class="dropdown-item waves-effect" href="#">后台管理</a>
+                            <a class="dropdown-item waves-effect" href="#">个人设置</a>
+                            <a class="dropdown-item waves-effect" href="#">账户中心</a>
+                            <a class="dropdown-item waves-effect" href="#">我的教学</a>
+                            <a class="dropdown-item waves-effect" href="#">我的学习</a>
+                            <a class="dropdown-item waves-effect" href="#">我的主页</a>
+                            <a class="dropdown-item waves-effect" href="#">退出登陆</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="button-collapse slide-logo" data-activates="slide-out">
+        <a href="#" class="white-text"><i class="fas fa-bars"></i><span
+                class="sr-only" aria-hidden="true">Toggle side navigation</span></a>
+    </div>
+</header>
+<main class="py-6 mb-5">
+    <div class="wrap">
+        <nav class="slide">
+            <div id="slide-out">
+                <ul class="custom-scrollbar">
+                    <!-- Logo -->
+                    <li class="slide-nav-logo">
+                        <div class="logo-wrapper waves-light">
+                            <a href="#"><img src="https://images.rooyun.com/logo-sm-2017-12-01.png"
+                                             class="img-fluid flex-center"></a>
+                        </div>
+                    </li>
+                    <!--/. Logo -->
+                    <!--Search Form-->
+                    <li class="slide-nav-form">
+                        <form class="search-form" role="search">
+                            <div class="form-group md-form mt-0 pt-1 waves-light">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </form>
+                    </li>
+                    <!--/.Search Form-->
+                    <!-- Side navigation links -->
+                    <li class="container">
+                        <div class="card ul_box">
+                            <ul class="collapsible collapsible-accordion ul_list">
+                                <li>
+                                    <a class="collapsible-header waves-effect arrow-r list_title active">
+                                        <i class="fas fa-chevron-right"></i>账户中心
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </a>
+                                    <div class="collapsible-body">
+                                        <ul>
+                                            <li class="list_item">
+                                                <a href="#" class="waves-effect">我的订单</a>
+                                            </li>
+                                            <li class="list_item">
+                                                <a href="#" class="waves-effect">退款管理</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="collapsible collapsible-accordion ul_list">
+                                <li>
+                                    <a class="collapsible-header waves-effect arrow-r list_title active">
+                                        <i class="fas fa-chevron-right"></i>个人设置
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </a>
+                                    <div class="collapsible-body">
+                                        <ul>
+                                            <li class="list_item_active">
+                                                <a href="#" class="waves-effect">个人信息</a>
+                                            </li>
+                                            <li class="list_item">
+                                                <a href="#" class="waves-effect">退款管理</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="sidenav-bg rgba-blue-strong"></div>
+            </div>
+        </nav>
+        <div class="col-xl-9 profile">
+            <div class="card">
+                <form action="" id="signupForm">
+                    <div class="card-body">
+                        <h6 class="card-title">个人信息</h6>
+                        <hr>
+                        <div class="row pl-3">
+                            <div class="col-xl-6">
+                                <div class="avatar-wrap" data-toggle="modal" data-target="#centralModallg">
+                                    <img src="http://cdn.ydma.cn/image/2018-12-17-a0oTbKZP" alt="加载中...">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                </div>
+                                <span class="font-small secondary">请上传jpg, gif, png格式的图片,<br> 建议图片大小不超过2MB</span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h6 class="mt-3">用户名</h6>
+                                <input type="text" id="username" class="form-control mt-4" value="管理员" disabled>
+                            </div>
+                        </div>
+                        <div class="row pl-3 mt-4">
+                            <div class="col-xl-6">
+                                <h6 class="mt-3">真实姓名</h6>
+                                <input type="text" name="realname" class="form-control mt-4" value="王八蛋">
+                            </div>
+                            <div class="col-xl-6">
+                                <h6 class="mt-3 mb-4">性别</h6>
+                                <div class="form-check float-left pl-0">
+                                    <input type="radio" class="form-check-input" id="man" name="sex">
+                                    <label class="form-check-label" for="man">男</label>
+                                </div>
+                                <div class="form-check float-left">
+                                    <input type="radio" class="form-check-input" id="woman" name="sex" checked>
+                                    <label class="form-check-label" for="woman">女</label>
+                                </div>
+                                <div class="form-check float-left">
+                                    <input type="radio" class="form-check-input" id="secret" name="sex">
+                                    <label class="form-check-label" for="secret">保密</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pl-3 mt-4">
+                            <div class="col-xl-6">
+                                <h6 class="mt-3">头衔</h6>
+                                <input type="text" id="title" class="form-control mt-4" value="王八蛋">
+                            </div>
+                            <div class="col-xl-6">
+                                <h6 class="mt-3">个人签名</h6>
+                                <input type="text" id="idiograph" class="form-control mt-4" value="王八蛋">
+                            </div>
+                        </div>
+                        <div class="row pl-3 mt-4">
+                            <div class="col-xl-11">
+                                <h6 class="mt-3 mb-4">自我介绍</h6>
+                                <script id="editor" name="content" type="text/plain">这里写你的初始化内容</script>
+                            </div>
+                        </div>
+                        <div class="row pl-3 mt-4">
+                            <div class="col-xl-6">
+                                <h6 class="mt-3">公司</h6>
+                                <input type="text" id="company" class="form-control mt-4" value="王八蛋">
+                            </div>
+                            <div class="col-xl-6">
+                                <h6 class="mt-3">职业</h6>
+                                <input type="text" id="professional" class="form-control mt-4" value="王八蛋">
+                            </div>
+                        </div>
+                        <div class="row pl-3 mt-4">
+                            <div class="col-xl-6">
+                                <h6 class="mt-3">个人空间/个人网站</h6>
+                                <input type="text" id="profile-site" class="form-control mt-4" value="王八蛋">
+                            </div>
+                            <div class="col-xl-6">
+                                <h6 class="mt-3">微博</h6>
+                                <input type="text" id="weibo" class="form-control mt-4" value="王八蛋">
+                            </div>
+                        </div>
+                        <div class="row pl-3 mt-4">
+                            <div class="col-xl-6">
+                                <h6 class="mt-3">微信</h6>
+                                <input type="text" id="wechat" class="form-control mt-4" value="王八蛋">
+                            </div>
+                            <div class="col-xl-6">
+                                <h6 class="mt-3">QQ</h6>
+                                <input type="text" id="qq" class="form-control mt-4" value="王八蛋">
+                            </div>
+                        </div>
+                        <div class="row pl-3 mt-4">
+                            <div class="col-xl-6">
+                                <h6 class="mt-3">毕业院校</h6>
+                                <input type="text" id="school" class="form-control mt-4" value="王八蛋">
+                            </div>
+                            <div class="col-xl-6">
+                                <h6 class="mt-3">所学专业</h6>
+                                <input type="text" id="major" class="form-control mt-4" value="王八蛋">
+                            </div>
+                        </div>
+                        <div class="row pl-3 mt-4 mb-4">
+                            <div class="col-xl-6">
+                                <h6 class="mt-3">生日</h6>
+                                <div class="md-form">
+                                    <input placeholder="请选择日期" data-value="2000/02/00" type="text" id="date-picker-example" class="form-control datepicker">
+                                    <label for="date-picker-example">点击我...</label>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <h6 class="mt-3">城市</h6>
+                                <input type="text" id="city" class="form-control mt-4" value="王八蛋">
+                            </div>
+                        </div>
+                        <div class="row col-xl-12 pl-3">
+                            <button class="btn btn-primary btn-rounded waves-effect waves-light" type="submit">保存
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="centralModallg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100" id="myModalLabel">上传头像</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row pl-2 pr-2">
+                        <form class="md-form mt-0 mb-0" action="#">
+                            <div class="file-field">
+                                <div class="btn blue-gradient btn-sm float-left">
+                                    <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>请选择文件</span>
+                                    <input type="file" class="file-upload" multiple>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row pl-2 pr-2 mt-3 crop-wrap">
+                        <div class="pl-2 pr-2 col-xl-9">
+                            <img src="xxxHTMLLINKxxx0.84646959829086830.7266167218630679xxx" alt="" id="upload-pre">
+                        </div>
+                        <div class="col-xl-3 pl-4">
+                            <div id="crop-pre" class="mb-3">
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn btn-primary btn-sm ml-0" id="CropperZoomUp" data-toggle="tooltip" data-placement="auto" title="放大"><i class="fas fa-search-plus"></i></button>
+                                <button class="btn btn-primary btn-sm ml-0" id="CropperZoomDown" data-toggle="tooltip" data-placement="auto" title="缩小"><i class="fas fa-search-minus"></i></button>
+                                <button class="btn btn-primary btn-sm ml-0 mr-0" id="resetCropper" data-toggle="tooltip" data-placement="auto" title="重置"><i class="fas fa-redo-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary btn-sm" id="saveAvatar">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Content -->
+                <img src="/dist/course/images/2018-08-27-CrQDFz0B.png" height="60" alt="eduplay logo">
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">友情链接</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a href="#!">IT云课堂</a>
+                </p>
+                <p>
+                    <a href="#!">兄弟连教育</a>
+                </p>
+                <p>
+                    <a href="#!">战地日记</a>
+                </p>
+                <p>
+                    <a href="#!">技术论坛</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">培训课程</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a href="#!">PHP开发</a>
+                </p>
+                <p>
+                    <a href="#!">HTML5全栈</a>
+                </p>
+                <p>
+                    <a href="#!">Java+大数据</a>
+                </p>
+                <p>
+                    <a href="#!">UI/UE设计师</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">培训课程</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    区块链工程师</p>
+                <p>
+                    Python全栈</p>
+                <p>
+                    Linux云计算</p>
+                <p>
+                    网站营销</p>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">培训课程</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    区块链工程师</p>
+                <p>
+                    Python全栈</p>
+                <p>
+                    Linux云计算</p>
+                <p>
+                    网站营销</p>
+            </div>
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/">&nbsp;eduplay</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<script type="text/javascript" src="/dist/vendor/chunk/index.js"></script><script type="text/javascript" src="/dist/profile/js/index.js"></script></body>
+</html>

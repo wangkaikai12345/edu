@@ -1,0 +1,120 @@
+@import "../../_variables.scss";
+
+.course_hr {
+  margin-top:16px;
+  margin-bottom: 0;
+}
+
+.row_div {
+  .row {
+    .col-lg-8 {
+      h6 {
+        margin-top: 17px;
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+#editor {
+  padding-left: 0;
+}
+
+.code-example {
+  position: relative;
+  margin: 2rem 0;
+
+  .bootstrap-tagsinput {
+    display: inline-block;
+    max-width: 100%;
+    padding: .25rem;
+    cursor: text;
+    vertical-align: middle;
+    color: #ced4da;
+    border: .0625rem solid #ced4da;
+    border-radius: .25rem;
+    background-color: #e9ecef;
+
+    .badge {
+      margin: .125rem;
+      padding: .625rem .625rem .5rem;
+      color: #fff;
+      border-radius: .25rem;
+      background: $primary;
+      box-shadow: 0 1px 2px rgba(68, 68, 68, .25);
+    }
+  }
+
+  .bootstrap-tagsinput [data-role='remove'] {
+    position: relative;
+    top: -1px;
+    margin-left: 8px;
+    cursor: pointer;
+    background:#fff;
+    border-radius:50%;
+    color: $primary;
+    padding-left:6px;
+    padding-right:6px;
+    padding-bottom:1px;
+  }
+
+  .bootstrap-tagsinput [data-role='remove']:after {
+    content: 'x';
+  }
+}
+
+.star {
+  .iconfont {
+    color:#FFD048;
+  }
+}
+
+.card {
+  .card-body {
+    .row_div {
+      .row {
+        .text-lg-right {
+          .btn {
+            float: right;
+            margin-right: 20px;
+            width: 112px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            padding: 0;
+            color: #666666 !important;
+            background: #f6f9fe;
+            font-weight: 350;
+            border: 0;
+            text-align: center;
+            margin-top: 12px;
+
+            span {
+              .iconfont {
+                float: left;
+                text-align: center;
+                font-size: 25px;
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .bd-example {
+      margin-bottom:50px;
+    }
+  }
+}
+
+.paper_title {
+  font-size:14px;
+  color: #666666;
+  font-weight:500;
+}
+
+.paper_content {
+  font-size:14px;
+  color: #666666;
+  font-weight:400;
+}

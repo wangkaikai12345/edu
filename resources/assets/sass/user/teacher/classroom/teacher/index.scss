@@ -1,0 +1,296 @@
+@import "../../../_variables.scss";
+
+.course_hr {
+  margin-top:12px;
+}
+
+.select2-container {
+  width:100% !important;
+  .select2-selection--single {
+    height:45px;
+    padding-top:7px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top:9px;
+}
+
+.czh_task_content {
+  overflow: hidden;
+  float: right;
+  height: auto;
+  box-shadow: $teacher_box_shadow !important;
+  border-radius: $teacher_radius !important;
+  padding: 0;
+
+  .operation_header {
+    width: 100%;
+    height: 50px;
+    padding-left: 30px;
+
+    p {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      line-height: 66px;
+      font-size: 20px;
+      color: #666;
+    }
+  }
+
+  .operation_content {
+    width: 100%;
+    height: auto;
+    padding-top: 35px;
+    padding-bottom: 50px;
+
+    .addTeacherTop {
+      margin: 0 auto;
+      width: 650px;
+      height: auto;
+
+      .teacher_collect {
+        margin: 0;
+        padding: 0;
+        width: 550px;
+        height: auto;
+        list-style: none;
+
+        .teacherItem {
+          width: 100%;
+          height: 70px;
+          margin-top: 20px;
+          border: 2px solid #d5d5d5;
+          border-radius: 5px;
+
+          .moveIcon {
+            float: left;
+            width: 80px;
+            height: 100%;
+            line-height: 68px;
+            text-align: center;
+
+            i {
+              font-size: 18px;
+              color: #999;
+            }
+
+            i:hover {
+              cursor: grab;
+            }
+          }
+
+          .teacherImg {
+            overflow: hidden;
+            float: left;
+            margin-top: 8px;
+            margin-right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 30px;
+            border: 1px solid #D5D5D5;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .teacherRole {
+            margin: 0;
+            float: left;
+            width: 240px;
+            height: 100%;
+            line-height: 70px;
+            font-weight: 400;
+            font-size: 15px;
+          }
+
+          .teacherStatus {
+            float: left;
+            margin-top: 22px;
+
+            label {
+              font-size: 15px;
+            }
+          }
+
+          .teacherRemove {
+            float: right;
+            width: 80px;
+            height: 100%;
+            line-height: 68px;
+            text-align: center;
+
+            i {
+              font-size: 16px;
+              color: #999;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .teacherItem:first-of-type {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .input-group {
+      width: 550px;
+      left: 252px;
+
+      input {
+        border-radius: 6px 0 0 6px;
+      }
+
+      .input-group-append button {
+        font-weight: 300;
+        border-radius: 0 6px 6px 0;
+        background-color: $course_primary;
+      }
+    }
+
+    .add_remark {
+      margin-top: -10px;
+      margin-left: 252px;
+      width: 57%;
+      font-size: 14px;
+      color: #999;
+    }
+  }
+}
+
+.basics_information {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .parentNode {
+    padding-left: 5px;
+    margin-left: 70px;
+    line-height: 25px;
+    border-left: 4px solid $primary;
+    font-size: 18px;
+  }
+
+  .plan_title_data {
+    margin: 10px auto 0;
+    width: 616px;
+    height: 40px;
+    line-height: 40px;
+
+    .title_tips {
+      float: left;
+      width: 80px;
+      height: 100%;
+
+      p {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+    }
+
+    .title_input {
+      float: right;
+      width: 530px;
+      height: 100%;
+
+      input {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        border: 1px solid #dcdcdc;
+        color: #666;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .plan_desc_data {
+    margin: 10px auto 0;
+    width: 616px;
+    height: auto;
+    line-height: 40px;
+
+    .desc_tips {
+      float: left;
+      width: 80px;
+      height: 100%;
+
+      p {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+    }
+
+    .desc_input {
+      float: right;
+      width: 616px;
+      height: 100%;
+      line-height: 20px;
+    }
+  }
+}
+
+.marketing_setup {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 30px;
+  font-size: 16px;
+
+  .parentNode {
+    padding-left: 5px;
+    margin-left: 70px;
+    line-height: 25px;
+    border-left: 4px solid $primary;
+    font-size: 18px;
+  }
+
+  .form_item {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.bd-example {
+  .nav-tabs {
+    padding: 0 30px;
+    border: 0;
+    margin: 20px 0;
+    .nav-item {
+      height: 30px;
+      font-size: 14px;
+      color: #666;
+      margin-right: 20px;
+      .nav-link {
+        background: #F6F6F6;
+        color: #666666;
+        border-radius: 0.25rem;
+      }
+      .nav-link:hover {
+        border: 1px solid transparent;
+        background: $primary;
+        color: #fff;
+      }
+      .nav-link.active {
+        background: $primary;
+        color: #FFF;
+        border: 1px solid transparent;
+      }
+    }
+    .nav-item:last-child {
+      margin-right: 0;
+    }
+  }
+}

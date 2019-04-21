@@ -1,0 +1,204 @@
+@import "../../font/_font.scss";
+@import "../../_variables.scss";
+
+.xh_topic {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: $template_radius;
+  box-shadow: $template_box_shadow;
+  //padding-bottom: 60px;
+
+  .course_head {
+    margin: 0 auto;
+    width: 100%;
+    height: 46px;
+
+    p {
+      margin: 0;
+      padding-left: 10px;
+      color: #4a4a4a;
+      font-size: 18px;
+      border-bottom: 1px solid #e5e5e5;
+      padding-top: 12px;
+      padding-bottom: 2.5px;
+    }
+  }
+
+  .course_content {
+    width: 100%;
+    height: auto;
+
+    .course_content_nav {
+      .nav {
+        padding-bottom: 10px;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+
+        .nav-item {
+          a.active {
+            border-bottom: 2px solid $primary;
+          }
+        }
+
+        .nav-item {
+          margin-right: 20px;
+
+          a {
+            font-size: 14px;
+            color: #666666;
+            padding-bottom: 8px;
+          }
+        }
+      }
+
+      .tab-pane {
+        .es_piece {
+          margin-bottom: 40px;
+
+          .piece_header {
+            height: 17px;
+            line-height: 17px;
+            border-left: 3px solid $primary;
+            padding-left: 6px;
+          }
+
+          .piece_body {
+            margin-top: 19px;
+            padding-left: 30px;
+            font-size: 14px;
+            color: #999999;
+            line-height: 20px;
+            width: 90%;
+          }
+        }
+      }
+    }
+
+    .topic_content {
+      .col-12 {
+        .topic_item {
+          padding-left: 30px !important;
+          font-size: 14px;
+          color: $primary;
+          .col-md-12 {
+            .topic_icon {
+              float: left;
+              margin-right: 10px;
+            }
+            .topic_title {
+              float: left;
+            }
+          }
+        }
+
+        .topic_item:hover {
+
+        }
+      }
+    }
+
+    .topic_no_content {
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+      line-height: 140px;
+    }
+  }
+}
+
+.zh_course .course-tabs {
+  margin-top: 0 !important;
+}
+
+.card.card_shadow {
+  border: 0;
+}
+
+.zh_course .huati .huati_wrap .huati_list .huati_item .huati_info {
+  .huati_title {
+    margin-right: 30px;
+  }
+  .huati_from {
+    float: left;
+    margin-top: 2px;
+    color: #666;
+    font-size: 12px;
+    span {
+      color: $primary;
+    }
+  }
+  .huati_from.second {
+    clear: both;
+    margin-left: 25px;
+  }
+}
+
+.zh_course .huati .huati_wrap .huati_list .huati_item {
+  position: relative;
+  min-height: 65px !important;
+  height: auto;
+  overflow: hidden;
+  padding: 0 !important;
+  padding-top: 5px !important;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 0;
+}
+
+.zh_course .huati .huati_wrap .huati_list .huati_item:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #EEEEEE;
+  bottom: -10px;
+  left: 0;
+}
+
+.zh_course .huati .huati_wrap .huati_list .huati_item:hover {
+  background: $plan_primary_rgba_1;
+}
+
+.zh_course .huati .huati_wrap .huati_list .huati_item .huati_info {
+  margin-top: 5px;
+}
+
+.zh_course .huati .huati_wrap .huati_list .huati_item .huati_info .huati_user {
+  margin-left: 25px;
+}
+
+.zh_course .huati .huati_wrap .huati_list .huati_item .huati_info .huati_user .user_name {
+  span {
+    color: $primary;
+  }
+}
+
+.zh_course .huati .huati_wrap .huati_list .huati_item .watch_num {
+  margin-top: 0;
+  margin-right: 20px;
+}
+
+.zh_course .huati .huati_wrap .huati_list .huati_item .huati_info {
+  width: 100%;
+  color: $primary;
+  font-size: 14px;
+  height: auto;
+  overflow: hidden;
+  min-height: 75px;
+}
+
+@media screen and (max-width: 1200px) {
+  .xh_topic {
+    margin-top: 30px;
+  }
+}
+
+.student_style {
+  border-radius: $template_radius;
+  box-shadow: $template_box_shadow;
+}

@@ -1,0 +1,78 @@
+@import '../../../variables';
+
+.modal-content {
+  overflow: hidden !important;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 460px !important;
+  height: 258px !important;
+  .modal-body {
+    width: 100%;
+    height: 100%;
+
+    .modal_con {
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+
+      p {
+        font-size: 20px;
+        color: #666;
+      }
+
+      p:first-of-type {
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+
+      p:last-of-type {
+        margin-top: 23px;
+        margin-bottom: 0;
+      }
+
+      .postAndAnswer {
+        margin-top: 45px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+        height: 50px;
+
+        button {
+          outline: none;
+          margin: 0 auto;
+          display: block;
+          cursor: pointer;
+          width: 180px;
+          height: 50px;
+          border-radius: 50px;
+          border: 2px solid $primary;
+          font-size: 20px;
+          color: $primary;
+          transition: .5s;
+          background: white;
+        }
+
+        button:first-of-type {
+          float: left;
+        }
+
+        button:last-of-type {
+          float: right;
+        }
+
+        button:hover {
+          cursor: pointer;
+          background-color: $primary;
+          color: white;
+        }
+      }
+    }
+  }
+}
+

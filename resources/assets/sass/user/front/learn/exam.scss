@@ -1,0 +1,50 @@
+@import "../../_variables.scss";
+.zh_course .huati .huati_wrap .huati_list .huati_item .huati_info .huati_user .user_name .span_text {
+  color:#666;
+}
+
+.zh_course .huati .huati_wrap .huati_list .huati_item .watch_num {
+  margin-top:0;
+  .watch_item {
+    .cancel-collection {
+      margin-top:15px;
+      width:96px;
+      height:30px;
+      border-radius:18px;
+      background:$primary;
+      padding:0;
+      font-weight:400;
+      font-size:14px;
+    }
+    .cancel-collection:hover {
+      border:0;
+    }
+  }
+}
+
+.zh_course .huati .huati_wrap .huati_list .huati_item {
+  .exam-btn {
+    button {
+      width:96px;
+      height:30px;
+      padding:0;
+      font-size:14px;
+      border-radius:18px;
+      font-weight:400;
+      margin-top:14px;
+      margin-right:15px;
+    }
+  }
+}
+
+.zh_course .huati .huati_wrap .huati_list .huati_item .watch_num.second {
+  margin-right:165px;
+}
+
+.zh_course .huati .huati_wrap .huati_list .huati_item .watch_num.second {
+  margin-right:165px;
+}
+
+.zh_course .huati .huati_wrap .huati_list .huati_item #watch_num_content {
+  margin-right:275px;
+}

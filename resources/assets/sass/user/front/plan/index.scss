@@ -1,0 +1,116 @@
+.course-progress {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  top: 50%;
+  margin-top: -40px !important;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 18px 2px rgba(41, 94, 64, .1);
+  -moz-box-shadow: 0 0 18px 2px rgba(41, 94, 64, .1);
+  box-shadow: 0 0 18px 2px rgba(41, 94, 64, .1);
+
+  .cricle-progress {
+    position: absolute;
+    left: 7.5px;
+    top: 7.5px;
+    width: 145px;
+    height: 145px;
+  }
+
+  .percent {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #919191;
+  }
+}
+
+.zh_course {
+  .shopping {
+    a {
+      margin-bottom: 0 !important;
+      padding: 6px 30px;
+      color: #FFFFFF;
+      font-size: 20px;
+      margin-left: 0 !important;
+    }
+    a:hover {
+      color: #ffffff;
+    }
+  }
+
+  .course_card {
+    min-height: 281px;
+  }
+
+  .p_item {
+    float: left;
+    height: 62px;
+    width: 142px;
+    margin-top: 60px;
+    border-right: 1px solid #717171;
+    margin-right: 50px;
+
+    .p_mb {
+      font-size: 30px;
+      color: #4A4A4A;
+      line-height: 33px;
+
+      span {
+        font-size: 14px;
+        color: #666666;
+      }
+    }
+    .p_title {
+      color: #666666;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .zh_course {
+    .course_card {
+
+    }
+    .p_first_item {
+      margin-left: 25%;
+    }
+    .shopping {
+      a {
+        margin: 20px auto 0 !important;
+        margin-left: auto!important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 992px) {
+  .zh_course {
+    .course-progress {
+      top: 0;
+      margin-top: 0!important;
+      margin-bottom: 20px!important;
+    }
+    .p_item {
+      float: none;
+      clear: both;
+      margin: 0 auto;
+      margin-right: auto!important;
+      margin-bottom: 20px;
+      border-right: 0!important;
+      text-align: center;
+    }
+  }
+}
+

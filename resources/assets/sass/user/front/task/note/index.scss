@@ -1,0 +1,280 @@
+@import '../../../variables';
+@import '../../../font/_font.scss';
+
+.czhNote {
+  position: absolute;
+  right: -100%;
+  top: 0;
+  width: 640px;
+  height: 100%;
+  background: #FFFFFF;
+  z-index: 9;
+  overflow: hidden;
+  -webkit-transition: right 0.2s ease;
+  -moz-transition: right 0.2s ease;
+  -ms-transition: right 0.2s ease;
+  -o-transition: right 0.2s ease;
+  transition: right 0.2s ease;
+  .custom-control-label::after {
+    top: 0.425rem;
+  }
+  .note_scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding-left: 30px;
+    padding-right: 12px;
+    padding-top: 20px;
+    .row {
+      margin: 0;
+    }
+    .pb-80 {
+      //padding-bottom: 80px;
+    }
+    h3 {
+      font-size: 16px;
+      color: #4A4A4A;
+      font-weight: 400;
+      margin-bottom: 19px;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 10px;
+      width: 98%;
+    }
+    .nav {
+      li {
+        margin-right: 60px;
+        a {
+          font-size: 16px;
+          color: #4A4A4A;
+          padding: 0;
+        }
+        a.active {
+          position: relative;
+          background: transparent;
+          color: $primary;
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: $primary;
+          }
+        }
+      }
+    }
+    .tab-content {
+      margin-top: 15px;
+
+      #createNote {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+
+        .batV {
+          width: 100%;
+          margin-bottom: 10px;
+          height: auto;
+          overflow: hidden;
+        }
+
+        .custom-control {
+          float: left;
+          height: 34px;
+          line-height: 34px;
+          .custom-control-label::before {
+            top: 0.425rem;
+          }
+        }
+
+        .screenShot {
+          float: left;
+          margin-left: 30px;
+          line-height: 34px;
+          cursor: pointer;
+          span {
+            float: left;
+            font-size: 16px;
+            color: $primary;
+            margin-left: 6px;
+          }
+          i {
+            float: left;
+            font-size: 20px;
+            color: $primary;
+          }
+        }
+
+        .postNoteBtn {
+          float: right;
+          width: 100px;
+          height: 40px;
+          button {
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            background-color: $primary;
+            color: white;
+            font-size: 16px;
+            font-weight: 300;
+          }
+        }
+      }
+      .notePublic.no_data {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+
+      .notePublic {
+        overflow: hidden;
+        padding: 30px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #f2f2f2;
+        margin-bottom: 120px;
+        .note_wrap {
+          width: 100%;
+          height: 100%;
+
+          .note_item:first-of-type {
+            padding-top: 0;
+          }
+
+          .note_item:last-of-type {
+            padding-bottom: 0;
+            border: 0;
+          }
+
+          .note_item {
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+
+            .noteTitle {
+              overflow: hidden;
+              width: 100%;
+              font-size: 14px;
+              color: #666;
+              margin-bottom: 5px;
+            }
+
+            .fullText {
+              height: auto;
+            }
+
+            .retract {
+              max-height: 20px;
+              overflow: hidden;
+            }
+
+            .titleHeight {
+              width: 100%;
+              height: 20px;
+              margin-bottom: 14px;
+
+              .heightSwitch {
+                width: 35px;
+                margin: 0;
+                height: 19px;
+                font-size: 15px;
+                color: $primary;
+              }
+
+              .heightSwitch:hover {
+                cursor: pointer;
+              }
+            }
+
+            .noteScreenShotDom {
+              width: 100%;
+              height: 141px;
+
+              .noteScreenShot {
+                position: relative;
+                width: 180px;
+                height: 100%;
+                border-radius: 5px;
+
+                .noteScreenShotImg {
+                  width: 100%;
+                  height: 100%;
+                }
+
+                .noteScreenShotTime {
+                  position: absolute;
+                  right: 0;
+                  bottom: 0;
+                  width: 60px;
+                  height: 20px;
+                  line-height: 20px;
+                  text-align: center;
+                  background-color: #999;
+                  border-radius: 5px 0 0 0;
+                  color: white;
+                  font-size: 14px;
+                }
+              }
+            }
+
+            .noteData {
+              margin-top: 10px;
+              width: 100%;
+              height: 22px;
+              line-height: 22px;
+              font-size: 14px;
+              color: #999;
+
+              p {
+                margin-bottom: 0;
+              }
+
+              .useNum {
+                float: left;
+                min-width: 32px;
+                height: 100%;
+              }
+
+              .fabulousNum {
+                float: left;
+                margin-left: 30px;
+                min-width: 30px;
+                height: 100%;
+
+                i {
+                  margin-top: -3px;
+                }
+
+                i:hover {
+                  cursor: pointer;
+                  color: $primary;
+                }
+              }
+
+              .noteCreateTime {
+                float: right;
+              }
+            }
+          }
+
+        }
+        .note_wrap.no_data {
+          margin-left: -30px;
+        }
+      }
+    }
+  }
+}
+
+.czhNote.active {
+  right: 0!important;
+}

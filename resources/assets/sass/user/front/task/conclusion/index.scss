@@ -1,0 +1,352 @@
+@import '../../../_variables.scss';
+
+.zh_conclusion {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  .conclusion_wrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 70px 0 0 170px;
+    width: 1920px;
+    height: 100%;
+    .conclusion_card {
+      float: left;
+      width: 400px;
+      height: 220px;
+      background: #FFFFFF;
+      border-radius: 8px;
+      box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.10);
+      margin: 0 40px 40px 0;
+      padding: 20px 0 0 50px;
+      .card_title {
+        font-size: 20px;
+        color: #4A4A4A;
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+      .card_body {
+        overflow: hidden;
+        .card_grade {
+          display: block;
+          font-size: 30px;
+          color: $primary;
+          line-height: 40px;
+        }
+        .grade_rank {
+          display: block;
+          font-size: 20px;
+          color: #999999;
+          margin-bottom: 20px;
+          margin-top: 8px;
+          line-height: 26px;
+        }
+        .join_draw {
+          padding: 6px 22px;
+        }
+        .card_lists {
+          margin-top: 20px;
+          list-style: none;
+          padding-left: 0;
+          li {
+            width: 100%;
+            font-weight: 800;
+            margin-left: -10px;
+            margin-bottom: 20px;
+            padding-right: 70px;
+            line-height: 26px;
+            font-size: 20px;
+            color: #666666;
+            span {
+              font-size: 18px;
+              color: #999999;
+              float: right;
+              line-height: 30px;
+              font-weight: 400;
+              width: 100px;
+              text-align: right;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin-top: 2px;
+            }
+            .iconfont {
+              font-size: 30px;
+              float: left;
+              color: $primary;
+            }
+          }
+        }
+        .grade {
+          width: 100%;
+          height: 110px;
+          margin: 0 auto 30px;
+        }
+        .card_results {
+          margin-top: 40px;
+          height: auto;
+          .results_item {
+            float: left;
+            width: 220px;
+            height: auto;
+            margin-right: 140px;
+            margin-left: 40px;
+            .points_num {
+              display: inline-block;
+              width: 20px;
+              height: 22px;
+              margin-right: -8px;
+              margin-top: -3px;
+            }
+            .points {
+              display: inline-block;
+              width: 29px;
+              height: 22px;
+              margin-top: -3px;
+            }
+
+            .results_header {
+              position: relative;
+              width: 100%;
+              height: 32px;
+              border-top-right-radius: 21px;
+              background: $primary;
+              line-height: 32px;
+              color: #fff;
+              font-size: 18px;
+              padding-left: 70px;
+              .header_seq {
+                position: absolute;
+                top: 50%;
+                left: -8px;
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                background: #FFFFFF;
+                box-shadow: 0px 0px 4px 0px rgba(107,145,255,0.50);
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                font-size: 18px;
+                color: #666666;
+                line-height: 40px;
+                text-align: center;
+              }
+            }
+            .results_body {
+              margin-top: 74px;
+              .card_lists {
+                li {
+                  padding-right: 0;
+                  margin-bottom: 21px;
+                  a {
+                    font-size: 36px;
+                  }
+                }
+              }
+            }
+          }
+          .results_item:nth-child(3n) {
+            margin-right: 0;
+          }
+        }
+        .ranking_wrap {
+          .conclusion_ranking {
+            float: left;
+            width: 323px;
+            .title {
+              width: 100%;
+              float: left;
+              font-size: 14px;
+              color: #4A4A4A;
+              margin-bottom: 8px;
+            }
+            .header_item {
+              position: relative;
+              float: left;
+              width: 61px;
+              height: 61px;
+              margin-right: 41px;
+              img {
+                display: block;
+                width: 61px;
+                height: 61px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+              }
+              .ranking_num {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 18px;
+                height: 20px;
+                border-radius: 0;
+              }
+            }
+            .header_item:nth-of-type(3n) {
+              margin-right: 0;
+            }
+          }
+          .user_ranking {
+            width: 165px;
+            .header_item {
+              width: 100%;
+              margin-right: 0;
+              img {
+                float: left;
+                margin-right: 19px;
+              }
+              .user_info {
+                float: left;
+                font-size: 18px;
+                color: #4A4A4A;
+                height: 60px;
+                line-height: 33px;
+                .user_rank_num {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .points_num {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: -5px;
+  }
+  .points {
+    display: inline-block;
+    width: 45px;
+    height: 33px;
+  }
+  .points_1 {
+    width: 12px;
+  }
+}
+
+.popover {
+  width: 300px !important;
+  min-width: 300px;
+  .popover-body {
+    width: 300px !important;
+    min-width: 300px;
+    padding: 0;
+  }
+  .popover_card {
+    width: 300px;
+    height: auto;
+    .teacher_header {
+      height: auto;
+      padding: 20px 0 0 20px;
+      overflow: hidden;
+      width: 100%;
+      .teacher_avatar {
+        float: left;
+        width: 52px;
+        height: 52px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+      .teacher_info {
+        float: left;
+        margin-left: 30px;
+        margin-top: 2px;
+        span {
+          display: block;
+        }
+        .teacher_name {
+          font-size: 14px;
+          color: #666666;
+          margin-bottom: 9px;
+        }
+        .teacher_job {
+          font-size: 12px;
+          color: #999999;
+        }
+      }
+    }
+    .teacher_fans {
+      height: auto;
+      overflow: hidden;
+      padding: 0 36px 10px;
+      margin-top: 14px;
+      .fans_item {
+        float: left;
+        text-align: center;
+        margin-right: 72px;
+        span {
+          display: block;
+          width: 100%;
+          font-size: 14px;
+          color: #999999;
+        }
+      }
+    }
+    .teacher_controls {
+      border-top: 1px solid #E5E5E5;
+      padding: 0 50px;
+      a.btn {
+        padding: 2px 10px;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1866px) {
+  .zh_conclusion .conclusion_wrap {
+    left: 0;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.to_sender {
+  display: block;
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.send_modal .py-3 {
+  overflow: hidden !important;
+  padding: 16px;
+}
+
+.send_modal textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 0;
+  font-size: 20px;
+  color: #666666;
+  padding: 20px;
+}
+
+.notice_time {
+  text-align: right;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #999;
+}

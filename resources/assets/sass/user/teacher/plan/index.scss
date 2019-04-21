@@ -1,0 +1,620 @@
+@import "../../_variables";
+
+@media screen and (max-width: 1200px) {
+  .form_content {
+    width: 100% !important;
+    margin-top: 30px;
+  }
+}
+
+.czh_plan_content {
+  .plan_content {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+}
+
+.card {
+  border: 0 !important;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.padding-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .czh_task_content {
+    overflow: hidden;
+    //float: right;
+    height: auto;
+    box-shadow: $teacher_box_shadow !important;
+    border-radius: $teacher_radius !important;
+    padding: 0;
+
+    .operation_header {
+      width: 100%;
+      height: 66px;
+      padding-left: 30px;
+
+      p {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        line-height: 66px;
+        font-size: 20px;
+        color: #666;
+      }
+
+      .back_btn {
+        position: relative;
+
+        a {
+          padding: 0;
+          position: absolute;
+          display: block;
+          margin: auto;
+          top: 0;
+          right: -50px;
+          bottom: 0;
+          left: 0;
+          width: 68px;
+          height: 30px;
+          line-height: 28px;
+          font-weight: 300;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+
+    .operation_content {
+      border-top: 1px solid #e5e5e5;
+      width: 100%;
+      height: auto;
+      padding-top: 30px;
+      padding-bottom: 50px;
+
+      .addTeacherTop {
+        margin: 0 auto;
+        width: 650px;
+        height: auto;
+
+        .teacher_collect {
+          margin: 0;
+          padding: 0;
+          width: 550px;
+          height: auto;
+          list-style: none;
+
+          .teacherItem {
+            width: 100%;
+            height: 70px;
+            margin-top: 20px;
+            border: 1px solid #d5d5d5;
+            border-radius: 5px;
+
+            .moveIcon {
+              float: left;
+              width: 80px;
+              height: 100%;
+              line-height: 68px;
+              text-align: center;
+
+              i {
+                font-size: 18px;
+                color: #999;
+              }
+
+              i:hover {
+                cursor: grab;
+              }
+            }
+
+            .teacherImg {
+              overflow: hidden;
+              float: left;
+              margin-top: 8px;
+              margin-right: 20px;
+              width: 50px;
+              height: 50px;
+              border-radius: 30px;
+              border: 1px solid #D5D5D5;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            .teacherRole {
+              margin: 0;
+              float: left;
+              width: 240px;
+              height: 100%;
+              line-height: 70px;
+              font-weight: 400;
+              font-size: 15px;
+            }
+
+            .teacherStatus {
+              float: left;
+              margin-top: 22px;
+              label {
+                font-size: 15px;
+              }
+            }
+
+            .teacherRemove {
+              float: right;
+              width: 80px;
+              height: 100%;
+              line-height: 68px;
+              text-align: center;
+              i {
+                font-size: 16px;
+                color: #999;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .teacherItem:first-of-type {
+            margin-top: 0;
+          }
+        }
+      }
+
+      .input-group {
+        width: 565px;
+        left: 236px;
+        input {
+          border-radius: 6px 0 0 6px;
+        }
+
+        .input-group-append button {
+          width: 100px !important;
+          font-weight: 300;
+          border-radius: 0 6px 6px 0;
+          background-color: $course_primary;
+        }
+      }
+
+      .add_remark {
+        margin-top: -10px;
+        margin-left: 252px;
+        width: 200px;
+        font-size: 14px;
+        color: #999;
+      }
+    }
+  }
+
+  .basics_information {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .parentNode {
+      padding-left: 5px;
+      margin-left: 70px;
+      line-height: 25px;
+      border-left: 4px solid $primary;
+      font-size: 18px;
+    }
+
+    .plan_title_data {
+      margin: 10px auto 0;
+      width: 616px;
+      height: 40px;
+      line-height: 40px;
+
+      .title_tips {
+        float: left;
+        width: 80px;
+        height: 100%;
+        p {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+        }
+      }
+
+      .title_input {
+        float: right;
+        width: 530px;
+        height: 100%;
+        input {
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          border: 1px solid #dcdcdc;
+          color: #666;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .plan_desc_data {
+      margin: 10px auto 0;
+      margin-bottom: 15px;
+      width: 616px;
+      height: auto;
+      line-height: 40px;
+
+      .desc_tips {
+        float: left;
+        width: 80px;
+        height: 100%;
+        p {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+        }
+      }
+
+      .desc_input {
+        float: right;
+        margin-top: 6px;
+        width: 530px;
+        height: 100%;
+        line-height: 20px;
+        .form-control {
+          float: left;
+          width: 84%;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          height: 40px;
+        }
+        .input-group-append {
+          float: left;
+          height: auto;
+          button {
+            height: 40px;
+            line-height: 17px;
+            font-weight: 400;
+            font-size: 14px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            padding: 10px 27px;
+          }
+        }
+      }
+    }
+
+    .form_search_item {
+      margin: 0 auto;
+      width: 90%;
+      height: 30px;
+
+      .question_count_select {
+        float: left;
+        width: 298px;
+        height: 30px;
+        border: 0.0625rem solid #ced4da;
+        border-radius: 0.25rem;
+      }
+
+    }
+
+    .question_count_table {
+      margin: 20px auto 0;
+      width: 93%;
+      height: auto;
+
+      table {
+        width: 100%;
+        height: 100%;
+        color: #666 !important;
+
+        th {
+          border-top: 0;
+        }
+      }
+    }
+
+    .bullet_problem {
+      margin: 0 auto;
+      width: 76%;
+      height: auto;
+
+      .b_video {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+
+        video {
+          width: 100%;
+        }
+      }
+
+      .b_p_inp {
+        margin: 20px auto 0;
+        width: 100%;
+        height: 40px;
+
+        .b_p {
+          height: 40px;
+
+          p {
+            width: 100%;
+            height: 100%;
+            line-height: 40px;
+            color: #666;
+            font-size: 14px;
+            text-align: right;
+            font-weight: 800;
+
+            span {
+              color: #f0a818;
+            }
+          }
+        }
+
+        .b_inp {
+          height: 40px;
+
+          input {
+            width: 90%;
+            height: 100%;
+            font-size: 14px;
+
+            span {
+              color: #f0a818;
+            }
+          }
+        }
+
+        .ch_a_c_b {
+          height: 30px;
+
+          button {
+            padding: 0;
+            width: 90px;
+            height: 30px;
+            line-height: 29px;
+            font-size: 14px;
+            font-weight: 300;
+          }
+
+          .ch_q_b {
+            margin-right: 30px;
+          }
+        }
+
+        .b_table {
+          margin-top: -15px;
+          width: 100%;
+          height: auto;
+
+          table {
+            width: 100%;
+            height: auto;
+
+            th {
+              border-top: 0;
+            }
+
+            .b_t_n {
+              width: 90px;
+              height: 30px;
+            }
+
+            .b_t_b {
+              padding: 0;
+            }
+
+            .b_t_t {
+              padding: 0;
+            }
+
+            .b_t_t_i {
+              display: inline-block;
+              color: $primary;
+              -webkit-transition: all 0.5s ease;
+              -moz-transition: all 0.5s ease;
+              -ms-transition: all 0.5s ease;
+              -o-transition: all 0.5s ease;
+              transition: all 0.5s ease;
+            }
+
+            .active~.b_t_t_i {
+              -webkit-transform: rotateZ(-180deg);
+              -moz-transform: rotateZ(-180deg);
+              -ms-transform: rotateZ(-1800deg);
+              -o-transform: rotateZ(-1800deg);
+              transform: rotateZ(-180deg);
+            }
+
+            .q_options {
+              overflow: hidden;
+              padding: 0;
+              height: 0;
+              border: 0;
+
+              ul {
+                margin: 0;
+                margin-left: 116px;
+                list-style: none;
+                display: none;
+                padding-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .added_question {
+      margin: 0 auto;
+      width: 90%;
+      height: auto;
+
+      table {
+        width: 100%;
+        height: auto;
+
+        th {
+          border-top: 0;
+        }
+
+        .added_del {
+          padding: 0;
+        }
+
+        .added_cat {
+          padding: 0;
+        }
+
+        .added_ol {
+          margin: 0;
+        }
+      }
+    }
+
+  }
+
+  .marketing_setup {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 30px;
+    font-size: 16px;
+
+    .parentNode {
+      padding-left: 5px;
+      margin-left: 70px;
+      line-height: 25px;
+      border-left: 4px solid $primary;
+      font-size: 18px;
+    }
+
+    .form_item {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.plan_service {
+  padding-left: 0;
+  margin-right: 1.75rem;
+  font-size: 12px;
+  line-height: 27px;
+  text-align: center;
+  color: white;
+  background-color: #d5d5d5;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ser_active {
+  background-color: $primary;
+}
+
+.bd-example-modal-lg {
+  .modal-dialog {
+    .modal-content {
+      width: 490px;
+    }
+  }
+}
+
+.inp_num_div {
+  input {
+    float: left;
+    width: 80%;
+    height: 30px;
+  }
+
+  span {
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+  }
+}
+
+.set_server_inp {
+  margin-bottom: 20px;
+  input {
+    float: left;
+    width: 40%;
+    height: 30px;
+  }
+
+  span {
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+  }
+}
+
+#save_data_btn {
+  padding: 0;
+  margin-left: 43%;
+  background-color: $primary !important;
+  width: 90px;
+  height: 30px;
+  border-radius: 30px;
+  border: 0;
+}
+
+.teacher_style {
+  box-shadow: $teacher_box_shadow !important;
+  border-radius: $teacher_radius !important;
+}
+
+#show_video {
+  width: 100%;
+  border-radius: $teacher_radius;
+  box-shadow: $teacher_box_shadow;
+}
+
+.select2-dropdown {
+  border: 2px solid #D5D5D5 !important;
+  border-bottom: 0 !important;
+}
+
+//.select2-container--open .select2-dropdown {
+//  //left: 8px !important;
+//}
+
+.progress-wrapper {
+  padding-top: .3rem !important;
+}
+
+.list-target {
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  padding: 0 10px;
+  padding-top: 10px;
+  margin-top: 60px;
+  min-height: 30px;
+}
+
+.list-target p {
+  display: block;
+  border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 10px;
+  position: relative;
+  padding-right: 50px;
+}
+
+.list-target p:last-child {
+  border-bottom: 0;
+  margin-bottom: 0px;
+}
+
+.list-target a {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: -1px;
+  font-size: 20px;
+  color: #807979;
+}

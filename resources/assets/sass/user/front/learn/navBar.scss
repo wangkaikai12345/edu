@@ -1,0 +1,44 @@
+@import "../../_variables.scss";
+
+.navbar-card {
+  margin: 0 !important;
+  .list_group_item_content {
+    width: 100%;
+    .list_group_item_title {
+      border: 0;
+      border-radius: 0;
+      padding: 0 1rem !important;
+      margin-left: 10px;
+      font-size: 18px;
+      color: #4A4A4A;
+      margin-bottom: 5px;
+      padding-top: 10px !important;
+    }
+    .list-group {
+      padding-top: 10px !important;
+      padding-bottom: 20px !important;
+      .list-group-item {
+        margin-bottom: 15px !important;
+      }
+      .list-group-item:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+.navbar-card .list-group .list-group-item.active {
+  border-left: 4px solid $primary !important;
+}
+
+.navbar-card .list-group .list-group-item {
+  color: #666666;
+  font-size: 14px;
+  margin-left: 0;
+  padding-left: 50px !important;
+}
+
+.student_style {
+  border-radius: $template_radius;
+  box-shadow: $template_box_shadow;
+}

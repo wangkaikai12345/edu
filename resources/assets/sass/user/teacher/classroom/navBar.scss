@@ -1,0 +1,112 @@
+@import "../../_variables.scss";
+.col-lg-12 {
+  margin-top:2rem;
+}
+
+.btn-icon {
+  border:0;
+}
+
+.col-md-3 {
+  padding-left:0;
+  padding-right:0;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.navbar-card {
+  width:87.5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  .list-group {
+    padding-top:30px;
+    padding-bottom:40px;
+    .list-group-item-action:hover {
+      color:red !important;
+    }
+    .list-group-item {
+      border:0;
+      border-radius:0;
+      padding:0 1rem !important;
+      margin-left:10px;
+      margin-bottom:10px;
+      border-left:4px solid transparent !important;
+      font-size:18px;
+      div {
+        span {
+          .courseStatus {
+            width:60px;
+            height:26px;
+            text-align:center;
+            line-height:19px;
+            font-size:12px;
+            font-weight:400;
+            color:#F18C29 !important;
+          }
+        }
+      }
+    }
+    .display-btn {
+      padding-top:5px !important;
+      padding-bottom:5px !important;
+      padding-left:25px !important;
+      margin-left:0;
+      background:#FAFAFA;
+      color:#999999;
+      cursor: default;
+    }
+    .list-group-item-action.display-btn:hover {
+      border-left:0 !important;
+      background: #FAFAFA !important;
+      color: #999999 !important;
+      padding-left:29px !important;
+    }
+    .list-group-item-action.display-btn:focus {
+      color: #999999 !important;
+    }
+    .list-group-item.active {
+      background:#fff !important;
+      color:$primary !important;
+      border-left:4px solid $primary !important;
+    }
+  }
+}
+
+.navbar-card .list-group .list-group-item-action:hover, .list-group-item-action:focus {
+  background:#fff;
+  border-left:4px solid $primary !important;
+  color:$primary !important;
+}
+
+.navbar-card .list-group:last-child .list-group-item:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.card > .list-group:first-child .list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-card {
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar_content {
+    padding-right:0;
+  }
+
+  .navbar-card {
+    width:100%;
+  }
+}
+
+
+.navbar-card {
+  border-radius: $teacher_radius !important;
+  box-shadow: $teacher_box_shadow !important;
+}

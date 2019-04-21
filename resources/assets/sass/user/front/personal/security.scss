@@ -1,0 +1,129 @@
+@import "../../_variables.scss";
+@import "../../font/_font.scss";
+
+.card-body {
+  padding: 10px 1rem;
+}
+
+.row {
+  .col-lg-8 {
+    h6 {
+      font-weight: 400;
+      font-size: 18px;
+      margin-top: 3px;
+      margin-bottom: 9px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.xh_plan_content {
+  margin: 0 auto;
+  width: 1280px;
+  height: auto;
+}
+
+.padding-content {
+  padding-top: 30px;
+}
+
+.personal_hr {
+  margin-bottom: 15px !important;
+}
+
+.form_content {
+  padding-bottom: 40px !important;
+}
+
+.row {
+  .col-md-12 {
+    .col-md-12.row {
+      .col-lg-5 {
+        .item-btn {
+          margin-top: 6px;
+          width: 21.9%;
+          line-height: 37.5%;
+          font-size: 14px;
+          font-weight: 400;
+          text-align: center;
+          border-radius: 20px;
+        }
+      }
+      .form-group {
+        margin-bottom: 40px !important;
+
+        .form-control-label {
+          .text-success {
+            color: #74BE0F !important;
+          }
+        }
+
+        .input-group-transparent {
+          width: 88%;
+
+          .input-group-prepend {
+            .input-group-text {
+              background: transparent;
+              height: 40px;
+              padding: 0.625rem 0.7rem;
+              border-color: #999999;
+              -webkit-transition: all 0.2s ease-in-out;
+              transition: all 0.2s ease-in-out;
+              border-right: 0;
+            }
+          }
+
+          .form-control {
+            border-left: 0;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            font-size: 12px;
+            height: 40px;
+            padding-left: 0;
+            border-color: #999999;
+          }
+        }
+      }
+    }
+
+    .focused {
+      .input-group-transparent {
+        border-color: $primary;
+
+        .input-group-prepend {
+          .input-group-text {
+            border-color: $primary;
+
+            .iconfont {
+              color: $primary;
+            }
+          }
+        }
+
+        .form-control {
+          border-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.input-group > .form-control:not(:last-child) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#send_sms_code {
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 1330px) {
+  .xh_plan_content {
+    width: 100%;
+  }
+}
+
+.student_style {
+  border-radius: $template_radius;
+  box-shadow: $template_box_shadow;
+}

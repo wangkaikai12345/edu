@@ -1,0 +1,346 @@
+@import '../../../variables';
+
+@media (min-width: 1200px) {
+  .col-zdlg-2-5 {
+    float: left !important;
+    width: 20% !important;
+  }
+}
+
+@media only screen and (max-height: 926px) {
+  .czh_analysis_content {
+    height: auto !important;
+  }
+}
+
+.czh_analysis_content {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+
+  .analysis_left {
+    position: relative;
+    padding: 0;
+
+    .analysis_header {
+      padding-left: 30px;
+      width: 100%;
+      height: 80px;
+      line-height: 80px;
+      border-bottom: 2px solid #ddd;
+
+      p {
+        margin: 0;
+        font-size: 18px;
+        color: #4a4a4a;
+      }
+    }
+
+    .testQueData {
+      width: 100%;
+      height: auto;
+
+      .queData_content {
+        margin: 0 auto;
+        height: auto;
+
+        .que_title {
+          padding-top: 31px;
+          padding-bottom: 31px;
+          width: 100%;
+          min-height: 90px;
+
+          p {
+            margin: 0;
+            font-size: 20px;
+            color: #4a4a4a;
+
+            .q_t {
+              margin-left: 25px;
+            }
+          }
+        }
+
+        .option_content {
+          width: 100%;
+          height: auto;
+
+          .eachOption:first-of-type {
+            margin-top: 0;
+          }
+
+          .eachOption {
+            overflow: hidden;
+            margin-top: 40px;
+            width: 100%;
+            min-height: 70px;
+            border-radius: 50px;
+
+            .optionSeq {
+              float: left;
+              width: 70px;
+              height: 70px;
+              line-height: 70px;
+              text-align: center;
+
+              p {
+                margin: 0;
+                font-size: 22px;
+              }
+            }
+
+            .optionTile {
+              float: left;
+              width: 89%;
+              margin-left: 7px;
+              max-width: 1110px;
+              min-height: 70px;
+              padding-top: 20px;
+              padding-bottom: 20px;
+
+              p {
+                margin: 0;
+                font-size: 18px;
+              }
+            }
+          }
+
+          .normalStyle {
+            background-color: #f1f1f1;
+            border: 1px solid #f1f1f1;
+            color: #4a4a4a;
+          }
+
+          .falseOpStyle {
+            background-color: white;
+            border: 1px solid #e65046;
+            color: #4a4a4a;
+          }
+
+          .trueOpStyle {
+            background-color: #74be0f;
+            border: 1px solid #74be0f;
+            color: white;
+          }
+        }
+      }
+    }
+    .queAnswer {
+      overflow: hidden;
+      margin: 30px auto 0;
+      padding: 0;
+      width: 100%;
+      height: auto;
+
+      .queAnswer_desc {
+        width: 100%;
+        height: auto;
+
+        p {
+          margin: 0;
+          font-size: 18px;
+          color: #4a4a4a;
+        }
+      }
+
+      .answer_que {
+        float: right;
+        margin-right: 35px;
+        width: 90%;
+        height: auto;
+
+        p {
+          font-size: 18px;
+          color: #999;
+        }
+      }
+    }
+
+    .prevAndNextBtn {
+      margin: 80px auto 0;
+      width: 460px;
+      height: 50px;
+
+      .queBtn {
+        padding: 0;
+        width: 165px;
+        height: 48px;
+        border-radius: 50px;
+        font-size: 18px;
+        background: white;
+      }
+
+      .falseQueBtn {
+        disable: disabled;
+        border: 2px solid #999;
+        color: #999;
+      }
+
+      .falseQueBtn:hover {
+        cursor: not-allowed;
+      }
+
+      .trueQueBtn {
+        cursor: pointer;
+        color: $primary;
+        border: 2px solid $primary;
+        transition: .5s;
+      }
+
+      .trueQueBtn:hover {
+        color: white;
+        background-color: $primary;
+      }
+
+      .lastQuestion {
+        float: left;
+      }
+
+      .nextQuestion {
+        float: right;
+      }
+    }
+  }
+  .analysis_right {
+    overflow: hidden;
+    padding: 0;
+    width: 480px;
+    height: auto;
+    border-left: 2px solid #ddd;
+
+    .queDataNum {
+      margin: 0 auto;
+      padding-left: 28px;
+      padding-right: 28px;
+      width: 100%;
+      height: 80px;
+
+      div {
+        padding: 0;
+        height: 100%;
+        p {
+          margin-bottom: 0;
+          margin-top: 25px;
+          height: 28px;
+          border-left: 2px solid #ddd;
+          font-size: 18px;
+          color: #666;
+          span {
+            height: auto;
+            font-size: 16px;
+            color: #999;
+          }
+        }
+      }
+
+      .totalQue p {
+        border-left: 0;
+        text-align: left;
+      }
+
+      .alreadyQue_an p {
+        text-align: center;
+      }
+
+      .unanswered_an p {
+        text-align: right;
+      }
+    }
+
+    .questionNumBtn {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+      height: 720px;
+
+      .sectionQue {
+        margin: 28px auto 0;
+        width: 60px;
+        height: 60px;
+        line-height: 58px;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 50px;
+        color: #666;
+      }
+
+      .trueQueStyle {
+        border: 2px solid #74be0f;
+        transition: .5s;
+      }
+
+      .falseQueStyle {
+        border: 2px solid #e65046;
+        transition: .5s;
+      }
+
+      .nowTrueStyle {
+        border:2px solid #74be0f;
+        background-color: #74be0f;
+        color: white;
+      }
+
+      .nowFalseStyle {
+        border:2px solid #e65046;
+        background-color: #e65046;
+        color: white;
+      }
+
+      .trueQueStyle:hover {
+        background-color: rgba(116, 190, 15, .1);
+      }
+
+      .falseQueStyle:hover {
+        background-color: rgba(230, 80, 70, .1);
+      }
+
+      .sectionQue:hover {
+        cursor: pointer;
+      }
+
+    }
+
+    .questionNumBtn::-webkit-scrollbar {
+      display: none;
+    }
+
+    .postQue {
+      margin-top: 30px;
+      width: 100%;
+      height: 50px;
+
+      button {
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        width: 165px;
+        height: 48px;
+        border-radius: 50px;
+        border: 2px solid $primary;
+        font-size: 20px;
+        color: $primary;
+        transition: .5s;
+        background: white;
+      }
+
+      //button:first-of-type {
+      //  float: left;
+      //}
+      //
+      //button:last-of-type {
+      //  float: right;
+      //}
+
+      button:hover {
+        cursor: pointer;
+        background-color: $primary;
+        color: white;
+      }
+    }
+  }
+}

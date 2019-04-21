@@ -1,0 +1,78 @@
+@import "../../_variables.scss";
+
+.card-body {
+  padding: 10px 1rem;
+}
+
+.row {
+  .col-lg-8 {
+    h6 {
+      font-weight: 400;
+      font-size: 18px;
+      margin-top: 3px;
+      margin-bottom: 9px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.padding-content {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.row {
+  .col-md-12 {
+    .col-md-12.row {
+      margin-bottom: 20px;
+      .col-md-12 {
+        .btn-submit {
+          width: 80px;
+          height: 30px;
+          border-radius: 20px;
+          padding: 0;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+      .form-group {
+        .input-group-transparent {
+          .file-button {
+            width: 110px;
+            height: 110px;
+            background: #D8D8D8 !important;
+            border: 0;
+          }
+        }
+      }
+      .col-md-5 {
+        .input-group-transparent {
+          .custom-checkbox {
+            font-size: 14px;
+            line-height: 27px;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.personal_hr {
+  margin-bottom: 20px !important;
+}
+
+label {
+  font-size: 14px;
+}
+
+input {
+  height: 36px !important;
+  max-width: 260px !important;
+  font-size: 14px !important;
+}
+
+.student_style {
+  border-radius: $template_radius !important;
+  box-shadow: $template_box_shadow !important;
+}

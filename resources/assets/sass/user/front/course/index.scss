@@ -1,0 +1,37 @@
+ahtml, body, .wrapper {
+  height: 100%;
+  background:#fff !important;
+}
+
+.xh_content_wrap {
+  position: relative;
+  padding-top: 30px;
+  height: auto;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1056632 */
+  src: url('//at.alicdn.com/t/font_1056632_hb2ygren03.eot');
+  src: url('//at.alicdn.com/t/font_1056632_hb2ygren03.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1056632_hb2ygren03.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1056632_hb2ygren03.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1056632_hb2ygren03.ttf') format('truetype')
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+}
+

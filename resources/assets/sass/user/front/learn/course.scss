@@ -1,0 +1,308 @@
+@import "../../_variables.scss";
+
+@media screen and (max-width: 1200px) {
+  .czh_learn_course {
+    margin-top: 30px;
+  }
+}
+
+.padding-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .czh_learn_course {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-shadow: $template_box_shadow;
+    border-radius: $template_radius;
+    padding-bottom: 30px;
+
+    .course_head {
+      margin: 0 auto;
+      width: 100%;
+      height: 46px;
+
+      p {
+        margin: 0;
+        padding-left: 10px;
+        color: #4a4a4a;
+        font-size: 18px;
+        border-bottom: 1px solid #e5e5e5;
+        padding-top: 12px;
+        padding-bottom: 2.5px;
+      }
+    }
+
+    .course_content {
+      width: 100%;
+      height: auto;
+
+      .course_content_nav {
+        .nav {
+          padding-bottom: 10px;
+          padding-left: 30px;
+          margin-bottom: -10px;
+          padding-top: 10px;
+
+          .nav-item {
+            a.active {
+              border-bottom: 2px solid $primary;
+            }
+          }
+
+          .nav-item {
+            margin-right: 20px;
+
+            a {
+              font-size: 14px;
+              color: #666666;
+              padding-bottom: 8px;
+            }
+          }
+        }
+
+        .tab-pane {
+          .es_piece {
+            margin-bottom: 40px;
+
+            .piece_header {
+              height: 17px;
+              line-height: 17px;
+              border-left: 3px solid $primary;
+              padding-left: 6px;
+            }
+
+            .piece_body {
+              margin-top: 19px;
+              padding-left: 30px;
+              font-size: 14px;
+              color: #999999;
+              line-height: 20px;
+              width: 90%;
+            }
+          }
+        }
+      }
+
+      .courseCollect {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+
+        .notDataP {
+          width: 100%;
+          height: 100%;
+          padding-top: 20px;
+          line-height: 73px;
+          text-align: center;
+          font-size: 14px;
+          color: #999999;
+        }
+
+        hr {
+          max-width: 96.2% !important;
+          color: #eee;
+          margin: 0;
+        }
+
+        .courseItem {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          height: auto;
+          border-radius: 4px;
+          box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.1);
+          padding-top: 15px;
+          padding-bottom: 15px;
+          transition: all .2s linear;
+
+          .courseImg {
+            display: block;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+
+            .course_status {
+              position: absolute;
+              top: 10px;
+              right: 0px;
+              min-width: 42px;
+              height: 20px;
+              line-height: 20px;
+              text-align: center;
+              background-color: white;
+              font-size: 14px;
+              padding: 0 10px 0 13px;
+              border-radius: 10px 0 0 10px;
+              color: $primary;
+            }
+          }
+
+          .courseTitle {
+            margin-top: 15px;
+            width: 100%;
+            height: auto;
+
+            p {
+              margin: 0;
+              width: 100%;
+              text-align: left;
+              color: #666;
+              font-size: 18px;
+              font-weight: bold;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+          }
+
+          .progress-content {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+
+            .progress-wrapper {
+              width: 86%;
+              padding-top: 1rem !important;
+
+              .progress {
+                float: left;
+                width: 98%;
+                height: 5px;
+                border-radius: 50px !important;
+              }
+
+              .progress-bar {
+                height: 5px;
+                border-radius: 50px !important;
+              }
+            }
+
+            .scheduleNum {
+              margin-top: -8px;
+              float: right;
+              width: 38px;
+              height: 15px;
+
+              p {
+                width: 100%;
+                height: 100%;
+                font-size: 12px;
+                color: #999;
+                text-align: right;
+              }
+            }
+          }
+
+          .coursePrice {
+            margin-top: 6px;
+            width: 100%;
+            height: auto;
+            color: #666;
+            font-size: 15px;
+
+            .priceGreen {
+              color: #74BE0F;
+            }
+
+            .priceRed {
+              color: #e65046;
+            }
+          }
+
+          .operationBtn {
+            width: 96%;
+            height: 30px;
+
+            a {
+              display: block;
+              text-align: center;
+              width: 96px;
+              height: 30px;
+              line-height: 30px;
+              color: white;
+              font-size: 14px;
+              border: 0;
+              border-radius: 30px;
+              background-color: $primary;
+              font-weight: 300;
+            }
+          }
+        }
+
+        .courseItem:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 15px 31px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .course_list {
+        margin-top: 30px;
+        position: relative;
+        width: 100%;
+        height: 38px;
+
+        .pagination {
+          margin: auto;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          height: 100%;
+
+          .page-item:first-of-type {
+            margin-left: 0;
+          }
+
+          .page-item {
+            width: 38px;
+            height: 38px;
+            margin-left: 5px;
+
+            a {
+              border-radius: 5px;
+              text-align: center;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.no_data {
+  padding-top: 70px;
+}
+
+.notDataP {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 60px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #999;
+}
+
+.an_notDataP {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 35px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #999;
+}

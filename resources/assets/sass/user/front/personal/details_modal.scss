@@ -1,0 +1,81 @@
+@import "../../_variables.scss";
+@import "../../font/_font.scss";
+
+.details-modal-body {
+  margin: 0 auto;
+  width: 480px;
+
+  .modal_head_title {
+    margin: 0 auto;
+    height: 64px;
+    line-height: 58px;
+
+    p {
+      padding-left: 90px;
+      margin: 0;
+      text-align: center;
+      font-size: 18px;
+      color: #4a4a4a;
+    }
+
+    button {
+      width: 100%;
+      height: 64px;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      padding-left: 30px;
+      padding-right: 0;
+
+      i {
+        font-size: 20px;
+        color: #666;
+      }
+    }
+  }
+
+  .modal_con_data {
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 2px solid #eee;
+
+    .order_item_content {
+      width: 100%;
+    }
+
+    .identifyAndCancel {
+      width: 100%;
+      height: auto;
+      button {
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: $primary;
+        color: white;
+        border: 0;
+        font-weight: 300;
+        font-size: 15px;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+
+.data_item_c {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.data_item_ccc {
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  color: #999;
+  padding: 0;
+}

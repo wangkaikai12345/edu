@@ -1,0 +1,200 @@
+@import "../../_variables.scss";
+@import "../../font/_font.scss";
+
+.details-modal-body {
+  margin: 0 auto;
+  width: 100%;
+
+  .modal_head_title {
+    margin: 0 auto;
+    height: 64px;
+    line-height: 58px;
+
+    p {
+      padding-left: 150px;
+      margin: 0;
+      text-align: center;
+      font-size: 18px;
+      color: #4a4a4a;
+    }
+
+    button {
+      width: 100%;
+      height: 64px;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      padding: 0 20px 0 0;
+      text-align: right;
+
+      i {
+        font-size: 20px;
+        color: #666;
+      }
+    }
+  }
+
+  .modal_con_data {
+    margin: 0 auto;
+    width: 96%;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 2px solid #eee;
+
+    .note_data {
+      margin: 0 auto;
+      width: 96%;
+      height: 90px;
+
+      .note_img {
+        overflow: hidden;
+        float: left;
+        width: 140px;
+        height: 100%;
+        border-radius: 5px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .note_title_and_del {
+        margin-left: 30px;
+        float: left;
+        width: 550px;
+        height: 100%;
+
+        .note_title {
+          margin: 0;
+          margin-top: 6px;
+          width: 100%;
+          height: 26px;
+          line-height: 26px;
+          font-size: 22px;
+          color: #666;
+          font-weight: 700;
+
+          .note_type {
+            font-size: 16px;
+            color: #999;
+            font-weight: 300;
+          }
+        }
+
+        .note_status {
+          margin: 0;
+          margin-top: 14px;
+          width: 100%;
+          height: 15px;
+          line-height: 15px;
+          font-size: 14px;
+          color: #999;
+        }
+
+        .del_btn {
+          margin-top: 8px;
+          padding: 0;
+        }
+
+      }
+    }
+
+    .task_and_note {
+      margin: 20px auto 0;
+      width: 96%;
+      height: auto;
+
+      .taskNum {
+        width: 100%;
+        height: 24px;
+
+        p {
+          float: left;
+          margin: 0;
+          max-width: 10%;
+          height: 100%;
+          color: $primary;
+        }
+
+        span {
+          width: 50px;
+          hegiht: 100%;
+          color: #999;
+          font-size: 13px;
+        }
+      }
+
+      .noteCon {
+        margin-top: 10px;
+        padding: 10px 20px 10px 20px;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        max-height: 36px;
+        border-radius: 10px;
+        background-color: #fafafa;
+        -webkit-transition: max-height .5s ease;
+        -moz-transition: max-height .5s ease;
+        -ms-transition: max-height .5s ease;
+        -o-transition: max-height .5s ease;
+        transition: max-height .5s ease;
+
+        p {
+          font-size: 13px;
+          margin: 0;
+          color: #999;
+        }
+      }
+    }
+
+    .s_a_z {
+      width: 100%;
+      height: 40px;
+
+      button {
+        float: right;
+        width: 75px;
+        height: 40px;
+        padding: 0;
+        font-size: 14px;
+      }
+    }
+
+    .identifyAndCancel {
+      margin: 15px auto 0;
+      width: 96%;
+      height: 30px;
+      button {
+        float: right;
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: $primary;
+        color: white;
+        border: 0;
+        font-weight: 300;
+        font-size: 15px;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+
+.data_item_c {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.data_item_ccc {
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  color: #999;
+  padding: 0;
+}

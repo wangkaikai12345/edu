@@ -1,0 +1,404 @@
+@import '../../_variables.scss';
+
+.zh_course {
+  .student_style {
+    margin-bottom: 20px;
+  }
+  .phase {
+    padding: 20px 0 0 20px;
+    .phase_item {
+      display: inline-block;
+      height: 33px;
+      width: 100%;
+      line-height: 33px;
+      overflow: hidden;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      .phase_num {
+        float: left;
+        font-size: 24px;
+        color: #4A4A4A;
+        margin-right: 20px;
+      }
+      .phase_description {
+        float: left;
+        height: 100%;
+        font-size: 12px;
+        color: #999999;
+        line-height: 33px;
+      }
+      .iconfont {
+        font-size: 25px;
+        color: #4A4A4A;
+      }
+      .iconfont:last-child {
+        margin-right: 15px;
+      }
+      .phase_arrow {
+        -webkit-transition: transform 0.5s ease;
+        -moz-transition: transform 0.5s ease;
+        -ms-transition: transform 0.5s ease;
+        -o-transition: transform 0.5s ease;
+        transition: transform 0.5s ease;
+      }
+    }
+    .phase_item.collapsed {
+      .phase_arrow {
+        -webkit-transform: rotateZ(-180deg);
+        -moz-transform: rotateZ(-180deg);
+        -ms-transform: rotateZ(-180deg);
+        -o-transform: rotateZ(-180deg);
+        transform: rotateZ(-180deg);
+      }
+    }
+    .sub_title {
+      overflow: hidden;
+      .line {
+        float: left;
+        width: 100%;
+        margin: 10px 15px 20px;
+        height: 1px;
+        background: #d8d8d8;
+      }
+      .date_item {
+        float: left;
+        position: relative;
+        max-width: 200px;
+        height: 200px;
+        margin: 0 1.5% 40px 1.5%;
+        border-radius: 8px;
+        background: linear-gradient(to left top, #6B91FF, #836DF6);
+        overflow: hidden;
+        padding-left: 20px;
+        line-height: 1.7;
+        .date_seq {
+          float: left;
+          margin-top: 30px;
+          font-family: zcool-gdh;
+          font-size: 28px;
+          color: #ffffff;
+          line-height: 23px;
+          margin-bottom: 3px;
+          opacity: 1;
+          -webkit-transition: opacity 0.5s ease;
+          -moz-transition: opacity 0.5s ease;
+          -ms-transition: opacity 0.5s ease;
+          -o-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease;
+        }
+        .date_time {
+          float: left;
+          clear: both;
+          font-size: 14px;
+          color: #ffffff;
+          margin-bottom: 45px;
+          opacity: 1;
+          -webkit-transition: opacity 0.5s ease;
+          -moz-transition: opacity 0.5s ease;
+          -ms-transition: opacity 0.5s ease;
+          -o-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease;
+        }
+        .date_score {
+          float: left;
+          clear: both;
+          font-size: 28px;
+          color: #ffffff;
+          line-height: 23px;
+          opacity: 1;
+          -webkit-transition: opacity 0.5s ease;
+          -moz-transition: opacity 0.5s ease;
+          -ms-transition: opacity 0.5s ease;
+          -o-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease;
+        }
+        .date_star {
+          float: left;
+          clear: both;
+          .iconfont {
+            font-size: 25px;
+            color: #FFD048;
+          }
+        }
+        .date_goals {
+          opacity: 0;
+          position: absolute;
+          height: 17px;
+          top: 20px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+          -webkit-transition: opacity 0.5s ease;
+          -moz-transition: opacity 0.5s ease;
+          -ms-transition: opacity 0.5s ease;
+          -o-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease;
+        }
+        .goals_wrap {
+          opacity: 0;
+          position: absolute;
+          top: 40px;
+          left: 0;
+          width: 100%;
+          height: 160px;
+          overflow-x: hidden;
+          //overflow-y: scroll;
+          -webkit-transition: opacity 0.5s ease;
+          -moz-transition: opacity 0.5s ease;
+          -ms-transition: opacity 0.5s ease;
+          -o-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease;
+          .goals_lists {
+            padding-left: 0;
+            list-style: none;
+            color: #fff;
+            li,
+            p {
+              margin: 0;
+              padding: 0;
+            }
+            .iconfont {
+              float: left;
+              width: 10%;
+              margin-left: 2%;
+            }
+            p {
+              float: left;
+              width: 85%;
+            }
+          }
+        }
+        .classroom_perfect {
+          position: absolute;
+          top: 6px;
+          right: 6px;
+          width: 26px;
+          height: 31px;
+        }
+        .one,
+        .two,
+        .three,
+        .four,
+        .five,
+        .six,
+        .seven,
+        .eight,
+        .nine,
+        .zero {
+          float: left;
+          height: 18px;
+          margin-right: 2px;
+          background: transparent;
+        }
+        .mark {
+          float: left;
+          height: 21px;
+          margin-left: -5px;
+          margin-top: 2px;
+          background: transparent;
+        }
+        .st,
+        .nd,
+        .rd,
+        .th {
+          float: left;
+          height: 18px;
+          background: transparent;
+        }
+        .wait_submit,
+        .wait_study,
+        .wait_shenpi {
+          height: 13px;
+        }
+      }
+      .date_item:hover {
+        .date_goals,
+        .goals_wrap {
+          opacity: 1;
+        }
+        .date_seq,
+        .date_time,
+        .date_score {
+          opacity: 0;
+        }
+      }
+      .lock {
+        .date_goals,
+        .goals_wrap .goals_lists {
+          color: #757575;
+        }
+      }
+      .no_study {
+        background: linear-gradient(to left top, #EB69B5, #7066F7);
+      }
+      .lock {
+        background: transparent;
+        border: 1px solid rgba(107,145,255,0.30);
+        .date_seq,
+        .date_time,
+        .date_score {
+          color: #666666;
+        }
+        .date_score {
+          .iconfont {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+  .student_style:last-child {
+    margin-bottom: 0;
+  }
+  .course-tabs .col-xl-3 {
+    .student_style {
+      padding: 0;
+      .card-header {
+        padding-left: 20px!important;
+      }
+      .card-body {
+        padding: 1.5rem 0;
+        .card_item_title {
+          font-size: 14px;
+          color: #4A4A4A;
+          border-left: 3px solid $primary;
+          padding-left: 10px;
+          line-height: 19px;
+          margin-bottom: 10px;
+        }
+        .grade {
+          width: 90%;
+          margin: 0 auto 30px;
+          height: 200px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          border-radius: 8px;
+          overflow: hidden;
+        }
+        .ranking_item {
+          padding-left: 22px;
+          clear: both;
+          margin-bottom: 18px;
+          overflow: hidden;
+          .ranking_title {
+            font-size: 14px;
+            color: #4a4a4a;
+            margin-bottom: 6px;
+          }
+          .ranking_header {
+            margin-left: 15px;
+            .header_item {
+              float: left;
+              width: 60px;
+              height: 60px;
+              overflow: hidden;
+              position: relative;
+              margin-right: 20px;
+              img {
+                width: 100%;
+                height: 100%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+              }
+              .ranking_num {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 18px;
+                height: 20px;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                border-radius: 0;
+              }
+              .me_info {
+                float: left;
+                .ranking_n {
+                  float: left;
+                  font-size: 14px;
+                  color: #4a4a4a;
+                  margin-left: 19px;
+                  margin-top: 6px;
+                }
+                .ranking_name {
+                  float: left;
+                  clear: both;
+                  font-size: 14px;
+                  color: #4a4a4a;
+                  margin-left: 19px;
+                  margin-top: 5px;
+                }
+              }
+            }
+            .me_ranking {
+              width: 100%;
+              img {
+                width: 60px;
+              }
+            }
+            .header_item:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+        .mb_40 {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+.zh_course .course-tabs .col-xl-9 .card .card-body {
+  padding: 20px;
+  line-height: 0;
+}
+
+.zh_course .course-tabs .col-xl-3 .card .card-header {
+  font-size: 20px;
+  padding: 0.56rem 0;
+}
+
+@media (min-width: 992px) {
+  .zh_course .phase .sub_title .date_item:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .zh_course .phase .sub_title .date_item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 440px) {
+  .zh_course .phase .sub_title .date_item:nth-last-child(-n + 2) {
+    margin-bottom: 40px;
+  }
+  .zh_course .phase .sub_title .date_item:nth-last-child(-n + 1) {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1266px) {
+  .zh_course .phase .sub_title .date_item {
+    margin: 0 1.1% 40px 1.1%;
+  }
+}
+
+@media (max-width: 1222px) {
+  .zh_course .phase .sub_title .date_item {
+    margin: 0 0.9% 40px 0.9%;
+  }
+}
+
+@media (max-width: 454px) {
+  .zh_course .phase .sub_title .date_item {
+    clear: both;
+    margin: 0 auto 40px;
+  }
+}

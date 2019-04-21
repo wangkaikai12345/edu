@@ -1,0 +1,46 @@
+<?php
+
+use Faker\Generator as Faker;
+
+$factory->define(\App\Models\Plan::class, function (Faker $faker) {
+    return [
+        'title' => '默认版本',
+        'course_title' => $faker->word,
+        'about' => $faker->paragraph(),
+        'learn_mode' => \App\Enums\LearnMode::getRandomValue(),
+        'expiry_mode' => 'forever',
+        'expiry_started_at' => $faker->dateTime,
+        'expiry_ended_at' => $faker->dateTime,
+        'goals' => $faker->words(),
+        'audiences' => $faker->words(),
+        'is_default' => false,
+        'max_students_count' => random_int(1, 1000),
+        'status' => \App\Enums\Status::PUBLISHED,
+        'is_free' => true,
+        'free_started_at' => $faker->dateTime,
+        'free_ended_at' => $faker->dateTime,
+        'services' => $faker->paragraph,
+        'show_services' => $faker->boolean,
+        'enable_finish' => $faker->boolean,
+        'income' => random_int(1, 100000),
+        'price' => random_int(1, 100),
+        'origin_price' => random_int(1, 100),
+        'coin_price' => random_int(1, 100),
+        'origin_coin_price' => random_int(1, 100),
+        'locked' => false,
+        'serialize_mode' => \App\Enums\SerializeMode::getRandomValue(),
+        'max_discount' => random_int(1, 100),
+        'copy_id' => 0,
+        'deadline_notification' => $faker->dateTime,
+        'notify_before_days_of_deadline' => random_int(0, 10),
+        'rating' => random_int(1, 10),
+        'reviews_count' => random_int(1, 10),
+        'tasks_count' => random_int(1, 10),
+        'compulsory_tasks_count' => random_int(1, 10),
+        'students_count' => random_int(1, 10),
+        'notes_count' => random_int(1, 10),
+        'hit_count' => random_int(1, 10),
+        'topics_count' => random_int(1, 10),
+        'user_id' => 1,
+    ];
+});

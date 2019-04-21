@@ -1,0 +1,304 @@
+@import "../../_variables.scss";
+@import "../../font/_font.scss";
+
+.padding-content {
+  padding-top: 30px;
+
+  .czh_order {
+    padding: 0;
+
+    .view_head {
+      width: 100%;
+      height: 140px;
+      background-color: white;
+      border-radius: $template_radius;
+      box-shadow: $template_box_shadow;
+
+      .view_head_title {
+        margin: 0 auto;
+        width: 96%;
+        height: 46px;
+
+        p {
+          margin: 0;
+          padding-left: 10px;
+          color: #4a4a4a;
+          font-size: 18px;
+          border-bottom: 1px solid #e5e5e5;
+          padding-top: 12px;
+          padding-bottom: 2.5px;
+        }
+      }
+
+      .view_head_form {
+        padding-left: 10px;
+        margin: 0 auto;
+        width: 96%;
+        height: 82px;
+
+        .form-group {
+          margin-top: 24px;
+          float: left;
+          width: 200px;
+          height: 36px;
+          input {
+            float: left;
+            border: 1px solid #999;
+            width: 100%;
+            height: 100%;
+            font-size: 14px;
+          }
+          .clear {
+            display: none;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            margin: 4px 0 0 -25px;
+            i {
+              font-size: 12px;
+              color: #999;
+            }
+          }
+          input::-ms-clear {
+            display: none;
+          }
+          input:valid + .clear {
+            display: inline;
+          }
+
+        }
+
+        .searchBtn {
+          margin-top: 24px;
+          margin-left: 30px;
+          float: left;
+          width: 80px;
+          height: 36px;
+          button, button a {
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            background-color: $primary;
+            color: white;
+            font-weight: 300;
+          }
+
+          button {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .view_content {
+      margin-left: 0;
+      margin-top: 30px;
+      width: 100%;
+      height: auto;
+
+      .order_item:nth-of-type(3) {
+        margin-right: 0;
+      }
+
+      .order_item:nth-of-type(6) {
+        margin-right: 0;
+      }
+
+      .order_item:nth-of-type(9) {
+        margin-right: 0;
+      }
+
+      .order_item {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 306px;
+        height: auto;
+        background-color: white;
+        border-radius: $template_radius;
+        box-shadow: $template_box_shadow;
+
+        .order_item_title {
+          height: 63px;
+          line-height: 63px;
+          border-bottom: 2px solid #eee;
+          .order_title {
+            overflow: hidden;
+            max-width: 240px;
+            height: 63px;
+            margin: 0;
+            float: left;
+            font-size: 18px;
+            color: #4a4a4a;
+          }
+
+          .dropdown {
+            float: right;
+            button {
+              height: 60px;
+              padding: 0;
+              border: 0;
+              outline: none;
+              cursor: pointer;
+
+              i {
+                font-size: 28px;
+                color: $primary;
+                font-weight: 400;
+              }
+            }
+
+            button:hover {
+              background-color: white;
+            }
+          }
+
+          .dropdown-menu {
+            min-width: 80px !important;
+            height: auto !important;
+            top: -20px !important;
+            left: -38px !important;
+            padding: 0;
+            padding-top: 8px;
+            padding-bottom: 8px;
+
+            .dropdown-item {
+              width: 100%;
+              height: 26px;
+              line-height: 18px;
+              text-align: center;
+              color: #666;
+              font-size: 15px;
+            }
+
+            .dropdown-item:hover {
+              background-color: $primary_rgba_2;
+            }
+          }
+        }
+
+        .order_item_content {
+          width: 100%;
+          height: auto;
+          padding-top: 10px;
+          padding-bottom: 18px;
+
+          .data_item:first-of-type {
+            margin-top: 0;
+          }
+          .data_item {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin-top: 15px;
+
+            .data_item_c {
+              width: 100%;
+              height: 100%;
+              padding: 0;
+
+              .data_item_cc {
+                width: 100%;
+                height: 100%;
+
+                label {
+                  margin: 0;
+                  padding: 0;
+
+                  span {
+                    font-size: 15px;
+                    color: #666;
+                  }
+                }
+              }
+
+              .data_item_ccc {
+                margin-left: 0.2rem;
+                color: #999;
+                width: 100%;
+                height: auto;
+                float: right;
+                padding: 0;
+                word-wrap: break-word;
+                word-break: break-all;
+                overflow: hidden;
+              }
+
+              .order_status_end {
+                margin-left: 0;
+                padding-left: 0.2rem !important;
+              }
+
+              .order_status_end {
+                margin-left: 0;
+                padding-left: 0.2rem !important;
+              }
+
+              .order_status_close {
+                margin-left: 0;
+                padding-left: 0.2rem !important;
+                color: #E65046;
+              }
+
+              .order_status_success {
+                margin-left: 0;
+                padding-left: 0.2rem !important;
+                color: #74BE0F;
+              }
+
+              .order_status_unpaid {
+                margin-left: 0;
+                padding-left: 0.2rem !important;
+                color: #f0a818;
+              }
+
+              .data_item_details {
+                float: right;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .pageNumber {
+      position: relative;
+      width: 100%;
+      height: 100px;
+      text-align: center;
+
+      .pagination {
+        position: absolute;
+        margin: auto;
+        top: 66px;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        .active a {
+          background-color: $course_primary;
+          color: white;
+          border-color: $course_primary;
+        }
+      }
+      li {
+        margin-left: 5px;
+
+        a {
+          border-radius: 5px;
+          color: $course_primary;
+        }
+      }
+
+    }
+  }
+}
+
+
+

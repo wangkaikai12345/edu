@@ -1,0 +1,47 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",
+        "start": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=webpack.config.js",
+        "build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.17",
+        "babel-cli": "^6.24.1",
+        "babel-plugin-transform-runtime": "^6.22.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "babel-register": "^6.24.1",
+        "bootstrap-sass": "^3.3.7",
+        "browser-sync": "^2.26.3",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "cross-env": "^5.1",
+        "jquery": "^3.2",
+        "laravel-mix": "^1.0",
+        "lodash": "^4.17.4",
+        "vue": "^2.6.10"
+    },
+    "dependencies": {
+        "@ckeditor/ckeditor5-basic-styles": "^10.1.0",
+        "@ckeditor/ckeditor5-dev-utils": "^12.0.1",
+        "@ckeditor/ckeditor5-editor-classic": "^11.0.2",
+        "@ckeditor/ckeditor5-essentials": "^10.1.3",
+        "@ckeditor/ckeditor5-paragraph": "^10.0.4",
+        "@ckeditor/ckeditor5-theme-lark": "^12.0.0",
+        "@editorjs/editorjs": "^2.12.4",
+        "bootstrap": "^4.3.1",
+        "echarts": "^4.2.1",
+        "extract-text-webpack-plugin": "^3.0.2",
+        "hls.js": "^0.12.4",
+        "jquery.qrcode": "^1.0.3",
+        "optimize-css-assets-webpack-plugin": "3.2.0",
+        "popper.js": "^1.14.7",
+        "swiper": "^4.4.6",
+        "vue-template-compiler": "^2.6.10"
+    }
+}

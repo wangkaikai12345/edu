@@ -1,0 +1,195 @@
+@import "../../_variables.scss";
+@import "../../font/_font.scss";
+
+.edui-editor {
+  width: 100%;
+}
+
+.czh_homework_content {
+  margin-bottom: 150px;
+  margin-top: 30px;
+}
+
+.czh_add_con {
+  overflow: hidden;
+  height: auto;
+  border-radius: $teacher_radius;
+  box-shadow: $teacher_box_shadow;
+  background-color: white;
+
+  .add_head {
+    width: 100%;
+    height: 68px;
+    border-bottom: 1px solid #eee;
+
+    p {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      line-height: 68px;
+      padding-left: 30px;
+      font-size: 18px;
+      color: #666;
+    }
+  }
+
+  .add_con {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding: 30px 140px 30px 140px;
+
+    .work_czh {
+      width: 100%;
+      min-height: 40px;
+      margin-bottom: 20px;
+
+      .view_left {
+        text-align: right;
+        line-height: 44px;
+      }
+
+      .view_right {
+
+        .upload_wrap {
+          width: 100%;
+          label {
+            padding: 0;
+          }
+          .file_upload {
+            float: left;
+            height: 40px;
+            width: 100%;
+            background: #eee;
+            span {
+              float: right;
+              width: 96px;
+              height: 40px;
+              background: $course_primary;
+              line-height: 40px;
+              font-size: 14px;
+              color: #ffffff;
+              text-align: center;
+              border-radius: 0 5px 5px 0;
+            }
+          }
+        }
+
+        .view_r_input {
+          width: 100%;
+          height: 44px;
+        }
+
+        .view_r_input2 {
+          float: left;
+          width: 60%;
+          height: 100%;
+        }
+
+        .view_r_ol {
+          width: 100%;
+          min-height: 120px;
+          background-color: #eee;
+          border-radius: 5px;
+          border: 2px solid #d5d5d5;
+        }
+
+        .view_r_p {
+          margin: 0;
+          float: left;
+          margin-left: 10px;
+          width: 20%;
+          height: 44px;
+          line-height: 44px;
+        }
+
+        .view_r_radio {
+          float: left;
+          width: 76px;
+          margin-top: 8px;
+        }
+
+        .view_r_add_btn {
+          margin-top: 5px;
+          width: 140px;
+          height: 35px;
+          font-weight: 300;
+          border-radius: 5px;
+          font-size: 14px;
+          padding: 3px 10px 3px 10px;
+        }
+
+        .scoringStandard {
+          th {
+            border-top: 0;
+          }
+
+          .num_inp {
+            width: 80px;
+            height: 30px;
+          }
+
+          .p_l_b {
+            padding: 0;
+          }
+        }
+      }
+
+      .view_right2 {
+        float: right;
+        margin-top: 10px;
+        margin-right: 30px;
+
+        button {
+          padding: 0;
+          width: 68px;
+          height: 30px;
+          line-height: 29px;
+          border-radius: 5px;
+          color: white;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+.select2 {
+  width: 536.484px !important;
+
+}
+
+.select2-container--default .select2-selection--multiple {
+  border: 0.0625rem solid #ced4da !important;
+}
+
+.select2-search__field {
+  margin-top: 10px !important;
+}
+
+.select2-selection__choice {
+  margin-top: 8px !important;
+  background-color: $course_primary !important;
+  color: white !important;
+  border: 0 !important;
+}
+
+.select2-selection__choice__remove {
+  color: white !important;
+}
+
+.progress-wrapper {
+  float: left;
+  width: 100%;
+  padding-top: 0.2rem;
+}
+
+.batV {
+  line-height: 20px;
+}
+
+.error {
+  padding-top: 5px;
+  color: #ff0033;
+  font-weight: 400;
+}

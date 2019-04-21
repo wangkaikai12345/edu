@@ -1,0 +1,320 @@
+@import "../../_variables.scss";
+
+.container {
+  .padding-content {
+    .form_content {
+      .form-default {
+        .card {
+          .card-body {
+            padding-top:10px !important;
+            .student_course_hr {
+              margin-top: 18px;
+              margin-bottom: 20px;
+              position: absolute;
+              width: 100%;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.col-lg-12.margin-content {
+  margin-top:0 !important;
+}
+
+.row_div .row .col-lg-8 h6 {
+  margin-top:10px !important;
+  margin-left:5px !important;
+}
+
+.row_div {
+  .row {
+    .add-item {
+      float:right;
+      margin-left:20px;
+      background: $primary;
+      padding: 2px 10px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+
+.bd-example .row {
+  margin:0;
+}
+
+.bd-example {
+  .table_content {
+    padding:0 !important;
+  }
+  .nav-tabs {
+    padding:0 30px;
+    border:0;
+    margin:20px 0;
+    .nav-item {
+      height:30px;
+      font-size:14px;
+      color:#666;
+      margin-right:20px;
+      .nav-link {
+        background:#F6F6F6;
+        color:#666666;
+         border-radius:0.25rem;
+      }
+      .nav-link:hover {
+        border:1px solid transparent;
+        background:$primary;
+        color:#fff;
+      }
+      .nav-link.active {
+        background:$primary;
+        color:#FFF;
+        border:1px solid transparent;
+      }
+    }
+    .nav-item:last-child {
+      margin-right:0;
+    }
+  }
+}
+
+.modal {
+  .modal-lg {
+    .modal-content {
+      .form-group {
+        .input-group-transparent {
+          line-height:45px;
+          .control-label {
+            line-height:45px;
+            margin-right:20px;
+          }
+          .form-control {
+            margin-top:3px;
+            margin-right:10px;
+          }
+        }
+        .input_topic {
+          float:left;
+          margin-left:137px;
+          color:#999999;
+          font-size:12px;
+        }
+      }
+    }
+  }
+}
+
+.tab-content {
+  min-height:300px;
+  .table {
+    margin-top:20px;
+    thead {
+      tr {
+        th {
+          font-weight:500;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          //line-height:40px;
+          .user_avatar {
+            float:left;
+            margin-right:5px !important;
+            width:40px;
+            height:40px;
+            border-radius:50%;
+            //border:1px solid #979797;
+            background:#D8D8D8;
+            img {
+              width:40px;
+              height:40px;
+            }
+          }
+          .user_name {
+            overflow: hidden;
+            width:100px;
+            color:#666666;
+            font-size:14px;
+            -ms-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .join_time {
+            float:left;
+            color: #999999;
+            font-size:12px;
+          }
+          .validity_time {
+            float:left;
+            margin-left:44px;
+            color: #999999;
+            font-size:12px;
+          }
+          .more_message {
+            color:$primary;
+          }
+          .nav-pills {
+            .nav-item {
+              .nav-link {
+                color:$primary;
+                background:transparent;
+              }
+              .dropdown-menu {
+                min-width:inherit;
+                .dropdown-item {
+                  text-align:center;
+                  line-height:25px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#accession-record {
+  .table_content {
+    .table {
+      tbody {
+        tr {
+          td {
+            line-height:39px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.popover {
+  width: 300px !important;
+  min-width: 300px;
+  .popover-body {
+    width: 300px !important;
+    min-width: 300px;
+    padding: 0;
+  }
+  .popover_card {
+    width: 300px;
+    height: auto;
+    .teacher_header {
+      height: auto;
+      padding: 20px 0 0 20px;
+      overflow: hidden;
+      width: 100%;
+      .teacher_avatar {
+        float: left;
+        width: 52px;
+        height: 52px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+      .teacher_info {
+        float: left;
+        margin-left: 30px;
+        margin-top: 2px;
+        span {
+          display: block;
+        }
+        .teacher_name {
+          font-size: 14px;
+          color: #666666;
+          margin-bottom: 9px;
+        }
+        .teacher_job {
+          font-size: 12px;
+          color: #999999;
+        }
+      }
+    }
+    .teacher_fans {
+      height: auto;
+      overflow: hidden;
+      padding: 0 36px 10px;
+      margin-top: 14px;
+      border-bottom: 1px solid #E5E5E5;
+      .fans_item {
+        float: left;
+        text-align: center;
+        margin-right: 72px;
+        span {
+          display: block;
+          width: 100%;
+          font-size: 14px;
+          color: #999999;
+        }
+      }
+    }
+    .teacher_controls {
+      padding: 0 50px;
+      a.btn {
+        padding: 2px 10px;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+.add-student-message-modal-lg {
+    .modal-body {
+      .tab-content {
+        .tab-pane {
+          .table_content {
+            margin-top:20px;
+            margin-bottom:20px;
+            margin-left:auto;
+            margin-right:auto;
+            width:90%;
+            height:auto;
+            border: 1px solid rgba(151,151,151,1);
+            .table {
+              margin:0;
+              th {
+                text-align:center;
+                border-top:0;
+                border-bottom:1px solid #E5E5E5;
+                border-right:1px solid #E5E5E5;
+                font-size:18px;
+                color:#666666;
+              }
+              td {
+                border:0;
+                font-size:18px;
+                color:#666666;
+                border-top:0;
+                border-bottom:1px solid #E5E5E5;
+                padding-left:30px;
+                a {
+                  color:$primary;
+                }
+                a:hover {
+                  color: $primary;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .modal-footer {
+      .btn-secondary {
+        background:$primary;
+        color:#fff;
+      }
+    }
+  }
+
+@media (max-width:992px) {
+  .search_content {
+    margin-left:15px;
+  }
+}

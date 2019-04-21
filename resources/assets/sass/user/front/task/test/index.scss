@@ -1,0 +1,371 @@
+@import '../../../variables';
+
+@media (min-width: 1200px) {
+  .col-zdlg-2-5 {
+    float: left !important;
+    width: 20% !important;
+  }
+}
+
+@media only screen and (max-height: 1000px) {
+  //.czh_content {
+  //  height: auto !important;
+  //}
+
+  //.zh_content_wrap {
+  //  height: 100% !important;
+  //}
+}
+
+@media only screen and (max-height: 900px) {
+  .zh_content_wrap {
+    height: auto !important;
+  }
+}
+
+.czh_content {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 29px;
+
+  button {
+    outline: none;
+  }
+
+  .problemDetails {
+    overflow: hidden;
+    width: 1440px;
+    height: auto;
+    padding: 0;
+
+    .numAndTime {
+      width: 100%;
+      height: 80px;
+      line-height: 80px;
+      border-bottom: 2px solid #ddd;
+
+      .quesNum {
+        float: left;
+        padding-left: 30px;
+        min-width: 150px;
+        height: 100%;
+
+        p {
+          margin: 0;
+          font-size: 18px;
+          color: #4a4a4a;
+        }
+      }
+
+      .queTime {
+        float: right;
+        padding-right: 30px;
+        min-width: 200px;
+        height: 100%;
+
+        p {
+          margin: 0;
+          font-size: 18px;
+          color: #4a4a4a;
+
+          span:first-of-type {
+            float: left;
+            i {
+              font-size: 20px;
+            }
+          }
+
+          .secondNumBody {
+            float: left;
+            min-width: 70px;
+            height: 80px;
+          }
+
+        }
+      }
+    }
+
+    .queData {
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+
+      &_content {
+        margin: 0 auto;
+        height: auto;
+        .que_title {
+          padding-top: 31px;
+          padding-bottom: 31px;
+          width: 100%;
+          min-height: 90px;
+
+          p {
+            margin: 0;
+            font-size: 20px;
+            color: #4a4a4a;
+
+            .q_t {
+              margin-left: 25px;
+            }
+          }
+        }
+
+        .option_content {
+          width: 100%;
+          height: auto;
+
+          .eachOption:first-of-type {
+            margin-top: 0;
+          }
+
+          .eachOption {
+            overflow: hidden;
+            margin-top: 40px;
+            width: 100%;
+            min-height: 70px;
+            border-radius: 50px;
+            background-color: #f1f1f1;
+            transition: .5s;
+            color: #4a4a4a;
+
+            .optionSeq {
+              float: left;
+              width: 70px;
+              height: 70px;
+              line-height: 70px;
+              text-align: center;
+
+              p {
+                margin: 0;
+                font-size: 22px;
+              }
+            }
+
+            .optionTile {
+              float: left;
+              margin-left: 7px;
+              max-width: 1110px;
+              min-height: 70px;
+              padding-top: 20px;
+              padding-bottom: 20px;
+
+              p {
+                margin: 0;
+                font-size: 18px;
+              }
+            }
+          }
+
+          .active {
+            background-color: $primary;
+            color: white;
+          }
+
+          .eachOption:hover {
+            cursor: pointer;
+            background-color: $primary;
+            color: white;
+          }
+        }
+      }
+
+      .queBtns {
+        margin: 100px auto 0;
+        width: 460px;
+        height: 50px;
+
+        .queBtn {
+          width: 180px;
+          height: 50px;
+          border-radius: 50px;
+          font-size: 18px;
+          background: white;
+        }
+
+        .falseQueBtn {
+          disable: disabled;
+          border: 2px solid #999;
+          color: #999;
+        }
+
+        .falseQueBtn:hover {
+          cursor: not-allowed;
+        }
+
+        .trueQueBtn {
+          cursor: pointer;
+          color: $primary;
+          border: 2px solid $primary;
+          transition: .5s;
+        }
+
+        .trueQueBtn:hover {
+          color: white;
+          background-color: $primary;
+        }
+
+        .lastQuestion {
+          float: left;
+        }
+
+        .nextQuestion {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .problemNum {
+    overflow: hidden;
+    padding: 0;
+    width: 480px;
+    //height: auto;
+    height: 100%;
+    border-left: 2px solid #ddd;
+
+    .queDataNum {
+      margin: 0 auto;
+      padding-left: 28px;
+      padding-right: 28px;
+      width: 100%;
+      height: 80px;
+
+      div {
+        padding: 0;
+        height: 100%;
+        p {
+          margin-bottom: 0;
+          margin-top: 25px;
+          height: 28px;
+          border-left: 2px solid #ddd;
+          font-size: 18px;
+          color: #666;
+          span {
+            height: auto;
+            font-size: 16px;
+            color: #999;
+          }
+        }
+      }
+
+      .totalQue p {
+        border-left: 0;
+        text-align: left;
+      }
+
+      .alreadyQue p {
+        text-align: center;
+      }
+
+      .unanswered p {
+        text-align: right;
+      }
+    }
+
+    .questionNumBtn {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+      height: 720px;
+
+      .sectionQue {
+        margin: 28px auto 0;
+        width: 60px;
+        height: 60px;
+        line-height: 58px;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 50px;
+      }
+
+      .nowQueStyle {
+        background-color: $primary;
+        border: 2px solid $primary;
+        color: white;
+      }
+
+      .normalStyle {
+        cursor: pointer;
+        color: #666;
+        border: 2px solid #979797;
+        transition: .5s;
+      }
+
+      .alreadyStyle:hover, .normalStyle:hover {
+        background-color: $primary;
+        background-color: $primary_rgba_1;
+        border: 2px solid $primary;
+      }
+
+      .skipStyle:hover {
+        background-color: #FBBB19;
+        background-color: rgba(251, 187, 25, 0.15);
+      }
+
+      .alreadyStyle {
+        cursor: pointer;
+        border: 2px solid $primary;
+      }
+
+      .skipStyle {
+        position: relative;
+        cursor: pointer;
+        border: 2px solid #fbbb19;
+        color: #fbbb19;
+        transition: .5s;
+      }
+
+      .skipSpot {
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 8px;
+        height: 8px;
+        background-color: #fbbb19;
+        border-radius: 50px;
+      }
+
+      .sectionQue:hover {
+      }
+    }
+
+    .questionNumBtn::-webkit-scrollbar {
+      display: none;
+    }
+
+    .postQue {
+      position: absolute;
+      bottom: 40px;
+      //margin-top: 20px;
+      width: 100%;
+      height: 50px;
+
+      button {
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        width: 180px;
+        height: 50px;
+        border-radius: 50px;
+        border: 2px solid $primary;
+        font-size: 20px;
+        color: $primary;
+        transition: .5s;
+        background: white;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: $primary;
+        color: white;
+      }
+    }
+  }
+
+}
+

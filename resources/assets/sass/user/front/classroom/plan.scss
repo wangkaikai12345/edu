@@ -1,0 +1,1086 @@
+@import '../../_variables.scss';
+
+.zh_course {
+  padding-bottom: 40px;
+
+  .breadcrumb {
+    padding: 1.05rem 1rem;
+    font-size: 14px;
+    a {
+      color: #999;
+      font-size: 14px;
+    }
+    .breadcrumb-item.active {
+      color: #666666;
+      a {
+        color: #666666;
+      }
+    }
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: '>'
+  }
+  .course_card {
+    height: auto;
+    padding: 20px 0 40px 30px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.10);
+    .course_title {
+      font-size: 18px;
+      color: #4a4a4a;
+      font-weight: 400;
+      margin-bottom: 20px;
+      span {
+        font-size: 12px;
+        color: #999999;
+        line-height: 26px;
+        margin-right: 30px;
+        cursor: pointer;
+        a {
+          color: #666666;
+        }
+        .iconfont {
+          color: #666666;
+          font-size: 20px;
+          float: left;
+          margin-right: 5px;
+        }
+        .active {
+          color: #E65046;
+        }
+      }
+    }
+    .row {
+      img {
+        display: block;
+        width: 100%;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        max-width: 340px;
+      }
+      .cover_btn {
+        max-width: 340px;
+        margin-top: 8px;
+      }
+      .star {
+        float: left;
+        .iconfont {
+          color: #FFD048;
+          margin-right: 3px;
+          font-size: 16px;
+        }
+      }
+      .study_num {
+        float: right;
+        span {
+          font-size: 12px;
+          color: #999999;
+        }
+      }
+
+      .course_item {
+        clear: both;
+        height: auto;
+        overflow: hidden;
+        margin-top: 20px;
+        .course_title {
+          float: left;
+          height: 15px;
+          line-height: 15px;
+          font-size: 14px;
+          color: #666666;
+          border-left: 3px solid $primary;
+          padding-left: 6px;
+          width: 79px;
+          margin-right: 30px;
+          margin-top: 10px;
+        }
+        .course_price {
+          font-size: 30px;
+          color: #4a4a4a;
+          span {
+            font-size: 12px;
+            color: #666666;
+          }
+        }
+        .validity {
+          display: block;
+          margin-top: 6px;
+          font-size: 14px;
+          color: #999999;
+        }
+        .plan_item {
+          position: relative;
+          margin-bottom: 10px;
+          float: left;
+          width: auto;
+          height: 30px;
+          border: 1px solid $primary;
+          font-size: 12px;
+          text-align: center;
+          line-height: 16px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+          margin-right: 20px;
+          cursor: pointer;
+          overflow: hidden;
+          -ms-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          padding: 6px 10px;
+          top: 8px;
+          a {
+            color: $primary;
+          }
+        }
+        .plan_item.active {
+          border: 1px solid $primary;
+          color: $primary;
+          a {
+            color: $primary;
+          }
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 29px;
+            right: -14px;
+            width: 0;
+            height: 0;
+            border: 10px solid;
+            margin-top: -10px;
+            border-color: transparent transparent transparent #6B91FF;
+            margin-left: -10px;
+            transform: rotateZ(42deg);
+          }
+        }
+      }
+      .first_item {
+        margin-top: 26px;
+        .course_title {
+          margin-top: 22px;
+        }
+      }
+      .plan_wrap {
+        margin-top: 12px;
+        .course_title {
+          margin-top: 15px;
+          margin-bottom: 13px;
+        }
+      }
+      .shopping {
+        margin-top: 88px;
+        height: 60px;
+        border-left: 1px solid #999999;
+        a {
+          padding: 8px 34px;
+          font-size: 18px;
+          font-weight: 400;
+          color: #ffffff;
+        }
+        a:hover {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .course-tabs {
+    margin-top: 30px;
+    .col-xl-3,
+    .col-xl-9 {
+      .card_shadow {
+        border: 0;
+        background: #FFFFFF;
+        border-radius: 8px;
+        box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.10);
+        .classic-tabs {
+          .nav {
+            padding-bottom: 10px;
+            border-bottom: 2px solid #EEEEEE;
+            padding-left: 8px;
+            margin-bottom: 20px;
+            .nav-item {
+              a.active {
+                border-bottom: 2px solid $primary;
+              }
+            }
+            .nav-item {
+              margin-right: 20px;
+              a {
+                font-size: 14px;
+                color: #666666;
+                padding-bottom: 8px;
+              }
+            }
+          }
+          .tab-content {
+            .tab-pane {
+              .accordion {
+                img {
+                  width:880px;
+                }
+              }
+            }
+          }
+          .tab-pane {
+            .es_piece {
+              margin-bottom: 40px;
+              .piece_header {
+                height: 17px;
+                line-height: 17px;
+                border-left: 3px solid $primary;
+                padding-left: 6px;
+              }
+              .piece_body {
+                margin-top: 19px;
+                padding-left: 30px;
+                font-size: 14px;
+                color: #999999;
+                line-height: 20px;
+                width: 90%;
+                img {
+                  display: block;
+                  width: 100%;
+                  margin: 10px 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .col-xl-3 {
+      .card {
+        margin-bottom: 30px;
+        padding: 0 20px;
+        .card-header {
+          padding: 1.06rem 0.7rem;
+          border-bottom: 2px solid #eeeeee;
+          font-size: 14px;
+          color: #666;
+        }
+        .teacher_avatar {
+          float: left;
+          width: 60px;
+          height: 60px;
+          cursor: pointer;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .teacher_info {
+          float: left;
+          margin-left: 19px;
+          line-height: 20px;
+          h5 {
+            color: #666;
+            font-size: 14px;
+            font-weight: 400 !important;
+            margin-top: 8px;
+          }
+          p {
+            font-size: 12px;
+            color: #999999;
+            text-align: left;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .member {
+        img {
+          cursor: pointer;
+          float: left;
+          display: block;
+          width: 45px;
+          height: 45px;
+          margin: 0 0 20px 14px;
+        }
+        img:nth-child(4n) {
+          margin-right: 0;
+        }
+      }
+    }
+    .col-xl-9 {
+      .card {
+        .card-body {
+          padding-top: 0.63rem;
+        }
+      }
+    }
+  }
+  .folder {
+    .card {
+      border: 0;
+      .card-header {
+        border: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        a {
+          display: block;
+          width: 100%;
+          height: auto;
+          background: #FAFAFA;
+          border: 1px solid rgba(221, 221, 221, 1);
+          border-radius: 4px;
+          padding: 10px 32px 10px 10px;
+          .course_img {
+            float: left;
+            width: 160px;
+            height: 100px;
+            border-radius: 2px;
+            margin-right: 30px;
+            img {
+              width: 160px;
+              height: 100px;
+              border-radius: 2px;
+            }
+          }
+          .course_title {
+            margin-top: 8px;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #666666;
+            font-weight: 400;
+          }
+          .star {
+            float: left;
+            margin-top: 5px;
+            .iconfont {
+              color: #FFD048;
+              font-size: 14px;
+            }
+          }
+          .course_desc {
+            font-size: 12px;
+            margin-bottom: 3px;
+            color: #999999;
+          }
+          .course_price_content {
+            float: right;
+            .course_price {
+              font-size: 14px;
+              color: #666666;
+              span {
+                font-size: 30px;
+                color: #4A4A4A;
+              }
+            }
+          }
+        }
+        a:not(.collapsed) {
+          .iconfont.float-right {
+            -webkit-transform: rotateZ(90deg);
+            -moz-transform: rotateZ(90deg);
+            -ms-transform: rotateZ(90deg);
+            -o-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+          }
+        }
+      }
+      .sub_title {
+        .card-body {
+          padding-left: 40px !important;
+          h6 {
+            height: 50px;
+            line-height: 50px;
+            border: 1px solid rgba(153, 153, 153, 1);
+            border-radius: 4px;
+            margin-bottom: 10px !important;
+            font-size: 14px;
+            color: #666;
+            font-weight: 400;
+            padding-left: 20px;
+            .iconfont {
+              float: left;
+              font-size: 20px;
+              margin-right: 20px;
+            }
+          }
+
+          h6.task {
+            margin-left: 20px;
+          }
+          h6.section {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  .note {
+    .mdb-feed {
+      .news {
+        padding-left: 15px;
+        height: auto;
+        overflow: hidden;
+        clear: both;
+        margin-bottom: 20px;
+        .label {
+          float: left;
+          width: 50px;
+          height: 50px;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .excerpt {
+        width: 90%;
+        margin-top: 6px;
+        float: left;
+        padding: 10px 0 0 20px;
+        .added-text {
+          width: 100%;
+          max-width: 780px;
+          height: auto;
+          background: #FAFAFA;
+          border-radius: 4px;
+          padding: 10px 20px;
+          font-size: 12px;
+          color: #666;
+          p {
+            margin: 0;
+          }
+        }
+        .feed-footer {
+          font-size: 12px;
+          color: #999;
+          margin-top: 6px;
+        }
+        .star {
+          .iconfont {
+            color: #FFD048;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .no_data {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+  }
+  .notice {
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 7px 30px 0;
+    overflow: hidden;
+
+    .card-body {
+      cursor: pointer;
+      .iconfont {
+        float: left;
+        font-size: 20px;
+        color: #F0A818;
+        margin-right: 14px;
+      }
+      .swiper-container {
+        height: 50px;
+      }
+      span {
+        float: left;
+        width: 92%;
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 12px;
+        color: #999;
+        height: 100%;
+        line-height: 37px;
+      }
+    }
+
+  }
+  .huati {
+    .huati_wrap {
+      position: relative;
+      height: auto;
+      overflow: hidden;
+      a.float-right {
+        padding: 5px 19px;
+      }
+      .huati_list {
+        clear: both;
+        -webkit-transition: opacity 0.5s ease;
+        -moz-transition: opacity 0.5s ease;
+        -ms-transition: opacity 0.5s ease;
+        -o-transition: opacity 0.5s ease;
+        transition: opacity 0.5s ease;
+        .huati_item {
+          clear: both;
+          height: 90px;
+          padding: 20px 0;
+          border-bottom: 1px solid #EEEEEE;
+          .huati_avatar {
+            float: left;
+            width: 50px;
+            height: 50px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+          }
+          .huati_info {
+            float: left;
+            font-size: 14px;
+            color: #4A4A4A;
+            margin-left: 19px;
+            .huati_title {
+              float: left;
+              .iconfont {
+                float: left;
+                margin-right: 10px;
+                line-height: 23px;
+              }
+              p {
+                float: left;
+                margin-bottom: 0;
+              }
+            }
+            .huati_user {
+              float: left;
+              clear: both;
+              font-size: 12px;
+              color: #666666;
+              margin-top: 5px;
+              .user_name {
+                margin-right: 16px;
+                font-size: 12px;
+                color: #666666;
+              }
+              .huati_time {
+                color: #999999;
+                font-size: 12px;
+              }
+            }
+
+          }
+          .watch_num {
+            float: right;
+            margin-top: (52px - 27px);
+            .watch_item {
+              float: right;
+              font-size: 14px;
+              color: $primary;
+              line-height: 27px;
+              cursor: pointer;
+              .iconfont {
+                float: left;
+                margin-right: 7px;
+              }
+              span {
+                float: left;
+              }
+            }
+            .watch_item:first-child {
+              margin-right: 0;
+              color: #999999;
+            }
+            .watch_item {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+      .create_huati {
+        position: absolute;
+        top: 0;
+        left: 103%;
+        width: 100%;
+        height: 478px;
+        opacity: 0;
+        background: #ffffff;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        .huati_title {
+          height: 36px;
+          line-height: 36px;
+          padding: 0 13px;
+          font-size: 12px;
+          color: #666;
+          width: 100%;
+          background: #FFFFFF;
+          border: 1px solid #d4d4d4;
+          border-radius: 4px;
+          box-shadow: 0px 0px 4px 0px rgba(107, 145, 255, 0.20);
+          outline: none;
+          margin-bottom: 20px;
+        }
+        .huati_title::-webkit-input-placeholder {
+          color: #bbb;
+        }
+        /* 使用webkit内核的浏览器 */
+        .huati_title:-moz-placeholder {
+          color: #bbb;
+        }
+        /* Firefox版本4-18 */
+        .huati_title::-moz-placeholder {
+          color: #bbb;
+        }
+        /* Firefox版本19+ */
+        .huati_title:-ms-input-placeholder {
+          color: #bbb;
+        }
+        .huati_title:focus {
+          border: 1px solid $primary;
+        }
+        .upload_files {
+          float: left;
+          padding: 5px 20px;
+          margin: 20px 0;
+        }
+        input[type="submit"] {
+          float: right;
+          clear: both;
+          padding: 5px 26px;
+        }
+        .close_create {
+          float: right;
+          margin-right: 40px;
+          margin-top: 6px;
+          font-size: 14px;
+          color: $primary;
+        }
+      }
+      .create_huati.active {
+        left: 0;
+        opacity: 1;
+      }
+      .score {
+        float: left;
+        span {
+          float: left;
+          font-size: 14px;
+          color: #666666;
+          line-height: 30px;
+        }
+        #star {
+          float: left;
+        }
+      }
+      textarea {
+        clear: both;
+        float: left;
+        width: 100%;
+        margin-top: 13px;
+        background: #FFFFFF;
+        border: 1px solid rgba(107, 145, 255, 1);
+        border-radius: 4px;
+        box-shadow: 0px 0px 4px 0px rgba(107, 145, 255, 0.20);
+        margin-bottom: 20px;
+        outline: none;
+        padding: 20px;
+        color: #666;
+        font-size: 14px;
+      }
+      .cancel_reply {
+        float: right;
+        margin: 2px 40px 0 0;
+      }
+    }
+    .huati_wrap.active {
+      height: 478px;
+    }
+  }
+  .evaluation {
+    .huati_wrap {
+      .huati_list {
+        .huati_item {
+          height: auto;
+          overflow: hidden;
+          padding: 20px 0 20px 0;
+          .huati_info {
+            color: #999999;
+            font-size: 12px;
+            line-height: 23px;
+            width: 91%;
+            .huati_username {
+              float: left;
+              font-size: 14px;
+              color: $primary;
+            }
+            .plan_name {
+              float: left;
+              margin-left: 20px;
+            }
+            .plan_progress {
+              float: left;
+              margin-left: 6px;
+            }
+            .huati_star {
+              float: left;
+              clear: both;
+              margin-bottom: 5px;
+              .star {
+                float: left;
+                margin-top: 2px;
+                .iconfont {
+                  color: #FFD048;
+                  font-size: 15px;
+                }
+              }
+              .star_time {
+                float: left;
+                font-size: 12px;
+                color: #999999;
+                margin-left: 11px;
+                margin-top: 2px;
+              }
+            }
+            .huati_content {
+              max-width: 780px;
+              clear: both;
+              font-size: 14px;
+              color: #666666;
+            }
+            .reply {
+              float: right;
+              font-size: 14px;
+            }
+          }
+          .reply_wrap {
+            float: left;
+            clear: both;
+            height: auto;
+            overflow: hidden;
+            margin-left: 70px;
+            background: #FAFAFA;
+            border-radius: 2px;
+            padding: 20px 0 20px 20px;
+            margin-top: 10px;
+            display: none;
+            .reply_list {
+              .reply_item {
+                position: relative;
+                height: auto;
+                overflow: hidden;
+                padding-bottom: 20px;
+                padding-right: 20px;
+                .reply_avatar {
+                  float: left;
+                  width: 41px;
+                  height: 41px;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  border-radius: 50%;
+                }
+                .reply_info {
+                  float: left;
+                  margin: 6px 0 0 10px;
+                  width: 92%;
+                  a {
+                    font-size: 14px;
+                  }
+                  p {
+                    font-size: 14px;
+                    color: #666666;
+                    line-height: 21px;
+                    max-width: 690px;
+                    margin-bottom: 6px;
+                  }
+                  .reply_time {
+                    float: right;
+                    font-size: 12px;
+                    color: #999999;
+                  }
+                }
+                .reply_controls {
+                  position: absolute;
+                  right: 20px;
+                  top: 0;
+                  .iconfont {
+                    color: $primary;
+                    cursor: pointer;
+                  }
+                  ul {
+                    position: absolute;
+                    width: 90px;
+                    padding: 6px 0;
+                    background: #ffffff;
+                    left: -55px;
+                    top: 16px;
+                    border-radius: 4px;
+                    display: none;
+                    li {
+                      list-style: none;
+                      height: 32px;
+                      background: $primary_rgba_1;
+                      text-align: center;
+                      line-height: 32px;
+                      cursor: pointer;
+                      a {
+                        font-size: 12px;
+                        color: #666666;
+                      }
+                    }
+                  }
+                }
+                .reply_controls:hover {
+                  & > ul {
+                    display: block;
+                  }
+                }
+              }
+              .reply_item:last-child {
+                padding-bottom: 0;
+              }
+            }
+            .create_reply {
+              margin-top: 20px;
+              width: 741px;
+              height: 36px;
+              background: #FFFFFF;
+              border: 1px solid rgba(107, 145, 255, 1);
+              border-radius: 4px;
+              box-shadow: 0px 0px 4px 0px rgba(107, 145, 255, 0.20);
+              outline: none;
+              padding: 0 13px;
+              font-size: 12px;
+              color: #666666;
+            }
+            .send_reply {
+              padding: 5px 26px;
+              font-size: 14px;
+              color: #FFFFFF;
+              margin-top: 20px;
+              margin-right: 20px;
+            }
+          }
+        }
+        .huati_item:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+  .question {
+    .huati_wrap .huati_list .huati_item .huati_info .plan_name {
+      margin-left: 0;
+    }
+    .huati_wrap .huati_list .huati_item .huati_info .plan_progress {
+      margin-left: 20px;
+      margin-bottom: 14px;
+    }
+    .question_title {
+      clear: both;
+      font-size: 18px;
+      color: #4A4A4A;
+      font-weight: 400;
+    }
+    .question_content {
+      color: #666666;
+      font-size: 14px;
+      max-width: 780px;
+    }
+    .add_question {
+      display: block;
+      font-size: 14px;
+      color: #666666;
+      margin: 20px 0 10px 0;
+    }
+    .huati_wrap .huati_list .huati_item .watch_num {
+      margin-top: 0;
+    }
+    .huati_wrap .create_huati.create_question {
+      position: static;
+      top: 0;
+      left: 0;
+      opacity: 1;
+      clear: both;
+      overflow: hidden;
+
+    }
+  }
+
+  .upload_file {
+    .custom-input-file + label {
+      width: 760px;
+      height: 270px;
+      background: #FAFAFA;
+      border-radius: 2px;
+      border: 0;
+      button {
+        display: block;
+        padding: 5px 20px;
+        margin: 100px auto 0;
+      }
+      span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        color: #666666;
+        margin-top: 12px;
+      }
+    }
+    p {
+      font-size: 12px;
+      color: #999999;
+      line-height: 23px;
+    }
+  }
+}
+
+.notice_time {
+  text-align: right;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #999;
+}
+
+.popover {
+  width: 300px !important;
+  min-width: 300px;
+  .popover-body {
+    width: 300px !important;
+    min-width: 300px;
+    padding: 0;
+  }
+  .popover_card {
+    width: 300px;
+    height: auto;
+    .teacher_header {
+      height: auto;
+      padding: 20px 0 0 20px;
+      overflow: hidden;
+      width: 100%;
+      .teacher_avatar {
+        float: left;
+        width: 52px;
+        height: 52px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+      .teacher_info {
+        float: left;
+        margin-left: 30px;
+        margin-top: 2px;
+        span {
+          display: block;
+        }
+        .teacher_name {
+          font-size: 14px;
+          color: #666666;
+          margin-bottom: 9px;
+        }
+        .teacher_job {
+          font-size: 12px;
+          color: #999999;
+        }
+      }
+    }
+    .teacher_fans {
+      height: auto;
+      overflow: hidden;
+      padding: 0 36px 10px;
+      margin-top: 14px;
+      .fans_item {
+        float: left;
+        text-align: center;
+        margin-right: 72px;
+        span {
+          display: block;
+          width: 100%;
+          font-size: 14px;
+          color: #999999;
+        }
+      }
+    }
+    .teacher_controls {
+      border-top: 1px solid #E5E5E5;
+      padding: 0 50px;
+      a.btn {
+        padding: 2px 10px;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+.to_sender {
+  display: block;
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.send_modal {
+  .py-3 {
+    overflow: hidden !important;
+    padding: 16px;
+  }
+  textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 0;
+    font-size: 20px;
+    color: #666666;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 510px) {
+  .zh_course .huati .huati_wrap .huati_list .huati_item {
+    height: 120px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .zh_course .course_card .row .plan_wrap {
+    border-right: 0;
+  }
+  .zh_course .shopping {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 505px) {
+  .zh_course .course_card .row .plan_wrap {
+    padding-bottom: 20px;
+    float: left;
+    .plan_item {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .zh_course .course_card {
+    padding-left: 20px;
+    .row {
+      margin-right: 20px;
+      margin-left: 0;
+
+      .col-xl-4 {
+        padding-left: 0 !important;
+      }
+    }
+  }
+}
+
+.student_style {
+  border-radius: $template_radius !important;
+  box-shadow: $template_box_shadow !important;
+}
+
+@media (max-width: 1200px) {
+  .zh_course .course_card .row .shopping {
+    border-left: 0;
+    margin-top: 20px;
+  }
+}

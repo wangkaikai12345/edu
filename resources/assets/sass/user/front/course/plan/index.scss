@@ -1,0 +1,145 @@
+@import "../../../font/_font.scss";
+@import "../../../_variables.scss";
+.card-body.row_content {
+  padding:0;
+  h6 {
+    margin-bottom:1rem;
+    margin-left:30px;
+    margin-top:20px;
+    font-size:20px;
+    color:#666666;
+    font-weight:400;
+  }
+}
+
+.bd-example {
+  padding:30px;
+}
+
+label {
+  font-size:14px;
+}
+
+input {
+  width:540px !important;
+}
+
+.input-group-transparent {
+  font-size:14px;
+}
+
+.text-label {
+  margin-right:5px;
+  color:#F0A818;
+}
+
+.last-modal-body {
+  margin-bottom:20px;
+}
+
+.modal-label {
+  text-align:right !important;
+  span {
+    display: block;
+    float:right;
+    margin-top:2px;
+    margin-right:5px;
+  }
+  .iconfont {
+    float:right;
+    margin-right:0;
+  }
+}
+
+.custom-control-label {
+  padding-top:3px;
+}
+
+.modal-last-label {
+  text-align:left !important;
+  span {
+    float:left;
+    margin-right:0;
+  }
+}
+
+.dropdown-item {
+  font-size:14px;
+  color:#666;
+  height: auto;
+  overflow: hidden;
+  span {
+    float: left;
+    margin-top:2px;
+  }
+}
+
+.dropdown-item:hover {
+  color:#fff !important;
+}
+
+.message-label {
+  font-size:12px;
+  color:#F18C29;
+}
+
+.dropdown-menu {
+  min-width:7.2rem !important;
+}
+
+.iconfont {
+  float:left;
+  margin-right:10px;
+}
+
+.course_hr {
+  margin-top: 18px;
+  margin-bottom:20px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.add-plan {
+  padding:2px 10px;
+  font-size:14px;
+  background:$primary;
+  font-weight:400;
+}
+
+.more {
+  color:red;
+  -moz-user-select:none;/*火狐*/
+  -webkit-user-select:none;/*webkit浏览器*/
+  -ms-user-select:none;/*IE10*/
+  -khtml-user-select:none;/*早期浏览器*/
+  user-select:none;
+  cursor:pointer;
+}
+
+.item_more {
+  color: $primary!important;
+}
+
+.dropdown-item:hover {
+  background:$primary;
+}
+
+.xh_modal {
+  .invalid-feedback {
+    padding-left: 17.66666667%;
+  }
+}
+
+@media (max-width: 768px) {
+  .xh_modal {
+    .invalid-feedback {
+      padding-left: 1%;
+    }
+  }
+}
+
+.teacher_style {
+  box-shadow: $teacher_box_shadow !important;
+  border-radius: $teacher_radius !important;
+}

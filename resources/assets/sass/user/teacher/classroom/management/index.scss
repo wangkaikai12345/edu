@@ -1,0 +1,49 @@
+@import "../../../_variables.scss";
+@import "../../../font/_font.scss";
+.card-body {
+  padding:20px 30px 40px 30px;
+}
+
+.management_item {
+  float:left;
+  border:1px solid #D6D6D6;
+  border-radius:4px;
+  min-height:195px;
+  .management_title {
+    padding:20px 224px 8px 20px;
+    border-bottom:1px solid #E5E5E5;
+  }
+  .management_item_content {
+    float:left;
+    width:90%;
+    border-bottom:1px solid #E5E5E5;
+    padding:18px 15px;
+    margin-left:15px;
+    .management_item_content_title {
+      float:left;
+      margin-right:30px;
+    }
+    .management_item_content_number {
+      float:left;
+      .badge {
+        width:60px;
+        height:26px;
+        font-size:12px;
+        font-weight:400;
+        padding:0;
+        line-height:26px;
+      }
+    }
+    .management_item_content_link {
+      float:right;
+      .iconfont {
+        line-height:28px;
+        color:$primary;
+        font-size:24px;
+      }
+    }
+  }
+  .management_item_content:last-child {
+    border:0;
+  }
+}

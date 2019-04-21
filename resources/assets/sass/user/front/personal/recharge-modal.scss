@@ -1,0 +1,154 @@
+@import "../../_variables.scss";
+@import "../../font/_font.scss";
+
+.modal-content {
+  margin: 0 auto;
+  width: 550px;
+
+  .modal-body {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    .modal_head_title {
+      margin: 0 auto;
+      height: 64px;
+      line-height: 58px;
+
+      p {
+        padding-left: 90px;
+        margin: 0;
+        text-align: center;
+        font-size: 18px;
+        color: #4a4a4a;
+      }
+
+      button {
+        width: 100%;
+        height: 64px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+
+        i {
+          font-size: 20px;
+          color: #666;
+        }
+      }
+    }
+
+    .modal_con_data {
+      margin: 0 auto;
+      width: 96%;
+      height: auto;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-top: 2px solid #eee;
+
+      .rechargeList {
+        overflow: hidden;
+        margin: 0 auto;
+        width: 95%;
+        height: auto;
+        margin-bottom: 20px;
+
+        .rechargeItem {
+          cursor: pointer;
+          float: left;
+          margin-right: 24px;
+          width: 150px;
+          height: 145px;
+          border: 2px solid #999;
+          border-radius: 7px;
+
+          .reTitle {
+            margin: 0 auto;
+            width: 90%;
+            height: 40px;
+            line-height: 40px;
+            color: #666;
+            font-size: 18px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+          }
+
+          .rePrice {
+            margin: 0 auto;
+            margin-top: 5px;
+            width: 80%;
+            font-size: 16px;
+            color: #666;
+            span {
+              font-size: 15px;
+              color: #999;
+            }
+          }
+
+          .reBi {
+            margin: 0 auto;
+            margin-top: 5px;
+            width: 80%;
+            font-size: 16px;
+            color: #666;
+            span {
+              font-size: 15px;
+              color: #999;
+            }
+          }
+
+          .reZbi {
+            margin: 0 auto;
+            margin-top: 5px;
+            width: 80%;
+            font-size: 16px;
+            color: #666;
+            span {
+              font-size: 15px;
+              color: #999;
+            }
+          }
+        }
+
+        .active {
+          border: 2px solid $primary;
+        }
+
+        .rechargeItem:nth-of-type(3) {
+          margin-right: 0;
+        }
+
+        .rechargeItem:nth-of-type(6) {
+          margin-right: 0;
+        }
+
+        .rechargeItem:nth-of-type(9) {
+          margin-right: 0;
+        }
+      }
+
+      .identifyAndCancel {
+        width: 100%;
+        height: auto;
+        button {
+          width: 80px;
+          height: 30px;
+          border-radius: 20px;
+          background-color: $primary;
+          color: white;
+          border: 0;
+          font-weight: 300;
+          font-size: 15px;
+          outline: none;
+        }
+
+        button:first-of-type {
+          margin-left: 172px;
+        }
+
+        button:last-of-type {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

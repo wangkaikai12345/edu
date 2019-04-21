@@ -1,0 +1,214 @@
+// Copy and paste the variables that you want to modify from _variables.scss and remove the !default flad. 
+// The default ones will be overridden. Below we added the most wanted variables that a user needs to change.
+// Uncomment the variables starting with "$" that you want to edit.
+
+// Colors
+
+$primary: #6B91FF;
+$dark: #4A4A4A;
+$course_primary: #6478ff; // 我的在教课程主题色
+
+$primary_rgba_9: rgba(107, 145, 255, 0.9);
+$primary_rgba_8: rgba(107, 145, 255, 0.8);
+$primary_rgba_7: rgba(107, 145, 255, 0.7);
+$primary_rgba_6: rgba(107, 145, 255, 0.6);
+$primary_rgba_5: rgba(107, 145, 255, 0.5);
+$primary_rgba_4: rgba(107, 145, 255, 0.4);
+$primary_rgba_3: rgba(107, 145, 255, 0.3);
+$primary_rgba_2: rgba(107, 145, 255, 0.2);
+$primary_rgba_1: rgba(107, 145, 255, 0.1);
+
+$plan_primary: #6478FF;
+$plan_primary_rgba_9: rgba(100, 120, 255, 0.9);
+$plan_primary_rgba_8: rgba(100, 120, 255, 0.8);
+$plan_primary_rgba_7: rgba(100, 120, 255, 0.7);
+$plan_primary_rgba_6: rgba(100, 120, 255, 0.6);
+$plan_primary_rgba_5: rgba(100, 120, 255, 0.5);
+$plan_primary_rgba_4: rgba(100, 120, 255, 0.4);
+$plan_primary_rgba_3: rgba(100, 120, 255, 0.3);
+$plan_primary_rgba_2: rgba(100, 120, 255, 0.2);
+$plan_primary_rgba_1: rgba(100, 120, 255, 0.1);
+// $secondary: #234242;
+
+// Typography
+
+$font-family-base: sans-serif !default;
+$font-family-alt: sans-serif !default;
+
+.text_color_999 {
+  color: #999999;
+}
+
+.text_color_666 {
+  color: #666666;
+}
+
+html,
+.wrapper {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  box-sizing: border-box;
+  padding-bottom: 80px; /* .footer 的高度，为 footer 占位 */
+  background: #FAFAFA;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+
+// 默认按钮样式
+.btn-primary {
+  font-size: 14px;
+  font-weight: 400;
+  background: $primary;
+  text-align: center;
+}
+
+// table中暂无数据样式
+.empty {
+  padding: 40px 0;
+  color: #bbb;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+  .mb-xl-30 {
+    margin-bottom: 30px;
+  }
+}
+
+// 教师端边框阴影及圆角
+$teacher_box_shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+$teacher_radius: 0.375rem;
+
+// 学生端页面边框阴影及圆角
+$template_box_shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$template_radius: 0.375rem;
+
+#edui_fixedlayer {
+  z-index: 9999 !important;
+}
+
+.card {
+  border: 0 !important;
+}
+
+//----------------------------------------------------  Color  ----------------------------------------------------//
+// 重要字体蓝色
+$important_primary: #6B91FF;
+.important_primary {
+  color: #6B91FF;
+};
+// 重要字体黑色
+$important_drak: #4a4a4a;
+.important_drak {
+  color: #4a4a4a;
+};
+// 默认字体标题颜色
+$default_title: #666;
+.default_title {
+  color: #666;
+};
+// 默认字体内容颜色
+$default_body: #999;
+.default_body {
+  color: #999;
+};
+// 默认特殊字体颜色
+$default_special: #1b1f21;
+.default_special {
+  color: #1b1f21;
+};
+// 较深特殊字体颜色
+$deep_special: #282828;
+.deep_special {
+  color: #282828;
+};
+// 辅助颜色
+$default_assist: #ddd;
+.default_assist {
+  color: #ddd;
+};
+
+//----------------------------------------------------  Font  ----------------------------------------------------//
+// 重要字体大小（标题，导航）
+$font_important: 16px;
+.font_important {
+  font-size: 16px;
+};
+// 次级字体大小（二级导航）
+$font_secondary: 18px;
+.font_secondary {
+  font-size: 18px;
+};
+// 正文默认文字
+$font_body_default: 20px;
+.font_body_default {
+  font-size: 20px;
+};
+// 正文常用副标题
+$font_body_title: 24px;
+.font_body_title {
+  font-size: 24px;
+};
+// 辅助文字，提示性文字
+$font_assist: 12px;
+.font_assist {
+  font-size: 12px;
+};
+
+//----------------------------------------------------  Button  ----------------------------------------------------//
+// 默认按钮
+.default_button {
+  height: 50px;
+  font-size: 20px;
+  color: $important_primary;
+  border: 1px solid $important_primary;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+//  按钮hover
+.default_button:hover {
+  background: $important_primary;
+  color: #fff;
+}
+//  按钮禁用
+.default_button:disabled {
+  color: #999999;
+  border: 1px solid #999;
+}
+
+//----------------------------------------------------  Input  ----------------------------------------------------//
+// 默认输入框
+.default_input {
+  height: 50px;
+  border: 1px solid #999;
+  font-size: 16px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 0 10px;
+  line-height: 50px;
+  color: #666;
+}
+// 输入框 focus
+.default_input:focus {
+  border: 1px solid $important_primary;
+}
+//----------------------------------------------------  Link  ----------------------------------------------------//
+a:hover {
+  color: $important_primary;
+}

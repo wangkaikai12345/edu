@@ -1,0 +1,221 @@
+@import "../../_variables.scss";
+@import "../../font/_font.scss";
+
+.czh_homework_content {
+  margin-bottom: 150px;
+  margin-top: 30px;
+}
+
+.czh_list_con {
+  overflow: hidden;
+  height: auto;
+  border-radius: $teacher_radius;
+  box-shadow: $teacher_box_shadow;
+  background-color: white;
+
+  .list_head {
+    width: 100%;
+    height: 68px;
+    border-bottom: 1px solid #eee;
+
+    p {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      line-height: 68px;
+      padding-left: 30px;
+      font-size: 18px;
+      color: #666;
+    }
+  }
+
+  .list_content {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .con_form {
+      padding: 30px 20px 30px 20px;
+      margin: 0 auto;
+      width: 94%;
+      height: 91px;
+      background-color: #F6F9FF;
+      border-radius: 5px;
+
+      .inp_de {
+        color: #666;
+      }
+
+      .search_class {
+        float: left;
+        width: 250px;
+        height: 41px;
+        line-height: 41px;
+        .search_select {
+          float: right;
+          width: 83%;
+          height: 100%;
+          border: 1px solid #d5d5d5;
+        }
+      }
+
+      .search_status {
+        float: left;
+        margin-left: 15px;
+        width: 230px;
+        height: 41px;
+        line-height: 41px;
+        .search_select {
+          float: right;
+          width: 83%;
+          height: 100%;
+          border: 1px solid #d5d5d5;
+        }
+      }
+
+      .search_tag {
+        float: left;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 272px;
+        height: 30px;
+        input {
+          width: 100%;
+          height: 100%;
+          border: 1px solid #d5d5d5;
+        }
+      }
+
+      .search_btn {
+        float: left;
+        margin-left: 40px;
+        width: 54px;
+        height: 30px;
+
+        button {
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .list_item {
+      margin: 0 auto;
+      width: 94%;
+      height: auto;
+
+      th {
+        border-top: 0;
+      }
+
+      .rating_wait {
+        color: #f18c29;
+      }
+
+      .rating_yes {
+        color: #7cb305;
+      }
+
+      .vice_con {
+        margin: 0;
+        font-size: 14px;
+        color: #999;
+      }
+
+      .list_item_action {
+        .yl {
+          float: left;
+          padding: 0;
+        }
+      }
+    }
+
+    .course_list {
+      margin-top: 30px;
+      position: relative;
+      width: 100%;
+      height: 38px;
+
+      .pagination {
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        height: 100%;
+
+        .page-item:first-of-type {
+          margin-left: 0;
+        }
+
+        .page-item {
+          width: 38px;
+          height: 38px;
+          margin-left: 5px;
+          a {
+            border-radius: 5px;
+            text-align: center;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.select2 {
+  width: 230px !important;
+  min-height: 30px !important;
+}
+
+.select2-container--default .select2-selection--multiple {
+  min-height: 30px !important;
+  border: 0.0625rem solid #ced4da !important;
+}
+
+.select2-selection {
+  margin-top: -10px !important;
+  min-height: 30px !important;
+}
+
+.select2-search__field {
+  margin-top: 6px !important;
+}
+
+.select2-container--default, .select2-selection--multiple .select2-selection__choice {
+  margin-top: 6px !important;
+  height: 26px !important;
+  line-height: 26px !important;
+}
+
+.select2-selection__choice {
+  margin-top: 8px !important;
+  background-color: $primary !important;
+  color: white !important;
+  border: 0 !important;
+
+  .select2-selection__choice__remove {
+    color: white !important;
+  }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: -8px !important;
+}
+
+.select2-container--open .select2-dropdown {
+  top: -17px;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: #fff !important;
+  background-clip: padding-box !important;
+  border: 0.0625rem solid #ced4da !important;
+  border-radius: 0.25rem !important;
+}

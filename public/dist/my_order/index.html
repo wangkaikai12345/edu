@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en" class="full-height">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><meta http-equiv="expires" content="0"><meta http-equiv="pragma" content="no-cache"><meta http-equiv="cache-control" content="no-cache"><meta name="renderer" content="webkit|ie-comp|ie-stand"><link href="/dist/vendor/css/0.css" rel="stylesheet"><link href="/dist/my_order/css/index.css" rel="stylesheet"></head>
+<body class="white-skin">
+<header>
+    <nav class="navbar navbar-expand-lg scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/dist/course/images/logo-sm-2017-12-01.png" height="45" alt="eduplay logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link waves-effect" href="#">首页<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link waves-effect" href="#">课程中心</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link waves-effect" href="#">IT云课堂</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link waves-effect" href="#">兄弟连教育</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect" href="#">技术论坛</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <div class="md-form my-0">
+                        <input class="form-control mr-sm-2 font-weight-normal" type="text" placeholder="搜索"
+                               aria-label="Search">
+                    </div>
+                </form>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item ml-3 mr-3">
+                        <a class="nav-link waves-effect">1
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item avatar dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink-5"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <img src="data:image/jpeg;base64,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"
+                                 class="rounded-circle z-depth-0"
+                                 alt="avatar image">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-primary"
+                             aria-labelledby="navbarDropdownMenuLink-5">
+                            <a class="dropdown-item waves-effect" href="#">后台管理</a>
+                            <a class="dropdown-item waves-effect" href="#">个人设置</a>
+                            <a class="dropdown-item waves-effect" href="#">账户中心</a>
+                            <a class="dropdown-item waves-effect" href="#">我的教学</a>
+                            <a class="dropdown-item waves-effect" href="#">我的学习</a>
+                            <a class="dropdown-item waves-effect" href="#">我的主页</a>
+                            <a class="dropdown-item waves-effect" href="#">退出登陆</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="button-collapse slide-logo" data-activates="slide-out">
+        <a href="#" class="white-text"><i class="fas fa-bars"></i><span
+                class="sr-only" aria-hidden="true">Toggle side navigation</span></a>
+    </div>
+</header>
+<main class="py-6 mb-5">
+    <div class="wrap">
+       <div class="container pr-0">
+           <div class="alert alert-primary col-xl-12" role="alert">
+               基本
+               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+               </button>
+           </div>
+           <div class="alert alert-success col-xl-12" role="alert">
+               成功
+               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+               </button>
+           </div>
+           <div class="alert alert-danger col-xl-12" role="alert">
+               错误
+               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+               </button>
+           </div>
+           <div class="alert alert-warning col-xl-12" role="alert">
+               警告
+               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+               </button>
+           </div>
+           <div class="alert alert-info col-xl-12" role="alert">
+               信息
+               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+               </button>
+           </div>
+       </div>
+        <nav class="slide">
+            <div id="slide-out">
+                <ul class="custom-scrollbar">
+                    <!-- Logo -->
+                    <li class="slide-nav-logo">
+                        <div class="logo-wrapper waves-light">
+                            <a href="#"><img src="https://images.rooyun.com/logo-sm-2017-12-01.png"
+                                             class="img-fluid flex-center"></a>
+                        </div>
+                    </li>
+                    <!--/. Logo -->
+                    <!--Search Form-->
+                    <li class="slide-nav-form">
+                        <form class="search-form" role="search">
+                            <div class="form-group md-form mt-0 pt-1 waves-light">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </form>
+                    </li>
+                    <!--/.Search Form-->
+                    <!-- Side navigation links -->
+                    <li class="container">
+                        <div class="card ul_box">
+                            <ul class="collapsible collapsible-accordion ul_list">
+                                <li>
+                                    <a class="collapsible-header waves-effect arrow-r list_title active">
+                                        <i class="fas fa-chevron-right"></i>账户中心
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </a>
+                                    <div class="collapsible-body">
+                                        <ul>
+                                            <li class="list_item_active">
+                                                <a href="#" class="waves-effect">我的订单</a>
+                                            </li>
+                                            <li class="list_item">
+                                                <a href="#" class="waves-effect">退款管理</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="collapsible collapsible-accordion ul_list">
+                                <li>
+                                    <a class="collapsible-header waves-effect arrow-r list_title active">
+                                        <i class="fas fa-chevron-right"></i>个人设置
+                                        <i class="fas fa-angle-down rotate-icon"></i>
+                                    </a>
+                                    <div class="collapsible-body">
+                                        <ul>
+                                            <li class="list_item">
+                                                <a href="#" class="waves-effect">个人信息</a>
+                                            </li>
+                                            <li class="list_item">
+                                                <a href="#" class="waves-effect">退款管理</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="sidenav-bg rgba-blue-strong"></div>
+            </div>
+        </nav>
+        <div class="col-xl-9">
+            <div class="card">
+                <div class="card-body">
+                    <!--Title-->
+                    <h6 class="card-title">我的订单</h6>
+                    <hr>
+                    <!--Text-->
+                    <div class="row">
+                        <div class="col-xl-3 mr-3 col-md-5 col-sm-6">
+                            <div class="md-form ml-3">
+                                <input type="text" id="form1" class="form-control">
+                                <label for="form1">输入商品名搜索</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-5 col-sm-5">
+                            <button type="button"
+                                    class="btn btn-primary btn-rounded btn-sm waves-effect waves-light mt-4">查询
+                            </button>
+                            <button type="button"
+                                    class="btn btn-danger btn-rounded btn-sm waves-effect waves-light mt-4">重置
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-3">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-body row text-center">
+                                    <div class="col-xl-5">
+                                        <img class="card-img-top" src="/dist/course/images/img1.jpg"
+                                             alt="Card image cap">
+                                    </div>
+                                    <div class="col-xl-5 text-left">
+                                        <h6 class="font-weight-bold mt-3 mb-3 text-truncate ">手把手教会你UI图形创意手绘
+                                            默认教学计划131231213</h6>
+                                        <p class="text-uppercase font-small text-truncate">订单号：<span>ed16140ddd90441680cd9fd30ea8263b</span>
+                                        </p>
+                                        <p class="text-uppercase font-small">价格：<span>0.01元</span></p>
+                                        <p class="text-uppercase font-small text-truncate">优惠券：<span>ed16140ddd90441680cd9fd30ea8263b</span>
+                                        </p>
+                                        <p class="text-uppercase font-small">创建时间：<span>2019-01-03 15:21:42</span></p>
+                                        <p class="text-uppercase font-small">订单状态：<span>交易成功</span></p>
+                                    </div>
+                                    <div class="col-xl-2 text-center"
+                                         style="flex-direction: column-reverse;display: flex;">
+                                        <button type="button"
+                                                class="btn align-items-center btn-primary btn-rounded btn-sm waves-effect waves-light"
+                                                data-toggle="modal" data-target="#fullHeightModalRight">订单详情
+                                        </button>
+                                        <button type="button"
+                                                class="btn align-items-center btn-primary btn-rounded btn-sm waves-effect waves-light"
+                                                data-toggle="modal" data-target="#centralModalSm">
+                                            订单详情
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination pagination-circle pg-blue justify-content-center">
+                                    <li class="page-item disabled"><a class="page-link">第一页</a></li>
+                                    <li class="page-item disabled">
+                                        <a class="page-link" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            <span class="sr-only">上一页</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link">1</a></li>
+                                    <li class="page-item"><a class="page-link">2</a></li>
+                                    <li class="page-item"><a class="page-link">3</a></li>
+                                    <li class="page-item"><a class="page-link">4</a></li>
+                                    <li class="page-item"><a class="page-link">5</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">下一页</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link">最后一页</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Height Modal Right -->
+    <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-full-height modal-right" role="document">
+            <ul class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">订单详情</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group z-depth-0">
+                        <li class="list-group-item justify-content-between">
+                            <div class="font-small">订单号:
+                                ed16140ddd90441680cd9fd30ea8263b
+                            </div>
+                        </li>
+                        <li class="list-group-item justify-content-between">
+                            <div class="font-small">订单状态: 交易成功</div>
+                        </li>
+                        <li class="list-group-item justify-content-between">
+                            <div class="font-small">商品名称: 手把手教会你UI图形创意手绘
+                                默认教学计划
+                            </div>
+                        </li>
+                        <li class="list-group-item justify-content-between">
+                            <div class="font-small">商品价格: 0.01元</div>
+                        </li>
+                        <li class="list-group-item justify-content-between">
+                            <div class="font-small">订单价格: 0.01元</div>
+                        </li>
+                        <li class="list-group-item justify-content-between">
+                            <div class="font-small">创建时间: 2019-01-03 15:21:42
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Central Modal Small -->
+    <div class="modal fade" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="tuikuan">申请退款</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">商品名称: qaa</li>
+                        <li class="list-group-item">实付金额: 0.01元</li>
+                        <li class="list-group-item">
+                            <div class="form-group shadow-textarea">
+                                <label for="exampleFormControlTextarea6">退款原因:</label>
+                                <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="5" placeholder="请输入..."></textarea>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary btn-sm">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Content -->
+                <img src="/dist/course/images/2018-08-27-CrQDFz0B.png" height="60" alt="eduplay logo">
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">友情链接</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a href="#!">IT云课堂</a>
+                </p>
+                <p>
+                    <a href="#!">兄弟连教育</a>
+                </p>
+                <p>
+                    <a href="#!">战地日记</a>
+                </p>
+                <p>
+                    <a href="#!">技术论坛</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">培训课程</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a href="#!">PHP开发</a>
+                </p>
+                <p>
+                    <a href="#!">HTML5全栈</a>
+                </p>
+                <p>
+                    <a href="#!">Java+大数据</a>
+                </p>
+                <p>
+                    <a href="#!">UI/UE设计师</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">培训课程</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    区块链工程师</p>
+                <p>
+                    Python全栈</p>
+                <p>
+                    Linux云计算</p>
+                <p>
+                    网站营销</p>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">培训课程</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    区块链工程师</p>
+                <p>
+                    Python全栈</p>
+                <p>
+                    Linux云计算</p>
+                <p>
+                    网站营销</p>
+            </div>
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/">&nbsp;eduplay</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<script type="text/javascript" src="/dist/vendor/chunk/index.js"></script><script type="text/javascript" src="/dist/my_order/js/index.js"></script></body>
+</html>

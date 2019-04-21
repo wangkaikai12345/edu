@@ -1,0 +1,376 @@
+@import '../../_variables.scss';
+@import '../../font/font.scss';
+.zh_notice {
+  margin: 30px 0;
+  .container {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.10);
+    padding-bottom: 120px;
+    .page_title {
+      font-size: 18px;
+      color: #4a4a4a;
+      font-weight: 400;
+      padding: 20px 0 10px 30px;
+    }
+    .notice_wrap {
+      //display: none;
+      width: 100%;
+      height: auto;
+      background: #FFFFFF;
+      border-radius: 4px;
+      .notice_lists {
+        padding: 0 10px;
+        margin-top: 12px;
+        height: auto;
+        max-height: 776px;
+        overflow: hidden;
+        display: none;
+        .no_data {
+          display: block;
+          margin: 80px auto;
+          text-align: center;
+          font-size: 14px;
+          color: #999999;
+        }
+        .notice_item {
+          cursor: pointer!important;
+          height: 58px;
+          width: 100%;
+          padding: 8px 0 8px 10px;
+          margin-bottom: 2px;
+          cursor: pointer;
+          margin-top: 2px;
+          img {
+            float: left;
+            width: 41px;
+            margin: 0 9px 0 0;
+          }
+          .notice_content {
+            float: left;
+            width: 80%;
+            .notice_name {
+              float: left;
+              width: 100%;
+              -ms-text-overflow: ellipsis;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+              margin-bottom: 5px;
+              line-height: 18px;
+              font-size: 14px;
+              color: #666666;
+              a {
+                color: $primary;
+              }
+              i {
+                color: #999999;
+                font-style: normal;
+              }
+            }
+            .notice_p {
+              line-height: 20px;
+              float: left;
+              width: 100%;
+              font-size: 12px;
+              color: #999999;
+              white-space: nowrap;
+              -ms-text-overflow: ellipsis;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+          }
+          .message_num {
+            float: right;
+            font-size: 12px;
+            color: #999999;
+            margin: 22px 20px 0 0;
+          }
+          .message_del {
+            display: none;
+            font-size: 14px;
+            color: $primary;
+            float: right;
+            margin-right: 30px;
+            margin-top: 20px;
+          }
+        }
+        .line {
+          height: 2px;
+          width: 100%;
+          background: #EEEEEE;
+        }
+        .notice_item:hover {
+          background: $plan_primary_rgba_1;
+          .notice_name {
+            span:not(.message_content) {
+              color: $primary;
+            }
+          }
+          .message_del {
+            display: block;
+          }
+        }
+      }
+      .all_notice {
+        float: left;
+        width: 100%;
+        text-align: center;
+        line-height: 35px;
+        font-size: 14px;
+        color: $primary;
+      }
+      .notice_lists.active {
+        display: block;
+      }
+      .message {
+        .notice_item {
+          position: relative;
+          height: auto;
+          overflow: hidden;
+        }
+        .notice_content {
+          position: relative;
+        }
+        .notice_p {
+          position: absolute;
+          top: 23px;
+        }
+        .message_content {
+          width: auto;
+          max-width: 70%;
+          white-space: normal;
+        }
+        .message_del {
+          position: absolute;
+          bottom: 10px;
+          right: 60px;
+        }
+        .message_num {
+          position: absolute;
+          bottom: 12px;
+          right: 20px;
+        }
+      }
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 10px solid;
+        margin-top: -10px;
+        border-color: transparent transparent transparent #fff;
+        margin-left: -10px;
+      }
+    }
+    .message_details {
+      margin: 20px auto 0;
+      height: auto;
+      overflow: hidden;
+      .reply_message {
+        width: 88%;
+        margin: 0 auto;
+        form {
+          width: 100%;
+          textarea {
+            display: block;
+            width: 100%;
+            height: 90px;
+            outline: none;
+            background: #FFFFFF;
+            border: 1px solid rgba(153,153,153,1);
+            border-radius: 4px;
+            padding: 10px 12px;
+            font-size: 12px;
+            color: #999999;
+          }
+          button {
+            padding: 5px 26px;
+            margin: 10px 0 20px;
+          }
+        }
+      }
+      .message_lists {
+        width: 88%;
+        height: auto;
+        max-height: 1050px;
+        margin: 0 auto;
+        .side_item {
+          position: relative;
+          height: auto;
+          float: left;
+          clear: both;
+          width: 100%;
+          margin-bottom: 10px;
+          .user_avatar {
+            position: absolute;
+            top: 0;
+            left: -60px;
+            display: block;
+            width: 41px;
+            height: 41px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+          }
+          .item_wrap {
+            width: 100%;
+            margin: 0 auto;
+            background: #FFFFFF;
+            border: 1px solid rgba(221,221,221,1);
+            border-radius: 2px;
+            height: auto;
+            min-height: 57px;
+            padding: 8px 0 8px 13px;
+            overflow: hidden;
+            .message_info {
+              float: left;
+              .message_sender {
+                float: left;
+                font-size: 14px;
+                color: #4a4a4a;
+                margin-bottom: 6px;
+                line-height: 18px;
+              }
+              .message_time {
+                float: left;
+                clear: both;
+                font-size: 12px;
+                color: #999999;
+                line-height: 18px;
+              }
+            }
+            .message_content {
+              margin-top: -3px;
+              width: 81%;
+              font-size: 14px;
+              color: #666;
+              float: left;
+            }
+          }
+        }
+        .me {
+          cursor: pointer;
+          .item_wrap {
+            position: relative;
+            .message_del {
+              position: absolute;
+              right: 20px;
+              bottom: 8px;
+            }
+          }
+          .user_avatar {
+            left: 100%;
+            margin-left: 20px;
+          }
+        }
+        .me:hover {
+          .item_wrap {
+            background: $plan_primary_rgba_1;
+          }
+        }
+      }
+    }
+    .pageNumber {
+      position: absolute;
+      float: left;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      bottom: 30px;
+    }
+  }
+}
+
+.popover {
+  width: 300px!important;
+  min-width: 300px;
+  .popover-body {
+    width: 300px!important;
+    min-width: 300px;
+    padding: 0;
+  }
+  .popover_card {
+    width: 300px;
+    height: auto;
+    .teacher_header {
+      height: auto;
+      padding: 20px 0 0 20px;
+      overflow: hidden;
+      width: 100%;
+      .teacher_avatar {
+        float: left;
+        width: 52px;
+        height: 52px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+      .teacher_info {
+        float: left;
+        margin-left: 30px;
+        margin-top: 2px;
+        span {
+          display: block;
+        }
+        .teacher_name {
+          font-size: 14px;
+          color: #666666;
+          margin-bottom: 9px;
+        }
+        .teacher_job {
+          font-size: 12px;
+          color: #999999;
+        }
+      }
+    }
+    .teacher_fans {
+      height: auto;
+      overflow: hidden;
+      padding: 0 36px 10px;
+      margin-top: 14px;
+      border-bottom: 1px solid #E5E5E5;
+      .fans_item {
+        float: left;
+        text-align: center;
+        margin-right: 72px;
+        span {
+          display: block;
+          width: 100%;
+          font-size: 14px;
+          color: #999999;
+        }
+      }
+    }
+    .teacher_controls {
+      padding: 0 50px;
+      a.btn {
+        padding: 2px 10px;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .zh_notice .container .message_details .message_lists .side_item .user_avatar {
+    left: -41px;
+  }
+  .zh_notice .container .message_details .message_lists .me .user_avatar {
+    left: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 505px) {
+  .zh_notice .container .message_details .message_lists {
+    width: 70%;
+  }
+}

@@ -1,0 +1,144 @@
+@import "../../_variables";
+
+.modal-header {
+  height: 70px !important;
+  padding-left: 30px;
+  p {
+    margin: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    font-size: 18px;
+
+  }
+}
+
+.modal-content {
+  .search_form {
+    margin: 0 auto;
+    width: 100%;
+    height: 90px;
+    background-color: #F6F9FF;
+    border-radius: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .search_left {
+      float: left;
+      width: 320px;
+      height: 30px;
+      margin-right: 15px;
+      p {
+        margin: 0;
+        float: left;
+        padding-left: 20px;
+        padding-right: 10px;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+        font-size: 14px;
+        color: #666;
+      }
+
+      input {
+        float: left;
+        width: 218px;
+        height: 30px;
+        font-size: 14px;
+        padding-left: 10px;
+      }
+    }
+
+    .search_right {
+      float: right;
+      width: 585px;
+      height: 30px;
+      p {
+        margin: 0;
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+        font-size: 14px;
+        color: #666;
+      }
+
+      input {
+        float: left;
+        margin-right: 15px;
+        width: 208px;
+        height: 30px;
+        padding-left: 10px;
+        font-size: 14px;
+      }
+
+      button {
+        padding: 0;
+        width: 50px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 29px;
+        border: 0;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .choice-content {
+    margin: 0 auto;
+    width: 96%;
+    height: auto;
+
+    table {
+      th {
+        border-top: 0;
+      }
+
+      .star {
+        color: #FFD048;
+      }
+
+      .operation {
+        .yu_lan {
+          margin-right: 10px;
+        }
+
+        button {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+.modal-footer {
+  height: 70px !important;
+  padding-right: 50px;
+
+  button {
+    padding: 0;
+    width: 70px;
+    height: 30px;
+    line-height: 29px;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .cancel_btn button {
+    color: #666;
+    border: 1px solid #d5d5d5;
+    margin-right: 20px;
+  }
+
+  .determine_btn button {
+    color: white;
+    line-height: 30px;
+  }
+}

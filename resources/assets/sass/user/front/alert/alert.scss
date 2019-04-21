@@ -1,0 +1,40 @@
+.zh_notification {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  width: 300px;
+}
+.zh_alert {
+  opacity: 0;
+  -webkit-animation: zh_alert_hide_animate 1s ease;
+  -o-animation: zh_alert_hide_animate 1s ease;
+  animation: zh_alert_hide_animate 1s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+@for $i from 0 to 10 {
+  .zh_alert_#{$i} {
+    margin-top: 30px;
+    -webkit-animation: zh_alert_animate 1s ease;
+    -o-animation: zh_alert_animate 1s ease;
+    animation: zh_alert_animate 1s ease;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes zh_alert_animate {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 30px;
+    opacity: 1;
+  }
+}

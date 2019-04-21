@@ -1,0 +1,107 @@
+@import "../../_variables.scss";
+@import "../../font/_font.scss";
+.card-body {
+  //padding: 0;
+}
+
+.course_hr {
+  margin-top:16px;
+  margin-bottom: 0;
+}
+
+.row_div {
+  .row {
+    .col-lg-8 {
+      h6 {
+        margin-top: 17px;
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+td {
+  .not-mark {
+    border-radius:5px;
+    background:$primary;
+    color:#fff;
+    text-align:center;
+    padding:5px 10px;
+    font-size:14px;
+    font-weight:400;
+  }
+}
+
+.dropdown-menu.show {
+  .dropdown-item:hover {
+    background:$primary;
+    color:#fff;
+  }
+
+  .dropdown-item {
+    color:#666666;
+  }
+}
+
+.bd-example {
+  padding-top: 0;
+  margin-top: 1rem;
+
+  .table_content {
+    padding-left:30px;
+    padding-right: 30px;
+  }
+
+  .row {
+    padding: 25px 0;
+    background: $primary_rgba_1;
+    .row.second {
+      background:transparent;
+    }
+    .form-group {
+      font-size: 14px;
+
+      .input-group-transparent {
+        .form-control {
+          height: 30px !important;
+          font-size: 14px;
+        }
+
+        .control-label {
+          padding-right: 10px;
+          padding-top: 5px;
+        }
+      }
+    }
+    .search {
+      padding: 0;
+      width: 48px !important;
+      height: 30px !important;
+      font-size: 14px;
+      line-height: 24px;
+      background: #6B91FF;
+      font-weight: 400;
+    }
+    .search:hover {
+      border:0;
+    }
+  }
+}
+
+.table {
+  tbody {
+    tr {
+      td {
+        .user-nav {
+          .user-avatar-li {
+            .dropdown {
+              .more {
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

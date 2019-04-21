@@ -1,0 +1,117 @@
+@import "../../font/_font.scss";
+.wrapper {
+  background:#fff !important;
+}
+.header {
+  .col-md-12 {
+    padding: 0;
+
+    .card {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 0;
+      background:#fff !important;
+      .icon-lg {
+        img {
+          width: 150px;
+          height: 80px;
+          margin-right: 20px;
+        }
+      }
+
+      .icon-text {
+        width:100%;
+        .text-white {
+          float:left;
+          margin-right:22px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 18px;
+          color: #505050 !important;
+          padding-left:7px;
+        }
+
+        .teacher-information {
+          padding-left:7px;
+          color:#505050;
+        }
+
+        .text-uppercase {
+          width: 60px;
+          height: 26px;
+          text-align: center;
+          line-height: 26px;
+          font-size: 12px;
+          color: #F18C29;
+          background: #FFF0DA !important;
+          padding: 0;
+          font-weight: 350;
+        }
+        .text-uppercase.success {
+          color: #13C334;
+          background: #DFF8E3 !important;
+        }
+
+        button {
+          float: right;
+          margin-right:20px;
+          width: 112px;
+          height: 30px;
+          line-height:20px;
+          font-size: 12px;
+          padding: 0;
+          color: #666666 !important;
+          background:#f6f9fe;
+          font-weight:350;
+          border:0;
+          margin-top: -17px;
+          span {
+            .iconfont {
+              float:left;
+              text-align:center;
+              font-size:23px;
+              margin-right:0;
+            }
+          }
+          .btn-inner--text {
+            margin-left:0;
+            color: #666666;
+          }
+        }
+        button:first-child {
+          margin-right:7px;
+        }
+      }
+    }
+  }
+}
+
+.py-4 {
+  padding-top: 1.35rem !important;
+  padding-bottom: 1.35rem !important;
+}
+
+.xh_content_wrap {
+  position: relative;
+  margin-top:20px;
+  height: auto;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.breadcrumb {
+  padding: 1.05rem 1rem;
+  a {
+    color: #999999;
+  }
+}
+
+.breadcrumb-item {
+  font-size:14px;
+  color:#999999;
+}
+
+.breadcrumb-item.active {
+  color: #666666;
+}

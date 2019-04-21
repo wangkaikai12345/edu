@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en" class="full-height">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><meta http-equiv="expires" content="0"><meta http-equiv="pragma" content="no-cache"><meta http-equiv="cache-control" content="no-cache"><meta name="renderer" content="webkit|ie-comp|ie-stand"><link href="/dist/vendor/css/0.css" rel="stylesheet"><link href="/dist/plan/css/index.css" rel="stylesheet"></head>
+<body class="white-skin">
+<header>
+    <nav class="navbar navbar-expand-lg scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://images.rooyun.com/logo-sm-2017-12-01.png" height="45" alt="eduplay logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link waves-effect" href="#">首页<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link waves-effect" href="#">课程中心</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link waves-effect" href="#">IT云课堂</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link waves-effect" href="#">兄弟连教育</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect" href="#">技术论坛</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="form-inline">
+                <div class="md-form my-0">
+                    <input class="form-control mr-sm-2 font-weight-normal" type="text" placeholder="搜索"
+                           aria-label="Search">
+                </div>
+            </form>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item ml-3 mr-3">
+                    <a class="nav-link waves-effect">1
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="nav-item avatar dropdown">
+                    <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink-5"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                             class="rounded-circle z-depth-0"
+                             alt="avatar image">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-primary"
+                         aria-labelledby="navbarDropdownMenuLink-5">
+                        <a class="dropdown-item waves-effect" href="#">后台管理</a>
+                        <a class="dropdown-item waves-effect" href="#">个人设置</a>
+                        <a class="dropdown-item waves-effect" href="#">账户中心</a>
+                        <a class="dropdown-item waves-effect" href="#">我的教学</a>
+                        <a class="dropdown-item waves-effect" href="#">我的学习</a>
+                        <a class="dropdown-item waves-effect" href="#">我的主页</a>
+                        <a class="dropdown-item waves-effect" href="#">退出登陆</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="py-6">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a class="" href="#">首页</a>
+                    <span class="ml-2">/</span>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="" href="#">课程中心</a>
+                    <span class="ml-2">/</span>
+
+                </li>
+                <li class="breadcrumb-item active">王八蛋的课程</li>
+            </ol>
+        </nav>
+        <div class="course-card">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body card-body-cascade">
+                            <div class="row">
+                                <div class="col-xl-12 row">
+                                    <h5 class="card-title mt-3 col-xl-9 pl-4">
+                                        基于Java开发微信小程序和公众号
+                                    </h5>
+                                    <div class="col-xl-3 right-icon text-right">
+                                        <a href="#" class="badge badge-light ml-3 mr-3"><i
+                                                class="fas fa-cog"></i></a>
+                                        <a href="#" class="badge badge-light mr-3"><i class="fas fa-heart"></i></a>
+                                        <a href="#" class="badge badge-primary mr-3"><i
+                                                class="fas fa-heart"></i></a>
+                                        <span class="people-num mr-5">
+                                               <i class="fas fa-user-plus mr-1"></i>300
+                                           </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-3 position-relative">
+                                    <div class="view overlay">
+                                        <div class="text-center mt-4">
+                                            <span class="min-chart" id="chart-sales" data-percent="56"><h6><i
+                                                    class="fas fa-graduation-cap mr-2"></i>学习进度</h6><span
+                                                    class="percent"></span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 text-center">
+                                    <h6 class="ls-three"><i class="fas fa-check-square mr-2"></i>已完成</h6>
+                                    <div>0 / 12 任务</div>
+                                </div>
+                                <div class="col-xl-2 text-center">
+                                    <h6 class="ls-three"><i class="fas fa-calendar-alt mr-2"></i>学习有效期</h6>
+                                    <div>永久有效</div>
+                                </div>
+                                <div class="col-xl-2 text-center">
+                                    <h6 class="ls-three"><i class="fas fa-tasks mr-2"></i>学习任务</h6>
+                                    <div>手绘阶段 / 手绘基础
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 text-center">
+                                    <button type="button" class="btn btn-primary btn-rounded join-study btn-sm">加入学习
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="course-tabs">
+            <div class="row">
+                <div class="col-xl-9" style="padding-right: 0px;">
+                    <div class="card">
+                        <div class="card-body card-body-cascade">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <!-- Classic tabs -->
+                                    <div class="classic-tabs">
+                                        <ul class="nav" id="myClassicTab" role="tablist">
+                                            <li class="nav-item ml-0">
+                                                <a class="nav-link  waves-light active show"
+                                                   id="profile-tab-classic" data-toggle="tab" href="#profile-classic"
+                                                   role="tab" aria-controls="profile-classic"
+                                                   aria-selected="true">介绍</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link waves-light" id="follow-tab-classic"
+                                                   data-toggle="tab" href="#follow-classic" role="tab"
+                                                   aria-controls="follow-classic" aria-selected="false">目录</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link waves-light" id="contact-tab-classic"
+                                                   data-toggle="tab" href="#contact-classic" role="tab"
+                                                   aria-controls="contact-classic" aria-selected="false">笔记</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link waves-light" id="huati-tab-classic"
+                                                   data-toggle="tab" href="#huati-classic" role="tab"
+                                                   aria-controls="huati-classic" aria-selected="false">话题</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link waves-light" id="awesome-tab-classic"
+                                                   data-toggle="tab" href="#awesome-classic" role="tab"
+                                                   aria-controls="awesome-classic" aria-selected="false">评价</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content rounded-bottom" id="myClassicTabContent">
+                                            <div class="tab-pane fade active show" id="profile-classic" role="tabpanel"
+                                                 aria-labelledby="profile-tab-classic">
+                                                <div>
+                                                    <div class="es_piece">
+                                                        <div class="piece_header">课程介绍</div>
+                                                        <div class="piece_body" style="text-align: left;">
+                                                            为了实现了应用“触手可及”的梦想，用户扫一扫或搜一下即可打开应用；为了满足人们对信息、产品的传播。本课程将针对微信小程序、微信公众号展开实战，传授最新技术给那些在小程序、公众号开发道路上摸索的人们。<br>
+                                                        </div>
+                                                        <div class="goals">
+                                                            <ul></ul>
+                                                        </div>
+                                                        <div class="goals">
+                                                            <ul></ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="es_piece">
+                                                        <div class="piece_header">课程目标</div>
+                                                        <div class="piece_body" style="text-align: left;"></div>
+                                                        <div class="goals">
+                                                            <ul>
+                                                                <li>微信小程序和微信公众号开发</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="goals">
+                                                            <ul></ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="es_piece">
+                                                        <div class="piece_header">适应人群</div>
+                                                        <div class="piece_body" style="text-align: left;"></div>
+                                                        <div class="goals">
+                                                            <ul>
+                                                                <li>小程序、公众号爱好者</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="goals">
+                                                            <ul></ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="follow-classic" role="tabpanel"
+                                                 aria-labelledby="follow-tab-classic">
+                                                <!--Accordion wrapper-->
+                                                <div class="accordion md-accordion" id="accordionEx" role="tablist"
+                                                     aria-multiselectable="true">
+                                                    <!-- Accordion card -->
+                                                    <div class="card">
+                                                        <!-- Card header -->
+                                                        <div class="card-header" role="tab" id="headingOne1">
+                                                            <a data-toggle="collapse" data-parent="#accordionEx"
+                                                               href="#collapseOne1" aria-expanded="true"
+                                                               aria-controls="collapseOne1">
+                                                                <h6 class="mb-0">
+                                                                    <i class="fas fa-bars mr-3"></i>第一章：微信小程序概述 <i
+                                                                        class="fas fa-angle-down rotate-icon"></i>
+                                                                </h6>
+                                                            </a>
+                                                        </div>
+                                                        <!-- Card body -->
+                                                        <div id="collapseOne1" class="collapse show" role="tabpanel"
+                                                             aria-labelledby="headingOne1" data-parent="#accordionEx">
+                                                            <div class="card-body section-wrap">
+                                                                <h6 class="mb-0 task section">
+                                                                    第一节：微信小程序概述
+                                                                </h6>
+                                                                <h6 class="task">
+                                                                    <i class="far fa-circle mr-3"></i>1-1任务学习：吹牛逼
+                                                                </h6>
+                                                                <h6 class="mb-0 task section">
+                                                                    第二节：微信小程序概述
+                                                                </h6>
+                                                                <h6 class="task">
+                                                                    <i class="fas fa-video mr-3"></i>1-2任务学习：吹牛逼
+                                                                </h6>
+                                                                <h6 class="mb-0 task section">
+                                                                    第一节：微信小程序概述
+                                                                </h6>
+                                                                <h6 class="task">
+                                                                    <i class="fas fa-headphones-alt mr-3"></i></i>
+                                                                    1-1任务学习：吹牛逼
+                                                                </h6>
+                                                                <h6 class="mb-0 task section">
+                                                                    第三节：微信小程序概述
+                                                                </h6>
+                                                                <h6 class="task">
+                                                                    <i class="fas fa-file-word mr-3"></i>1-2任务学习：吹牛逼
+                                                                </h6>
+                                                                <h6 class="mb-0 task section">
+                                                                    第四节：微信小程序概述
+                                                                </h6>
+                                                                <h6 class="task">
+                                                                    <i class="fas fa-file-powerpoint mr-3"></i>
+                                                                    1-1任务学习：吹牛逼
+                                                                </h6>
+                                                                <h6 class="mb-0 task section">
+                                                                    第五节：微信小程序概述
+                                                                </h6>
+                                                                <h6 class="task">
+                                                                    <i class="fas fa-file-image mr-3"></i>1-2任务学习：吹牛逼
+                                                                </h6>
+                                                                <h6 class="mb-0 task section">
+                                                                    第六节：微信小程序概述
+                                                                </h6>
+                                                                <h6 class="task">
+                                                                    <i class="fas fa-file-alt mr-3"></i>1-2任务学习：吹牛逼
+                                                                </h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Accordion card -->
+                                                    <!-- Accordion card -->
+
+
+                                                </div>
+                                                <!-- Accordion wrapper -->
+                                            </div>
+                                            <div class="tab-pane fade" id="contact-classic" role="tabpanel"
+                                                 aria-labelledby="contact-tab-classic">
+                                                <div class="row">
+                                                    <!-- Grid column -->
+                                                    <div class="col-md-12">
+                                                        <!-- Newsfeed -->
+                                                        <div class="mdb-feed">
+                                                            <!-- Fourth news -->
+                                                            <div class="news">
+                                                                <!-- Label -->
+                                                                <div class="label">
+                                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg"
+                                                                         class="rounded-circle z-depth-1-half">
+                                                                </div>
+                                                                <!-- Excerpt -->
+                                                                <div class="excerpt">
+                                                                    <!-- Brief -->
+                                                                    <div class="brief">
+                                                                        <a class="name">二手书生</a>&nbsp;添加了笔记
+                                                                        <div class="date">2天之前</div>
+                                                                    </div>
+                                                                    <!-- Added text -->
+                                                                    <div class="added-text">
+                                                                        厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦
+                                                                    </div>
+                                                                    <!-- Feed footer -->
+                                                                    <div class="feed-footer">
+                                                                        <a class="like">
+                                                                            <i class="fas fa-heart"></i>
+                                                                            <span>7 喜欢</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Excerpt -->
+                                                            </div>
+                                                            <div class="news">
+                                                                <!-- Label -->
+                                                                <div class="label">
+                                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg"
+                                                                         class="rounded-circle z-depth-1-half">
+                                                                </div>
+                                                                <!-- Excerpt -->
+                                                                <div class="excerpt">
+                                                                    <!-- Brief -->
+                                                                    <div class="brief">
+                                                                        <a class="name">二手书生</a>&nbsp;添加了笔记
+                                                                        <div class="date">2天之前</div>
+                                                                    </div>
+                                                                    <!-- Added text -->
+                                                                    <div class="added-text">
+                                                                        厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦
+                                                                    </div>
+                                                                    <!-- Feed footer -->
+                                                                    <div class="feed-footer">
+                                                                        <a class="like">
+                                                                            <i class="fas fa-heart"></i>
+                                                                            <span>7 喜欢</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Excerpt -->
+                                                            </div>
+                                                            <!-- Fourth news -->
+                                                        </div>
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination pagination-circle pg-blue justify-content-center">
+                                                                <li class="page-item disabled"><a
+                                                                        class="page-link">第一页</a></li>
+                                                                <li class="page-item disabled">
+                                                                    <a class="page-link" aria-label="Previous">
+                                                                        <span aria-hidden="true">&laquo;</span>
+                                                                        <span class="sr-only">上一页</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="page-item active"><a class="page-link">1</a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link">2</a></li>
+                                                                <li class="page-item"><a class="page-link">3</a></li>
+                                                                <li class="page-item"><a class="page-link">4</a></li>
+                                                                <li class="page-item"><a class="page-link">5</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" aria-label="Next">
+                                                                        <span aria-hidden="true">&raquo;</span>
+                                                                        <span class="sr-only">下一页</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link">最后一页</a></li>
+                                                            </ul>
+                                                        </nav>
+                                                        <!-- Newsfeed -->
+                                                    </div>
+                                                    <!-- Grid column -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="huati-classic" role="tabpanel"
+                                                 aria-labelledby="huati-tab-classic">
+                                                <div class="row">
+                                                    <!-- Grid column -->
+                                                    <div class="col-md-12">
+                                                        <!-- Newsfeed -->
+                                                        <div class="mdb-feed">
+                                                            <!-- Fourth news -->
+                                                            <div class="news">
+                                                                <!-- Label -->
+                                                                <div class="label">
+                                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg"
+                                                                         class="rounded-circle z-depth-1-half">
+                                                                </div>
+                                                                <!-- Excerpt -->
+                                                                <div class="excerpt">
+                                                                    <!-- Brief -->
+                                                                    <div class="brief">
+                                                                        <a class="name">二手书生</a>&nbsp;发起了问答
+                                                                        <div class="date">2天之前</div>
+                                                                    </div>
+                                                                    <!-- Added text -->
+                                                                    <div class="added-text">
+                                                                        厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦
+                                                                    </div>
+                                                                    <!-- Feed footer -->
+                                                                    <div class="feed-footer">
+                                                                        <a class="">
+                                                                            <i class="fas fa-comment"></i>
+                                                                            <span>7 回复</span>
+                                                                        </a>
+                                                                        <a class="">
+                                                                            <i class="far fa-eye"></i>
+                                                                            <span>7 查看</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Excerpt -->
+                                                            </div>
+                                                            <div class="news">
+                                                                <!-- Label -->
+                                                                <div class="label">
+                                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg"
+                                                                         class="rounded-circle z-depth-1-half">
+                                                                </div>
+                                                                <!-- Excerpt -->
+                                                                <div class="excerpt">
+                                                                    <!-- Brief -->
+                                                                    <div class="brief">
+                                                                        <a class="name">二手书生</a>&nbsp;发起了问答
+                                                                        <div class="date">2天之前</div>
+                                                                    </div>
+                                                                    <!-- Added text -->
+                                                                    <div class="added-text">
+                                                                        厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦
+                                                                    </div>
+                                                                    <!-- Feed footer -->
+                                                                    <div class="feed-footer">
+                                                                        <a class="">
+                                                                            <i class="fas fa-comment"></i>
+                                                                            <span>7 回复</span>
+                                                                        </a>
+                                                                        <a class="">
+                                                                            <i class="far fa-eye"></i>
+                                                                            <span>7 查看</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Excerpt -->
+                                                            </div>
+                                                            <!-- Fourth news -->
+                                                        </div>
+                                                        <!-- Newsfeed -->
+                                                    </div>
+                                                    <!-- Grid column -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="awesome-classic" role="tabpanel"
+                                                 aria-labelledby="awesome-tab-classic">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="star mb-5">
+                                                            <span>请评分：</span>
+
+                                                        </div>
+                                                        <div class="form-group shadow-textarea green-border-focus">
+                                                            <textarea class="form-control z-depth-1"
+                                                                      id="exampleFormControlTextarea6" rows="3"
+                                                                      placeholder="请输入您的评价..."></textarea>
+                                                        </div>
+                                                        <button type="button"
+                                                                class="btn btn-primary btn-rounded mb-5 btn-sm">我要评价
+                                                        </button>
+                                                        <!-- Newsfeed -->
+                                                        <div class="mdb-feed">
+                                                            <!-- Fourth news -->
+                                                            <div class="news">
+                                                                <!-- Label -->
+                                                                <div class="label">
+                                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg"
+                                                                         class="rounded-circle z-depth-1-half">
+                                                                </div>
+                                                                <!-- Excerpt -->
+                                                                <div class="excerpt">
+                                                                    <!-- Brief -->
+                                                                    <div class="brief">
+                                                                        <a class="name float-left mr-2">二手书生</a>&nbsp;
+                                                                        <ul class="rating float-left">
+                                                                            <li><i class="fa fa-star"></i></li>
+                                                                            <li><i class="fa fa-star"></i></li>
+                                                                            <li><i class="fa fa-star"></i></li>
+                                                                            <li><i class="fa fa-star"></i></li>
+                                                                            <li><i class="fa fa-star"></i></li>
+                                                                        </ul>
+                                                                        <div class="date">2天之前</div>
+                                                                    </div>
+                                                                    <!-- Added text -->
+                                                                    <div class="added-text">
+                                                                        厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦
+                                                                    </div>
+                                                                    <!-- Feed footer -->
+                                                                    <div class="feed-footer">
+                                                                        <a class="like">
+                                                                            <i class="fas fa-heart"></i>
+                                                                            <span>7 喜欢</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Excerpt -->
+                                                            </div>
+                                                            <div class="news">
+                                                                <!-- Label -->
+                                                                <div class="label">
+                                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg"
+                                                                         class="rounded-circle z-depth-1-half">
+                                                                </div>
+                                                                <!-- Excerpt -->
+                                                                <div class="excerpt">
+                                                                    <!-- Brief -->
+                                                                    <div class="brief">
+                                                                        <a class="name float-left mr-2">二手书生</a>&nbsp;
+                                                                        <ul class="rating float-left">
+                                                                            <li><i class="fa fa-star"></i></li>
+                                                                            <li><i class="fa fa-star"></i></li>
+                                                                            <li><i class="fa fa-star"></i></li>
+                                                                            <li><i class="fa fa-star"></i></li>
+                                                                            <li><i class="fa fa-star"></i></li>
+                                                                        </ul>
+                                                                        <div class="date">2天之前</div>
+                                                                    </div>
+                                                                    <!-- Added text -->
+                                                                    <div class="added-text">
+                                                                        厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦厉害啦
+                                                                    </div>
+                                                                    <!-- Feed footer -->
+                                                                    <div class="feed-footer">
+                                                                        <a class="like">
+                                                                            <i class="fas fa-heart"></i>
+                                                                            <span>7 喜欢</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Excerpt -->
+                                                            </div>
+                                                            <!-- Fourth news -->
+                                                        </div>
+                                                        <!-- Newsfeed -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- Classic tabs -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3" style="padding-left: 20px;">
+                    <div class="card">
+                        <div class="card-header">
+                            授课教师
+
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="avatar mx-auto">
+                                <img src="http://cdn.ydma.cn/image/2018-12-17-a0oTbKZP" class="rounded-circle z-depth-1"
+                                     alt="Sample avatar">
+                            </div>
+                            <h5 class="font-weight-bold mt-4 mb-3">王八蛋</h5>
+                            <p class="text-uppercase blue-text">特约教师</p>
+                            <p class="grey-text">
+                                行如风，站如松圣诞节和附近喀什
+                            </p>
+                            <ul class="list-unstyled mb-0">
+                                <a class="like p-2 fa-lg tw-ic"><i class="fas fa-star blue-text"></i></a>
+                                <a class="p-2 fa-lg tw-ic">
+                                    <i class="fas fa-comment blue-text"></i>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <!-- Card content -->
+                        <div class="card-header">
+                            最新成员
+                        </div>
+                        <div class="card-body">
+                            <!-- Title -->
+                            <div class="member" data-toggle="popover" data-content='<div class="popover-content">
+                                                    <div class="avatar mx-auto">
+                                                        <img src="http://cdn.ydma.cn/image/2018-12-17-a0oTbKZP" class="rounded-circle z-depth-1" alt="Sample avatar">
+                                                    </div>
+                                                    <h5 class="font-weight-bold mt-4 mb-3">王八蛋</h5>
+                                                    <p class="grey-text popover-body">萨法四季度后付款交首付款金黄色的尽快发货时看见啊回复看见啊哈速度快解放哈萨克绝代风华看见爱上打飞机啊圣诞节开发和</p>
+                                                    <ul class="list-unstyled mb-0">
+                                                        <a class="like p-2 fa-lg tw-ic">
+                                                            <i class="fas fa-star blue-text"></i>
+                                                        </a>
+                                                        <a class="p-2 fa-lg tw-ic">
+                                                            <i class="fas fa-comment blue-text"></i>
+                                                        </a>
+                                                    </ul>
+                                                    <div class="mt-5 row user-info">
+                                                        <div class="col-xl-4">
+                                                            <div>在学</div>
+                                                            <i class="far fa-eye mr-1"></i>55
+                                                        </div>
+                                                        <div class="col-xl-4">
+                                                            <div>关注</div>
+                                                            <i class="fas fa-star mr-1"></i>55
+                                                        </div>
+                                                        <div class="col-xl-4">
+                                                            <div>粉丝</div>
+                                                            <i class="fas fa-users mr-1"></i>55
+                                                        </div>
+                                                    </div>
+                                                </div>'>
+                                <img src="http://cdn.ydma.cn/image/2018-12-17-a0oTbKZP" class="rounded-circle z-depth-1"
+                                     alt="Sample avatar">
+                            </div>
+                            <div class="member" data-toggle="popover" data-content='<div class="popover-content">
+                                                    <div class="avatar mx-auto">
+                                                        <img src="http://cdn.ydma.cn/image/2018-12-17-a0oTbKZP" class="rounded-circle z-depth-1" alt="Sample avatar">
+                                                    </div>
+                                                    <h5 class="font-weight-bold mt-4 mb-3">王八蛋</h5>
+                                                    <p class="grey-text popover-body">萨法四季度后付款交首付款金黄色的尽快发货时看见啊回复看见啊哈速度快解放哈萨克绝代风华看见爱上打飞机啊圣诞节开发和</p>
+                                                    <ul class="list-unstyled mb-0">
+                                                        <a class="like p-2 fa-lg tw-ic">
+                                                            <i class="fas fa-star blue-text"></i>
+                                                        </a>
+                                                        <a class="p-2 fa-lg tw-ic">
+                                                            <i class="fas fa-comment blue-text"></i>
+                                                        </a>
+                                                    </ul>
+                                                    <div class="mt-5 row user-info">
+                                                        <div class="col-xl-4">
+                                                            <div>在学</div>
+                                                            <i class="far fa-eye mr-1"></i>66
+                                                        </div>
+                                                        <div class="col-xl-4">
+                                                            <div>关注</div>
+                                                            <i class="fas fa-star mr-1"></i>66
+                                                        </div>
+                                                        <div class="col-xl-4">
+                                                            <div>粉丝</div>
+                                                            <i class="fas fa-users mr-1"></i>66
+                                                        </div>
+                                                    </div>
+                                                </div>'>
+                                <img src="http://cdn.ydma.cn/image/2018-12-17-a0oTbKZP" class="rounded-circle z-depth-1"
+                                     alt="Sample avatar">
+                            </div>
+                            <div class="member">
+                                <img src="http://cdn.ydma.cn/image/2018-12-17-a0oTbKZP" class="rounded-circle z-depth-1"
+                                     alt="Sample avatar">
+                            </div>
+                            <div class="member">
+                                <img src="http://cdn.ydma.cn/image/2018-12-17-a0oTbKZP" class="rounded-circle z-depth-1"
+                                     alt="Sample avatar">
+                            </div>
+                            <div class="member">
+                                <img src="http://cdn.ydma.cn/image/2018-12-17-a0oTbKZP" class="rounded-circle z-depth-1"
+                                     alt="Sample avatar">
+                            </div>
+                            <div class="member">
+                                <img src="http://cdn.ydma.cn/image/2018-12-17-a0oTbKZP" class="rounded-circle z-depth-1"
+                                     alt="Sample avatar">
+                            </div>
+                            <div class="member">
+                                <img src="http://cdn.ydma.cn/image/2018-12-17-a0oTbKZP" class="rounded-circle z-depth-1"
+                                     alt="Sample avatar">
+                            </div>
+                            <div class="member">
+                                <img src="http://cdn.ydma.cn/image/2018-12-17-a0oTbKZP" class="rounded-circle z-depth-1"
+                                     alt="Sample avatar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+
+        <!-- Grid row -->
+        <div class="row mt-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Content -->
+                <img src="http://cdn.ydma.cn/2018-08-27-CrQDFz0B" height="60" alt="eduplay logo">
+
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">友情链接</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a href="#!">IT云课堂</a>
+                </p>
+                <p>
+                    <a href="#!">兄弟连教育</a>
+                </p>
+                <p>
+                    <a href="#!">战地日记</a>
+                </p>
+                <p>
+                    <a href="#!">技术论坛</a>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">培训课程</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a href="#!">PHP开发</a>
+                </p>
+                <p>
+                    <a href="#!">HTML5全栈</a>
+                </p>
+                <p>
+                    <a href="#!">Java+大数据</a>
+                </p>
+                <p>
+                    <a href="#!">UI/UE设计师</a>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">培训课程</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    区块链工程师</p>
+                <p>
+                    Python全栈</p>
+                <p>
+                    Linux云计算</p>
+                <p>
+                    网站营销</p>
+
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">培训课程</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    区块链工程师</p>
+                <p>
+                    Python全栈</p>
+                <p>
+                    Linux云计算</p>
+                <p>
+                    网站营销</p>
+
+            </div>
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/">&nbsp;eduplay</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+ <!--Footer-->
+<script type="text/javascript" src="/dist/vendor/chunk/index.js"></script><script type="text/javascript" src="/dist/plan/js/index.js"></script></body>
+</html>

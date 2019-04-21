@@ -1,0 +1,190 @@
+@import "../../_variables.scss";
+@import "../../font/_font.scss";
+
+.padding-content {
+  padding-top: 30px;
+
+  .czh_virtual {
+    padding: 0;
+
+    .view_head {
+      width: 100%;
+      height: auto;
+      background-color: white;
+      border-radius: $template_radius;
+      box-shadow: $template_box_shadow;
+
+      .view_head_title {
+        margin: 0 auto;
+        width: 96%;
+        height: 46px;
+
+        p {
+          margin: 0;
+          padding-left: 10px;
+          color: #4a4a4a;
+          font-size: 18px;
+          border-bottom: 1px solid #e5e5e5;
+          padding-top: 12px;
+          padding-bottom: 2.5px;
+        }
+      }
+
+      .view_content {
+        width: 100%;
+        height: 196px;
+
+        .balance {
+          float: left;
+          margin-top: 20px;
+          margin-left: 30px;
+          margin-bottom: 20px;
+          width: 340px;
+          height: 100px;
+          background-image: linear-gradient(#94ceff, $primary);
+          border-radius: 7px;
+
+          .moneyLogo {
+            float: left;
+            margin-left: 40px;
+            width: 50px;
+            height: 100%;
+            line-height: 100px;
+
+            i {
+              font-size: 50px;
+              color: white;
+              font-weight: 400;
+            }
+          }
+
+          .balance_num {
+            float: right;
+            width: 225px;
+            height: 100%;
+
+            p {
+              color: white;
+            }
+
+            p:first-of-type {
+              width: 100%;
+              height: auto;
+              margin: 0;
+              margin-top: 23px;
+              font-size: 14px;
+              font-weight: 300;
+            }
+
+            p:last-of-type {
+              margin: 0;
+
+              width: 100%;
+              height: auto;
+              font-size: 22px;
+              font-weight: 400;
+            }
+
+            .company {
+              font-size: 13px;
+            }
+          }
+        }
+
+        .budget {
+          float: right;
+          margin-top: 40px;
+          width: 540px;
+          height: 60px;
+          border-left: 1px solid #999;
+
+          .income {
+            float: left;
+            width: 40%;
+            height: 100%;
+
+            p:first-of-type {
+              margin: 0;
+              margin-left: 80px;
+              color: #999;
+            }
+
+            p:last-of-type {
+              margin: 0;
+              margin-left: 80px;
+              color: #666;
+              font-size: 25px;
+            }
+
+            .small_font {
+              font-size: 14px;
+            }
+          }
+
+          .expenditure {
+            float: left;
+            width: 40%;
+            height: 100%;
+
+            p:first-of-type {
+              margin: 0;
+              margin-left: 20px;
+              color: #999;
+            }
+
+            p:last-of-type {
+              margin: 0;
+              margin-left: 20px;
+              color: #666;
+              font-size: 25px;
+            }
+
+            .small_font {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .recharge {
+          margin-left: 30px;
+          width: 80px;
+          height: 30px;
+
+          button {
+            cursor: pointer;
+            outline: none;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            background-color: $primary;
+            color: white;
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.czh_modal {
+  .pay_mode {
+    padding: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .pay_mode.active {
+    border: 1px solid $primary;
+  }
+}
+
+.table {
+  margin-top: 5px;
+
+  th {
+    border-top: 0 !important;
+  }
+}

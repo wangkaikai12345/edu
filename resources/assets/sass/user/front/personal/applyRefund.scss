@@ -1,0 +1,100 @@
+@import "../../_variables.scss";
+@import "../../font/_font.scss";
+
+.modal-content {
+  margin: 0 auto;
+  width: 480px;
+
+  .modal-body {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    .modal_head_title {
+      margin: 0 auto;
+      height: 64px;
+      line-height: 58px;
+
+      p {
+        padding-left: 90px;
+        margin: 0;
+        text-align: center;
+        font-size: 18px;
+        color: #4a4a4a;
+      }
+
+      button {
+        width: 100%;
+        height: 64px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+
+        i {
+          font-size: 20px;
+          color: #666;
+        }
+      }
+    }
+
+    .modal_con_data {
+      margin: 0 auto;
+      width: 96%;
+      height: auto;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-top: 2px solid #eee;
+
+      .order_item_content {
+        .textArea {
+          margin: 0 auto;
+          width: 427px;
+          height: 110px;
+          border: 1px solid #999;
+          margin-bottom: 20px;
+        }
+      }
+
+      .tips {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 15px;
+        i {
+          color: #E65046;
+          margin-right: 5px;
+        }
+      }
+
+      .identifyAndCancel {
+        width: 100%;
+        height: auto;
+        button {
+          width: 80px;
+          height: 30px;
+          border-radius: 20px;
+          background-color: $primary;
+          color: white;
+          border: 0;
+          font-weight: 300;
+          font-size: 15px;
+          outline: none;
+          cursor: pointer;
+        }
+
+        button:first-of-type {
+          margin-left: 140px;
+        }
+
+        button:last-of-type {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+
+.data_item_ccc {
+  color: #999;
+}

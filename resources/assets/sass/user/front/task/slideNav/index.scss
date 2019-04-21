@@ -1,0 +1,104 @@
+@import '../../../_variables.scss';
+
+.element::-webkit-scrollbar {
+  width: 0 !important
+}
+
+.element {
+  -ms-overflow-style: none;
+}
+
+.element {
+  overflow: -moz-scrollbars-none;
+}
+
+.zh_slide_nav {
+  position: relative;
+  float: left;
+  width: 98px;
+  height: 100%;
+  background: #1B1F21;
+  overflow: hidden;
+  left: -18px;
+  z-index: 9;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+  .slide_hide_scroll {
+    position: absolute;
+    left: 18px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    .slide_wrap {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      .slide_nav_item {
+        margin-bottom: 83px;
+        cursor: pointer;
+        padding-left: 24px;
+        .item_title {
+          font-size: 16px;
+          color: #DDDDDD;
+          .iconfont {
+            display: block;
+            font-size: 35px;
+            line-height: 33px;
+          }
+        }
+      }
+      .slide_nav_item.active {
+        .item_title,.iconfont {
+          color: $primary;
+        }
+      }
+
+      .slide_nav_item:first-child {
+        //margin-top: 190px;
+      }
+
+      .slide_nav_item:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-height: 710px) {
+  .zh_slide_nav {
+    .slide_hide_scroll {
+      .slide_wrap {
+        top: 10px;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .zh_slide_nav {
+    display: none;
+  }
+  #dplayer,
+  #dplayer.full_page {
+    left: 0!important;
+    width: 100%!important;
+  }
+}

@@ -1,0 +1,223 @@
+@import "../../../_variables.scss";
+@import "../../../font/_font.scss";
+//.zh_slide_nav {
+//  background: #fff !important;
+//}
+
+.item_title {
+  color: #999999 !important;
+}
+
+.xh {
+  overflow: hidden;
+
+  .xh_content {
+    float: left;
+    margin-top: 80px;
+    margin-bottom: 252px;
+    width:100%;
+    .xh_first_content {
+      width:100%;
+      margin: 0 auto 54px auto;
+
+      .number_content {
+        margin: 0 auto 26px auto;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+        background: #6B91FF;
+        font-size: 20px;
+        line-height: 60px;
+        color: #fff;
+      }
+
+      .homework_title {
+        font-size: 32px;
+        color: #4a4a4a;
+        text-align: center;
+      }
+    }
+
+    .xh_second_content {
+      float: left;
+      width:1000px;
+      .homework_item {
+        float: left;
+        margin-bottom: 30px;
+
+        .homework_item_dian {
+          float: left;
+          margin-top: 15px;
+          margin-right: 10px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #6B91FF;
+        }
+
+        .homework_item_title {
+          float: left;
+          margin-right: 31px;
+          color: #666666;
+          font-size: 24px;
+          text-align: left;
+        }
+
+        .homework_item_desc {
+          float: left;
+          width: 735px;
+          padding-top: 2px;
+          line-height: 35px;
+          font-size: 20px;
+          color: #999;
+        }
+
+        .pack {
+          color: #6B91FF !important;
+
+          .iconfont {
+            font-size: 20px;
+          }
+        }
+
+        .data_pack {
+          margin-right: 55px;
+        }
+
+        .ranking {
+          margin-top: 35px;
+          width: 800px;
+
+          .ranking_item {
+            position: relative;
+            float: left;
+            margin-right: 120px;
+            font-size: 16px;
+            color: #666;
+
+            .student_img {
+              float: left;
+
+              img {
+                margin-right: 9px;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+              }
+            }
+
+            .ranking_right_content {
+              float: right;
+
+              .ranking_student_score {
+                margin-top: -5px;
+                font-size: 28px;
+                color: #E65046;
+              }
+
+              .ranking_student_date {
+                margin-top: -10px;
+                font-size: 12px;
+                color: #999;
+              }
+            }
+          }
+
+          .ranking_item:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  .right_operation {
+    float:left;
+    .submit_btn_content {
+      margin-bottom:22px;
+      .submit_button {
+        display:block;
+        width:140px;
+        margin:0 auto;
+        font-size:20px;
+        background:transparent;
+        border:1px solid $primary;
+        border-radius:20px;
+        height:40px;
+        padding-top:3px;
+        padding-left:30px;
+        color:$primary;
+        font-weight:400;
+      }
+      .submit_button:hover {
+        background:$primary;
+        color:#fff;
+      }
+    }
+    .right_content {
+      float:left;
+      background: #fff;
+      box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.10);
+      padding:0 10px 30px 10px;
+      border-radius:8px;
+      .homework_title {
+        font-size:18px;
+        text-align:center;
+        padding:12px 50px;
+      }
+      .division_xian {
+        background:#979797;
+        margin-bottom:27px !important;
+      }
+      .submit_tips {
+        padding:0 50px;
+        font-size:16px;
+        color:#999999;
+        .not-submit {
+          color:#E65046;
+        }
+        .pending-approval {
+          color:#999999;
+        }
+        .score_content {
+          font-size:48px;
+          color:$primary;
+          text-align:center;
+        }
+        .view-details {
+          background:transparent;
+          border:1px solid $primary;
+          color:$primary;
+          border-radius:17px;
+          height:30px;
+          padding-top:3px;
+          font-size:14px;
+        }
+        .view-details:hover {
+          background:$primary;
+          color:#fff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1002px) {
+  .homework_item_desc {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .ranking_right_content {
+    float: left !important;
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ranking_item {
+    float: left;
+  }
+}

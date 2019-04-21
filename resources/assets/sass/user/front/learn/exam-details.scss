@@ -1,0 +1,411 @@
+@import "../../_variables.scss";
+.czh_examDetails {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .left_con {
+    height: auto;
+    .left_con_top {
+      overflow: hidden;
+      height: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+      background-color: white;
+      .exam_title {
+        margin-bottom: 4px;
+        padding: 0 15px 0 15px;
+        color: #4a4a4a;
+        font-size: 18px;
+      }
+      .exam_status {
+        margin-bottom: 4px;
+        padding: 0 15px 0 15px;
+        color: #666;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: right;
+      }
+      .details_data {
+        margin: 0 auto;
+        padding: 0 15px 6px 15px;
+        height: auto;
+        border-bottom: 2px solid #eee;
+        p {
+          margin-bottom: 0;
+          height: 25px;
+          line-height: 25px;
+          margin-right: 15px;
+          color: #999;
+          font-size: 14px;
+        }
+        .answer_user {
+          color: #666;
+          font-size: 15px;
+        }
+      }
+      .exam_score_data {
+        margin: 20px auto 0;
+        height: auto;
+        .exam_score_num {
+          height: 100%;
+          border-right: 1px solid #999;
+          .e_s_n {
+            padding-left: 40px;
+            margin: 0;
+            width: 100%;
+            color: #666;
+            font-size: 14px;
+            span {
+              font-size: 70px;
+              color: $primary;
+              font-weight: bold;
+            }
+          }
+          .total_score {
+            margin: -10px 0 0 0;
+            padding-left: 40px;
+            width: 100%;
+            height: auto;
+            font-size: 14px;
+            color: #666;
+          }
+          .exam_que_desc {
+            margin-top: 30px;
+            padding: 10px;
+            width: 90%;
+            min-height: 50px;
+            background-color: #fafafa;
+            border-radius: 5px;
+            p {
+              margin: 0;
+              width: 100%;
+              height: 100%;
+              text-align: left;
+              font-size: 14px;
+              color: #999;
+            }
+          }
+        }
+        .exam_score_table {
+          padding: 0 0 0 30px;
+          height: auto;
+          .e_s_t {
+            width: 100%;
+            height: 100%;
+            .shortTable {
+              width: 80px;
+              height: 45px;
+              text-align: center;
+              color: #666 !important;
+              font-size: 16px;
+            }
+            th {
+              width: 180px;
+              height: 45px;
+              text-align: center;
+              background-color: #fafafa;
+              border: 1px solid #999;
+              color: #4a4a4a;
+            }
+            td {
+              width: 180px;
+              height: 45px;
+              text-align: center;
+              border: 1px solid #999;
+            }
+            .answer_yes td {
+              color: #7cb035;
+            }
+            .answer_no td {
+              color: #e65046;
+            }
+            .answer_not td {
+              color: #999;
+            }
+            .answer_score td {
+              color: #F0A818;
+            }
+          }
+        }
+      }
+      .exam_tips {
+        margin: 10px auto 0;
+        max-width: 97%;
+        min-height: 30px;
+        background-color: #f7f9ff;
+        border-radius: 5px;
+        p {
+          text-align: center;
+          margin: 0;
+          width: 100%;
+          height: 100%;
+          line-height: 30px;
+          color: #999;
+          font-size: 14px;
+        }
+      }
+    }
+    .left_con_bottom {
+      margin-top: 30px;
+      overflow: hidden;
+      height: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+      background-color: white;
+      .single_question {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        .que_type_title {
+          padding-left: 30px;
+          width: 100%;
+          height: 30px;
+          border-left: 3px solid $primary;
+          p {
+            float: left;
+            width: 60px;
+            height: 100%;
+            font-size: 20px;
+            color: #666;
+          }
+          span {
+            float: left;
+            margin-top: 4px;
+            margin-left: 10px;
+            color: #999;
+            font-weight: 300;
+          }
+        }
+        .title_hr {
+          margin: 15px auto 0;
+          margin-bottom: 20px;
+          width: 93%;
+          height: 2px;
+          background-color: #eee;
+          border: none;
+        }
+        .question_item {
+          overflow: hidden;
+          margin: 0 auto;
+          width: 93%;
+          height: auto;
+          margin-bottom: 15px;
+          border-bottom: 1px solid #eee;
+          .question_title {
+            margin: 0;
+            width: 100%;
+            height: auto;
+            padding: 0 10px 0 10px;
+            font-size: 18px;
+          }
+          .question_score {
+            margin: 0;
+            width: 93%;
+            padding-left: 28px;
+            height: auto;
+            color: #999;
+            font-size: 14px;
+          }
+          .que_options {
+            width: 100%;
+            height: auto;
+            .answer {
+              overflow: hidden;
+              width: 100%;
+              height: auto;
+              margin-left: 25px;
+              margin-top: 10px;
+              .answer_title {
+                margin: 0;
+                width: 100%;
+                height: auto;
+              }
+              .answer_con {
+                float: right;
+                margin-right: 45px;
+                padding: 10px 20px 10px 20px;
+                width: 88%;
+                height: auto;
+                background-color: #fafafa;
+                color: #999;
+                border-radius: 5px;
+              }
+            }
+            .true_answer {
+              overflow: hidden;
+              width: 100%;
+              height: auto;
+              margin-left: 25px;
+              margin-top: 10px;
+            }
+            .que_option {
+              margin: 15px 0 15px 0;
+              padding-left: 50px;
+              width: 100%;
+              min-height: 30px;
+              color: #999;
+              border-radius: 5px;
+              span {
+                font-size: 18px;
+                color: #666;
+              }
+            }
+            .active {
+              background-color: #fafafa;
+            }
+          }
+          .true_data {
+            margin: 0 auto;
+            width: 98%;
+            height: 24px;
+            font-size: 18px;
+            .answerNum {
+              float: left;
+            }
+            .answerStatus {
+              float: left;
+              margin-left: 20px;
+            }
+            .true_g {
+              color: #74BE0F;
+            }
+            .false_r {
+              color: #e65046;
+            }
+            button {
+              padding: 0;
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right_con {
+    position: fixed;
+    top: 90px;
+    right: 311px;
+    width: 320px;
+    overflow: hidden;
+    max-height: 585px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    .answer_card_title {
+      margin: 0 auto;
+      width: 90%;
+      height: 60px;
+      border-bottom: 2px solid #eee;
+      p {
+        float: left;
+        padding-left: 15px;
+        width: 50%;
+        height: 100%;
+        line-height: 60px;
+        margin: 0;
+        color: #666;
+        font-size: 16px;
+      }
+      a {
+        margin-top: 15px;
+        padding: 0;
+        float: right;
+        width: 96px;
+        height: 30px;
+        line-height: 28px;
+        background-color: $primary;
+        color: white;
+        border-radius: 30px;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+    .que_card {
+      margin-top: 10px;
+      width: 100%;
+      height: auto;
+      .que_card_title {
+        margin: 0;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        border-left: 3px solid $primary;
+        padding-left: 18px;
+        color: #666;
+      }
+      .queNum {
+        overflow: hidden;
+        margin: 15px auto 0;
+        width: 90%;
+        height: auto;
+        padding-bottom: 7px;
+        border-bottom: 1px solid #eee;
+        .queNumItem {
+          float: left;
+          margin-right: 13px;
+          margin-bottom: 13px;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          color: white;
+          font-size: 14px;
+          border-radius: 2px;
+        }
+        .queNumItem:nth-of-type(7),
+        .queNumItem:nth-of-type(14),
+        .queNumItem:nth-of-type(21),
+        .queNumItem:nth-of-type(28),
+        .queNumItem:nth-of-type(35),
+        .queNumItem:nth-of-type(42),
+        .queNumItem:nth-of-type(49),
+        .queNumItem:nth-of-type(56) {
+          margin-right: 0;
+        }
+        .trueQue {
+          background-color: #7cb035;
+        }
+        .falseQue {
+          background-color: #e65046;
+        }
+        .waitQue {
+          background-color: #F0A818;
+        }
+        .notQue {
+          background-color: white;
+          border: 1px solid #999;
+          color: #999;
+        }
+      }
+    }
+    .que_status_tips {
+      margin: 20px auto 0;
+      width: 90%;
+      height: 20px;
+      .status_item {
+        float: left;
+        width: 24%;
+        height: 100%;
+        div {
+          float: left;
+          margin-top: 5px;
+          margin-right: 5px;
+          width: 8px;
+          height: 8px;
+          border-radius: 30px;
+        }
+        p {
+          margin: 0;
+          font-size: 12px;
+          color: #999;
+        }
+      }
+    }
+    .just_look {
+      margin: 20px auto 0;
+      width: 90%;
+    }
+  }
+}

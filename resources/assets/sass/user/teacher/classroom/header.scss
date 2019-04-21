@@ -1,0 +1,103 @@
+@import "../../variables";
+.header {
+  .col-md-12 {
+    padding: 0;
+
+    .card {
+      overflow: initial;
+      background: #fff !important;
+      .icon-lg {
+        img {
+          width: 150px;
+          height: 80px;
+          margin-right: 20px;
+        }
+      }
+
+      .icon-text {
+        width: 100%;
+        .courseStatus {
+          width:60px;
+          height:26px;
+          text-align:center;
+          line-height:19px;
+          font-size:12px;
+          font-weight:400;
+        }
+        p {
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 18px;
+          color: #505050 !important;
+        }
+
+        .text-uppercase {
+          width: 60px;
+          height: 26px;
+          text-align: center;
+          line-height: 26px;
+          font-size: 12px;
+          color: #F18C29;
+          background: #FFF0DA !important;
+          padding: 0;
+          font-weight: 350;
+        }
+        .dropdown-toggle.btn-icon {
+          width:60px;
+        }
+        .btn-icon {
+          float: right;
+          margin-right: 10px;
+          width: 44px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 12px;
+          padding: 0;
+          color: #666666 !important;
+          background: #f6f9fe;
+          font-weight: 350;
+          border: 0;
+          .btn-inner--icon {
+            float: left;
+            .iconfont {
+              font-size: 23px;
+              float: left;
+              padding-left: 5px;
+              margin-right: -5px;
+            }
+          }
+          span {
+          }
+          .btn-inner--text {
+            margin-left: 0 !important;
+            color: #666666;
+          }
+        }
+      }
+    }
+  }
+}
+
+.py-4 {
+  padding-top: 1.35rem !important;
+  padding-bottom: 1.35rem !important;
+}
+
+.card {
+  box-shadow: $teacher_box_shadow;
+  border-radius: $teacher_radius;
+}
+
+.dropdown {
+  .dropdown-menu {
+    .dropdown-item {
+      text-align:center;
+    }
+    .dropdown-item:hover {
+      background:$primary;
+      color:#fff;
+    }
+  }
+}
